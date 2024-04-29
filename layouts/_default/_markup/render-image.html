@@ -1,0 +1,8 @@
+{{ if in .Destination "/static/" }}
+	<!-- 12 is count of ../../static carachers -->
+	{{ $path := substr .Destination 12 }}
+	<img class="img-fluid" src="{{ $path }}" alt='{{ .Text }}' />
+{{ else }}
+	{{ $path := path.Join  "../" .Destination }}
+	<img class="img-fluid" src="{{ $path }}" alt='{{ .Text }}' />
+{{ end }}

@@ -1,0 +1,72 @@
+baseurl = "/"
+uglyURLs = false
+title = "Andrey's Notes"
+languageCode = "en-us"
+paginate = "20" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+# googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[taxonomies]
+  category = 'categories'
+  programming_language = 'programming_languages'
+  archives = 'archives'
+  tag = 'tags'
+
+[Params]
+  description = "Andrey's Personal blog about everything" # Description of your site
+  copyright = "Andrey Dmitriev" # Footer copyright holder, otherwise will use site title
+  opengraph = true
+  twitter_cards = false
+  readmore = true # Show "Read more" button in list if true
+  authorbox = false
+  author.name = "Andrey Dmitriev"
+  author.bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  author.avatar = "img/avatar.png"
+  pager = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["xray", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo"]
+
+[Params.logo]
+  subtitle = "Just my online notepad" # Logo subtitle
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "programming_languages", "taglist", "archives"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+  archives_counter = true
+  categories_counter = true
+  programming_languages_counter = true
+
+[Params.style.vars]
+  highlightColor = "#02a783" # org "#e22d30" wg "#02a783"
+
+[Params.thumbnail]
+  # Show thumbnail only for list items
+  visibility = ["list"]
+
+# .AD.
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'github' # monokai
+    tabWidth = 4
+
+[markup.goldmark.renderer]
+unsafe= true

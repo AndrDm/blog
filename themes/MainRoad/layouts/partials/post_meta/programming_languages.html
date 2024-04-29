@@ -1,0 +1,16 @@
+{{- $taxo := "programming_languages" -}}
+{{- with .Param $taxo -}}
+<div class="meta__item-programming_languages meta__item">
+	{{- partial "svg/programming_language.svg" (dict "class" "meta__icon") -}}
+	<span class="meta__text">
+		{{- range $index, $programming_language := . }}
+			{{- $url := urls.Parse ($programming_language | urlize) -}}
+			{{- $path := $url.Path -}}
+			{{- with $.Site.GetPage (printf "/%s/%s" $taxo $path) }}
+				{{- if gt $index 0 }}, {{ end -}}
+				<a class="meta__link" href="{{ .RelPermalink }}" rel="programming_language">{{ .Title }}</a>
+			{{- end }}
+		{{- end }}
+	</span>
+</div>
+{{- end }}
