@@ -3,8 +3,8 @@ uglyURLs = false
 title = "Andrey's Notes"
 languageCode = "en-us"
 paginate = "20" # Number of posts per page
-theme = "mainroad"
-themesDir = "../themes"
+theme = "MainRoad"
+themesDir = "themes"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 # googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
