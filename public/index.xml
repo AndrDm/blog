@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrey&#39;s Notes</title>
+    <link>/</link>
+    <description>Recent content on Andrey&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to build open62541 from sources</title>
+      <link>/labview/opc_ua/part2-build_open62541/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>/labview/opc_ua/part2-build_open62541/</guid>
+      <description>&lt;p&gt;Step by step guide - how to build &lt;a href=&#34;https://www.open62541.org&#34;&gt;open62541&lt;/a&gt; from sources as Dynamic Link Library.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to setup simple OPC UA Server in B&amp;R AS</title>
+      <link>/labview/opc_ua/part1-setup_br/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>/labview/opc_ua/part1-setup_br/</guid>
+      <description>&lt;p&gt;How to setup simple B&amp;amp;R OPC UA Server from the scratch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compyt view of the NI Forum page</title>
+      <link>/labview/forum/web_page/</link>
+      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>/labview/forum/web_page/</guid>
+      <description>&lt;p&gt;Text before Cut.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Tue, 25 Jan 2022 14:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>This website builds with Hugo static site generator and modified Mainroad theme.&#xA;About Hugo Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website. With its amazing speed and flexibility, Hugo makes building websites fun again.&#xA;Learn more on GitHub. Complete documentation is available at Hugo Documentation.</description>
+    </item>
+  </channel>
+</rss>
