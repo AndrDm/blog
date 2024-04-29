@@ -1,0 +1,16 @@
+{{- $taxo := "archives" -}}
+{{- with .Param $taxo -}}
+<div class="meta__item-archives meta__item">
+	{{- partial "svg/archive.svg" (dict "class" "meta__icon") -}}
+	<span class="meta__text">
+		{{- range $index, $archive := . }}
+			{{- $url := urls.Parse ($archive | urlize) -}}
+			{{- $path := $url.Path -}}
+			{{- with $.Site.GetPage (printf "/%s/%s" $taxo $path) }}
+				{{- if gt $index 0 }}, {{ end -}}
+				<a class="meta__link" href="{{ .RelPermalink }}" rel="archive">{{ .Title }}</a>
+			{{- end }}
+		{{- end }}
+	</span>
+</div>
+{{- end }}
