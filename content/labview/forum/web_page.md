@@ -1,5 +1,5 @@
 ---
-title: "Compyt view of the NI Forum page"
+title: "Compact view of the NI Forum page"
 date: 2023-01-31
 authorbox: false
 sidebar: false
@@ -10,7 +10,7 @@ archives:
   - "2024-04"
 tags:
   - "usability"
-draft: false
+draft: true
 ---
 Text before Cut.
 <!--more-->
