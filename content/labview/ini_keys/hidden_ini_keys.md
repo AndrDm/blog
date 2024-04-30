@@ -12,6 +12,7 @@ archives:
   - "2024-04"
 tags:
   - "LabVIEW"
+  - "INI"
 draft: false
 ---
 There are some "hidden" INI keys available in LabVIEW, which I often forgot
