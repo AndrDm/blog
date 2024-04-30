@@ -1,6 +1,5 @@
 ---
 title: About
-date: 2022-01-25T14:00:00.000Z
 authorbox: false
 sidebar: false
 menu: main
@@ -40,4 +39,3 @@ Main features:
 
 Learn more on [GitHub](https://github.com/vimux/mainroad). Mainroad theme is released under the [GPLv2 license](https://github.com/vimux/mainroad/blob/master/LICENSE.md).
 
-Last change 30-Apr-2024
