@@ -7,7 +7,7 @@ description: My Template.
 categories:
   - Programming
 archives:
-  - 2024-04 (Apr)
+  - 2024-04
 tags:
   - B&R
   - OPCUA
