@@ -10,7 +10,7 @@
 	{{ range $pages.GroupByPublishDate "2006-01" }}
 	<h2 class="archive-year" id="{{.Key | urlize}}">{{.Key}}</h2>
 		<ul class="year-of-posts">
-			{{ range sort .Pages "PublishDate" "asc" }}
+			{{ range sort .Pages "PublishDate" "desc" }}
 			<li>
 				<p>
 					<time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}"></time>
