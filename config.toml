@@ -25,7 +25,7 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
   author.bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   author.avatar = "img/avatar.png"
   pager = true
-  post_meta = ["date", "categories"] # Order of post meta information
+  post_meta = ["date", "lastmod", "categories"] # Order of post meta information
   mainSections = ["xray", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo"]
 
 [Params.logo]
