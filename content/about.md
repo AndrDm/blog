@@ -6,7 +6,7 @@ sidebar: false
 menu: main
 ---
 
-This website builds with [Hugo](https://gohugo.io/) static site generator and modified [Mainroad](https://github.com/vimux/mainroad) theme.
+This website builds with [Hugo](https://gohugo.io/) static site generator and modified [Mainroad](https://github.com/vimux/mainroad) theme, powered by [Pagefind](https://pagefind.app).
 
 ## About Hugo
 
@@ -15,6 +15,10 @@ configurability. Hugo takes a directory with content and templates and renders t
 amazing speed and flexibility, Hugo makes building websites fun again.
 
 Learn more on [GitHub](https://github.com/gohugoio/hugo). Complete documentation is available at [Hugo Documentation](https://gohugo.io/getting-started/).
+
+## About Pagefind
+
+Pagefind is a fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure.
 
 ## About Mainroad
 
@@ -36,4 +40,4 @@ Main features:
 
 Learn more on [GitHub](https://github.com/vimux/mainroad). Mainroad theme is released under the [GPLv2 license](https://github.com/vimux/mainroad/blob/master/LICENSE.md).
 
-Last change 22-Apr-2024
+Last change 30-Apr-2024
