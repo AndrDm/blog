@@ -10,7 +10,7 @@ archives:
 tags:
   - AIPD
   - ImageJ
-draft: true
+draft: false
 ---
 The AIPD image format is an internal, proprietary National Instruments format. It can normally be opened in NI software like Vision Assistant, but it can also be opened in ImageJ.
 <!--more-->
