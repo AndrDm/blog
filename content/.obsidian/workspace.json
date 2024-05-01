@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/opc_ua/part1-br_setup.md",
+                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:OPCUA",
+                "query": "tag:template",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/opc_ua/part1-br_setup.md",
+                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/opc_ua/part1-br_setup.md",
+                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/opc_ua/part1-br_setup.md"
+                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md"
               }
             }
           }
@@ -135,21 +135,28 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 288.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dade6e62f4b603c2",
+  "active": "48a6861767c15637",
   "lastOpenFiles": [
+    "search.md",
+    "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+    "kb/aipd_in_imagej",
+    "Untitled",
+    "kb",
+    "about.md",
+    "labview/forum/web_page.md",
     "Pasted image 20240417160149.png",
     "hardware/Memory Benchmarks/index.md",
     "2023-04-02.md",
@@ -157,7 +164,6 @@
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
     "template/index.md",
-    "about.md",
     "hardware/Memory Benchmarks/memory benchmark.md",
     "algorithms/Haar Wavelet/haar wavelet.md",
     "programming/G110 & LUA Scripting/lua scripting.md",
@@ -181,20 +187,14 @@
     "sandbox/subdir3/index.md",
     "sandbox/subdir3/img3.png",
     "sandbox/subdir3/FARDC51.tmp",
-    "sandbox/subdir3/FARDC50.tmp",
     "sandbox/subdir3/img2.png",
-    "sandbox/subdir3",
     "sandbox/subdir2/index.md",
     "sandbox/subdir2/img2.png",
-    "sandbox/subdir2/FARDC4E.tmp",
     "sandbox/subdir2/sandbox subdir.md",
-    "sandbox/subdir2/img1.png",
     "sandbox/subdir/sandbox subdir.md",
     "sandbox/sandboox root.md",
     "sandbox/test/index.md",
     "sandbox/WPF in LabVIEW Test.md",
-    "sandbox/DLL3.md",
-    "sandbox/asets/test/subdir/ren1.md",
-    "sandbox/asets/test/subdir/ren.md"
+    "sandbox/DLL3.md"
   ]
 }

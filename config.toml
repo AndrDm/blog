@@ -26,7 +26,7 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
   author.avatar = "img/avatar.png"
   pager = true
   post_meta = ["date", "lastmod", "categories"] # Order of post meta information
-  mainSections = ["xray", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo"]
+  mainSections = ["kb", "xray", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo"]
 
 [Params.logo]
   subtitle = "Just my online notepad" # Logo subtitle
