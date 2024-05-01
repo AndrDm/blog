@@ -10,6 +10,21 @@ menu: main
 <div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            showImages: true,
+            processResult: function (result) {
+                if (result?.meta?.image) {
+                    let resultBase = new URL(result.url, window.location);
+                    let remappedImage = new URL(result.meta.image, resultBase);
+                    if (remappedImage.hostname !== window.location.hostname) {
+                        result.meta.image = remappedImage.toString();
+                    } else {
+                        result.meta.image = remappedImage.pathname;
+                    }
+                }
+            }
+        });    
     });
 </script>

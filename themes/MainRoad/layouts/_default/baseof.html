@@ -55,6 +55,7 @@
 			{{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
 		</div>
 		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+
 	</div>
 <script async defer src="{{ "js/menu.js" | relURL }}"></script>
 {{ range .Site.Params.customJS -}}

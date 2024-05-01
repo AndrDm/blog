@@ -73,7 +73,8 @@
 - id: footer_credits
   translation:
     "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo v.0.125.4</a> and \
-    modified <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+    modified <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme, \
+    powered by <a href=\"https://pagefind.app/\" rel=\"nofollow noopener\" target=\"_blank\">Pagefind</a>."
 
 # 404
 - id: 404_title
