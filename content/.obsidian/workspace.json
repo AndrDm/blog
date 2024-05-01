@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+                "file": "kb/aipd_in_imagej/open_aipd_in_imagej.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:template",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+                "file": "kb/aipd_in_imagej/open_aipd_in_imagej.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+                "file": "kb/aipd_in_imagej/open_aipd_in_imagej.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md"
+                "file": "kb/aipd_in_imagej/open_aipd_in_imagej.md"
               }
             }
           }
@@ -148,10 +147,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "48a6861767c15637",
+  "active": "9f2a385d50617a4e",
   "lastOpenFiles": [
     "search.md",
-    "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+    "kb/aipd_in_imagej/open_aipd_in_imagej.md",
     "kb/aipd_in_imagej",
     "Untitled",
     "kb",
