@@ -1,0 +1,31 @@
+Implement search on any static website.
+
+Usage: pagefind.exe [OPTIONS]
+
+Options:
+  -s, --site <SITE>
+          The location of your built static website
+      --output-subdir <OUTPUT_SUBDIR>
+          Where to output the search bundle, relative to the processed site
+      --output-path <OUTPUT_PATH>
+          Where to output the search bundle, relative to the working directory of the command
+      --root-selector <ROOT_SELECTOR>
+          The element Pagefind should treat as the root of the document. Usually you will want to use the data-pagefind-body attribute instead.
+      --exclude-selectors <EXCLUDE_SELECTORS>
+          Custom selectors that Pagefind should ignore when indexing. Usually you will want to use the data-pagefind-ignore attribute instead.
+      --glob <GLOB>
+          The file glob Pagefind uses to find HTML files. Defaults to "**/*.{html}"
+      --force-language <FORCE_LANGUAGE>
+          Ignore any detected languages and index the whole site as a single language. Expects an ISO 639-1 code.
+      --serve
+          Serve the source directory after creating the search index
+  -v, --verbose
+          Print verbose logging while indexing the site. Does not impact the web-facing search.
+  -l, --logfile <LOGFILE>
+          Path to a logfile to write to. Will replace the file on each run
+  -k, --keep-index-url
+          Keep "index.html" at the end of search result paths. Defaults to false, stripping "index.html".
+  -h, --help
+          Print help
+  -V, --version
+          Print version
