@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "69263ffba2a65573",
+        "id": "1b138d4ea3136825",
         "type": "tabs",
         "children": [
           {
-            "id": "dade6e62f4b603c2",
+            "id": "36c43911229266cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,10 +147,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "48a6861767c15637",
+  "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "search.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+    "search.md",
     "kb/aipd_in_imagej",
     "Untitled",
     "kb",
