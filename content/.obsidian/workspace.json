@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+                "file": "ndt/diconde_validation/dvtk_validation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+                "file": "ndt/diconde_validation/dvtk_validation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
+                "file": "ndt/diconde_validation/dvtk_validation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md"
+                "file": "ndt/diconde_validation/dvtk_validation.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
+    "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
     "kb/aipd_in_imagej",
@@ -193,7 +194,6 @@
     "sandbox/subdir/sandbox subdir.md",
     "sandbox/sandboox root.md",
     "sandbox/test/index.md",
-    "sandbox/WPF in LabVIEW Test.md",
-    "sandbox/DLL3.md"
+    "sandbox/WPF in LabVIEW Test.md"
   ]
 }
