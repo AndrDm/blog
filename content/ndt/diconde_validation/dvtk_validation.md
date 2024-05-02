@@ -13,7 +13,7 @@ tags:
   - DVTK
 draft: false
 ---
-Technical validation of the DICONDE Files is important compiance step to be sure that the PACS System is compliant to DICONDE Standard. Below the instruction how to validate DICONDE Files.
+Technical validation of the DICONDE Files is important compliance step to be sure that the PACS System is compliant to DICONDE Standard. Below the instruction how to validate DICONDE Files.
 <!--more-->
 Technically the DICONDE Standard follow DICOM Rules. The Data Element Types are defined in [Part 5, section 7.4](https://dicom.nema.org/medical/dicom/current/output/html/part05.html#sect_7.4).
 
@@ -41,13 +41,13 @@ Current Versions (as per 2nd May 2024):
 
 First you have to install Definition Files, then DVTK Toolkit. I also would like to recommend to install DVTK Editor, its not mandatory required for validation, but helpful for troubleshooting.
 
-After installation your Definitioon Files located in "C:\Program Files (x86)\Common Files\DVTk\Definition Files\DICOM"  Folder and the software in "C:\Program Files (x86)\DVTk\DVT\Bin\DVT.exe".
+After installation your Definition Files located in "C:\Program Files (x86)\Common Files\DVTk\Definition Files\DICOM"  Folder and the software in "C:\Program Files (x86)\DVTk\DVT\Bin\DVT.exe".
 
 You don't need all Validation Files, the only DICONDE relevant files are:
 
 ![image-20240502103053285](assets/image-20240502103053285.png)
 
-Usually I make a copy of these files in separate DICONDE Folder to avoid "mixture" of Mediacal and Industrial Definitions.
+Usually I make a copy of these files in separate DICONDE Folder to avoid "mixture" of Medical and Industrial Definitions.
 
 If you will take a look inside of these files you will see something like that:
 
@@ -164,4 +164,4 @@ Take a note that some missing Tags will not "damage" your DICONDE file. Such fil
 
 ![image-20240502115939308](assets/image-20240502115939308.png)
 
-but many experienced NDT Operators will not accept omitted Current, because this is a very important Property of the Inspection. This is historical reason for this, because initially DICONDE Standard based on the DICOM, which is Medical standard, and in Medicine the pure Current is not very important, but total Patient Dose is relevant, therefore the mAs is usually set. Common recommendation is to set as many parameters as possible.
+but many experienced NDT Operators will not accept omitted Current, because this is a very important Property of the Inspection. This is historical reason for this, because initially DICONDE Standard based on the DICOM, which is Medical standard, and in Medicine the pure Current is not very important, but total Patient Dose is relevant, therefore the mAs (milliamper * seconds) is usually set. Common recommendation is to set as many parameters as possible.
