@@ -154,10 +154,25 @@ textarea {
 	transition: background-color .25s ease-out;
 }
 
+/* Button 2 */
+.btn2org {
+	padding: 5px 10px;
+	font-weight: 100;
+	color: #27272c;
+	white-space: pre-line;
+	background: #FFFFFF;
+}
+
+.btn2org:hover {
+	color: #fff;
+	background: {{ $highlightColor }};
+}
+
 
 /* Button 2 */
 .btn2 {
 	padding: 5px 10px;
+    border-radius: 20px;
 	font-weight: 100;
 	color: #27272c;
 	white-space: pre-line;

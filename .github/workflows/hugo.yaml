@@ -6,6 +6,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "00 08 * * *"   # <=== Min Hours Day Month DayOfWeek
+    - cron: "00 23 * * *"   # <=== Min Hours Day Month DayOfWeek
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
