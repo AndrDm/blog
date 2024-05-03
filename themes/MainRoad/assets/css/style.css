@@ -301,11 +301,27 @@ figcaption h4 {
 
 pre,
 code,
-kbd,
 samp {
 	font-family: {{ $fontFamilySecondary }};
 	font-size: inherit;
 }
+
+kbd {
+	display:inline-block;
+	margin:0 .1em;
+	padding:.1em .6em;
+	font-family: {{ $fontFamilySecondary }};
+	font-size: inherit;
+	line-height:1.4;
+	color:var(--black-600);
+	text-shadow:0 1px 0 var(--white);
+	background-color:var(--black-200);
+	border:1px solid var(--black-350);
+	border-radius:3px;
+	box-shadow:0 1px 1px hsla(210,8%,5%,0.15),inset 0 1px 0 0 var(--white);
+	white-space:nowrap
+}
+
 
 pre,
 code {
