@@ -1,4 +1,6 @@
 {{- if .Params.tags }}
+    <aside data-pagefind-ignore>
+    
 <div class="post__tags tags clearfix">
 	{{ partial "svg/tag.svg" (dict "class" "tags__badge") }}
 	<ul class="tags__list">
@@ -11,4 +13,5 @@
 		{{- end }}
 	</ul>
 </div>
+</aside>
 {{- end }}

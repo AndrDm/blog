@@ -1,5 +1,7 @@
 {{- $tags := .Site.Taxonomies.tags }}
 {{- if gt (len $tags) 0 }}
+   <aside data-pagefind-ignore>
+        
 <div class="widget-taglist widget">
 	<h4 class="widget__title">{{ T "tags_title" }}</h4>
 	<div class="widget__content">
@@ -12,4 +14,5 @@
 	{{- end }}
 	</div>
 </div>
+</aside>
 {{- end }}
