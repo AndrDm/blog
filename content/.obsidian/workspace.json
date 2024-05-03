@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/lib_from_dll.md",
+                "file": "ndt/diconde_validation/dvtk_validation.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,11 +22,11 @@
         ]
       },
       {
-        "id": "b5e13fb3cdc8c5f4",
+        "id": "df662173017e81c3",
         "type": "tabs",
         "children": [
           {
-            "id": "5448883fb8edb61e",
+            "id": "d261ceeca73bc87d",
             "type": "leaf",
             "state": {
               "type": "hugo-preview-view",
@@ -79,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kb/lib_from_dll.md",
+                "file": "ndt/diconde_validation/dvtk_validation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kb/lib_from_dll.md",
+                "file": "ndt/diconde_validation/dvtk_validation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,12 +139,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/lib_from_dll.md"
+                "file": "ndt/diconde_validation/dvtk_validation.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -153,19 +152,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "36c43911229266cd",
+  "active": "d261ceeca73bc87d",
   "lastOpenFiles": [
     "ndt/diconde_validation/dvtk_validation.md",
-    "kb/lib_from_dll.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
     "kb/aipd_in_imagej",
@@ -209,6 +207,7 @@
     "sandbox/subdir2/sandbox subdir.md",
     "sandbox/subdir/sandbox subdir.md",
     "sandbox/sandboox root.md",
-    "sandbox/test/index.md"
+    "sandbox/test/index.md",
+    "sandbox/WPF in LabVIEW Test.md"
   ]
 }
