@@ -13,10 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md",
+                "file": "kb/lib_from_dll.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          }
+        ]
+      },
+      {
+        "id": "b5e13fb3cdc8c5f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5448883fb8edb61e",
+            "type": "leaf",
+            "state": {
+              "type": "hugo-preview-view",
+              "state": {}
             }
           }
         ]
@@ -65,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md",
+                "file": "kb/lib_from_dll.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md",
+                "file": "kb/lib_from_dll.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md"
+                "file": "kb/lib_from_dll.md"
               }
             }
           }
@@ -150,6 +165,7 @@
   "active": "36c43911229266cd",
   "lastOpenFiles": [
     "ndt/diconde_validation/dvtk_validation.md",
+    "kb/lib_from_dll.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
     "kb/aipd_in_imagej",
@@ -193,7 +209,6 @@
     "sandbox/subdir2/sandbox subdir.md",
     "sandbox/subdir/sandbox subdir.md",
     "sandbox/sandboox root.md",
-    "sandbox/test/index.md",
-    "sandbox/WPF in LabVIEW Test.md"
+    "sandbox/test/index.md"
   ]
 }
