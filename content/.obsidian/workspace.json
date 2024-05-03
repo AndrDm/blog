@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/lib_from_dll.md",
+                "file": "kb/alt_tab_windows11_fix.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kb/lib_from_dll.md",
+                "file": "kb/alt_tab_windows11_fix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kb/lib_from_dll.md",
+                "file": "kb/alt_tab_windows11_fix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/lib_from_dll.md"
+                "file": "kb/alt_tab_windows11_fix.md"
               }
             }
           }
@@ -161,8 +162,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f6f07263666f64b6",
+  "active": "36c43911229266cd",
   "lastOpenFiles": [
+    "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
+    "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp.crdownload",
+    "kb/lib_from_dll.md",
+    "kb/alt_tab_windows11_fix.md",
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
@@ -200,14 +205,10 @@
     "sandbox/subdir3/_index.md",
     "sandbox/subdir3/index.md",
     "sandbox/subdir3/img3.png",
-    "sandbox/subdir3/FARDC51.tmp",
     "sandbox/subdir3/img2.png",
     "sandbox/subdir2/index.md",
     "sandbox/subdir2/img2.png",
     "sandbox/subdir2/sandbox subdir.md",
-    "sandbox/subdir/sandbox subdir.md",
-    "sandbox/sandboox root.md",
-    "sandbox/test/index.md",
-    "sandbox/WPF in LabVIEW Test.md"
+    "sandbox/subdir/sandbox subdir.md"
   ]
 }
