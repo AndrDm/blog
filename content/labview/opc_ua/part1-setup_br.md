@@ -156,4 +156,12 @@ In the Tree located here:
 
 ![image-20240417165733887](assets/image-20240417165733887.png)
 
-That is.
+That is. Now you can connect to this server with NI OPC UA Toolkit as shown below:
+
+![](assets/Counter-Snippet-1714739886023-2.png)
+
+(The NodeID can be obtained from UA Expert):
+
+![](assets/nodeID.png)
+
+![](assets/Counter-1714739904295-4.gif)
