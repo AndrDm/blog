@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md",
+                "file": "kb/lib_from_dll.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,11 +22,11 @@
         ]
       },
       {
-        "id": "df662173017e81c3",
+        "id": "15132b8620739113",
         "type": "tabs",
         "children": [
           {
-            "id": "d261ceeca73bc87d",
+            "id": "f6f07263666f64b6",
             "type": "leaf",
             "state": {
               "type": "hugo-preview-view",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md",
+                "file": "kb/lib_from_dll.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md",
+                "file": "kb/lib_from_dll.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ndt/diconde_validation/dvtk_validation.md"
+                "file": "kb/lib_from_dll.md"
               }
             }
           }
@@ -161,7 +161,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d261ceeca73bc87d",
+  "active": "f6f07263666f64b6",
   "lastOpenFiles": [
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
