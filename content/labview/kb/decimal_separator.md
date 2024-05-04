@@ -1,5 +1,5 @@
 ---
-title: How to determine which decimal separator used
+title: How to determine which decimal separator is used
 date: 2024-05-04
 authorbox: false
 sidebar: false
