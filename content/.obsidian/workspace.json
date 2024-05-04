@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/alt_tab_windows11_fix.md",
+                "file": "labview/kb/decimal_separator.md",
                 "mode": "source",
                 "source": false
               }
@@ -22,11 +22,11 @@
         ]
       },
       {
-        "id": "15132b8620739113",
+        "id": "b4c336a43c7c32c2",
         "type": "tabs",
         "children": [
           {
-            "id": "f6f07263666f64b6",
+            "id": "2470b7987a6368bc",
             "type": "leaf",
             "state": {
               "type": "hugo-preview-view",
@@ -79,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kb/alt_tab_windows11_fix.md",
+                "file": "labview/kb/decimal_separator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kb/alt_tab_windows11_fix.md",
+                "file": "labview/kb/decimal_separator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/alt_tab_windows11_fix.md"
+                "file": "labview/kb/decimal_separator.md"
               }
             }
           }
@@ -153,21 +152,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
+    "labview/kb/decimal_sep.png",
+    "Pasted image 20240504111308.png",
+    "kb/alt_tab_windows11_fix.md",
+    "labview/kb/decimal_separator.md",
+    "labview/kb",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp.crdownload",
     "kb/lib_from_dll.md",
-    "kb/alt_tab_windows11_fix.md",
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
@@ -201,14 +204,10 @@
     "sandbox/FARDC52.tmp",
     "sandbox/img2.png",
     "sandbox/subdir2/subdir2/img2.png",
-    "sandbox/subdir2/subdir2",
     "sandbox/subdir3/_index.md",
     "sandbox/subdir3/index.md",
     "sandbox/subdir3/img3.png",
-    "sandbox/subdir3/img2.png",
     "sandbox/subdir2/index.md",
-    "sandbox/subdir2/img2.png",
-    "sandbox/subdir2/sandbox subdir.md",
-    "sandbox/subdir/sandbox subdir.md"
+    "sandbox/subdir2/sandbox subdir.md"
   ]
 }
