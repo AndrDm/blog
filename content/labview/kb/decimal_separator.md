@@ -12,7 +12,7 @@ tags:
   - LabVIEW
 draft: false
 ---
-Playing around with Signal Processing Toolkit, found funny method to detect which Decimal Separator used in OS — just perform conversion of the string "1,23" to double  and compare to double constant "1,23".
+While playing around with the Signal Processing Toolkit, I found in NI's sources a funny method to detect which decimal separator is used in the operating system — simply perform a conversion of the string "1,23" to a double and compare it to the double constant "1.23".
 <!--more-->
 ![image-20240504112347984](assets/image-20240504112347984.png)
 
