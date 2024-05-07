@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/kb/decimal_separator.md",
+                "file": "labview/Experiments/Timer/Timer.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/kb/decimal_separator.md",
+                "file": "labview/Experiments/Timer/Timer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/kb/decimal_separator.md",
+                "file": "labview/Experiments/Timer/Timer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/kb/decimal_separator.md"
+                "file": "labview/Experiments/Timer/Timer.md"
               }
             }
           }
@@ -152,21 +153,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
+    "Pasted image 20240507110302.png",
+    "labview/kb/decimal_separator.md",
+    "labview/Experiments/Timer/Timer.md",
+    "labview/Experiments/Timer",
+    "labview/Experiments",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
     "kb/alt_tab_windows11_fix.md",
-    "labview/kb/decimal_separator.md",
     "labview/kb",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp.crdownload",
@@ -199,15 +204,11 @@
     "sandbox/subdir2/FARDC5A.tmp",
     "sandbox/subdir2/subdir2/FARDC57.tmp",
     "sandbox/subdir2/subdir2/img3.png",
-    "sandbox/subdir2/FARDC56.tmp",
     "sandbox/subdir2/img3.png",
-    "sandbox/FARDC52.tmp",
     "sandbox/img2.png",
     "sandbox/subdir2/subdir2/img2.png",
     "sandbox/subdir3/_index.md",
     "sandbox/subdir3/index.md",
-    "sandbox/subdir3/img3.png",
-    "sandbox/subdir2/index.md",
-    "sandbox/subdir2/sandbox subdir.md"
+    "sandbox/subdir2/index.md"
   ]
 }
