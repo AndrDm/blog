@@ -324,4 +324,3 @@ It is not, the rate will be around 500-600 Hz only. But if you will set Timer to
 ![](assets/wait_until2.png)
 
 Now FPS will be around 800 Hz, but not 1000 anyway.
-
