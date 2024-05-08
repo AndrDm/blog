@@ -28,3 +28,6 @@ Mainroad is a responsive, simple, clean and content-focused Hugo theme based on 
 
 Source code on [GitHub](https://github.com/vimux/mainroad). Documentation at [Mainroad Documentation](https://mainroad-demo.netlify.app/docs/). License: [GPLv2](https://github.com/vimux/mainroad/blob/master/LICENSE.md).
 
+---
+
+v.20240508.0845
