@@ -19,147 +19,147 @@ Every LabVIEW's control part contains a "part ID" field which determines its pur
 List of Parts IDs:
 
 
-| Part ID |          Long Name          |         Description          |
-| :-----: | :-------------------------: | :--------------------------: |
-|    1    |          Cosmetic           |                              |
-|    2    |          Increment          |                              |
-|    3    |          Decrement          |                              |
-|    4    |       Large Increment       |                              |
-|    5    |       Large Decrement       |                              |
-|    6    |       Pixel Increment       |                              |
-|    7    |       Pixel Decrement       |                              |
-|    8    |           Housing           |                              |
-|    9    |            Frame            |                              |
-|   10    |        Numeric Text         |                              |
-|   11    |            Text             |                              |
-|   12    |          Ring Text          |                              |
-|   13    |          Scrollbar          |                              |
-|   14    |        Ring Picture         |                              |
-|   15    |            Radix            |                              |
-|   16    |         Name Label          |                              |
-|   17    |            Scale            |                              |
-|   18    |           X Scale           |                              |
-|   19    |           Y Scale           |                              |
-|   20    |      Out of Range Box       |                              |
-|   21    |       Boolean Button        |Apparently lost "Size to Text"|
-|   22    |        Boolean Text         |                              |
-|   23    |  Slider, Needle, or Thumb   |                              |
-|   24    |       Set to Default        |                              |
-|   25    |         Decoration          |                              |
-|   26    |          List Area          |                              |
-|   27    |        Scale Marker         |                              |
-|   28    |        Content Area         |                              |
-|   29    |          DDO Frame          |                              |
-|   30    |         Index Frame         |                              |
-|   31    |            Fill             |                              |
-|   32    |        Graph Legend         |                              |
-|   33    |        Graph Palette        |                              |
-|   34    |        X Fit Button         |                              |
-|   35    |        Y Fit Button         |                              |
-|   36    |      X Fit Lock Button      |                              |
-|   37    |      Y Fit Lock Button      |                              |
-|   38    |         X Scrollbar         |                              |
-|   39    |         Y Scrollbar         |                              |
-|   40    |         Scale Tick          |                              |
-|   41    |         Color Area          |                              |
-|   42    |     Palette Background      |                              |
-|   43    | Control or Indicator Symbol |                              |
-|   44    |      Extra Frame Part       |                              |
-|   45    |       Scale Min Tick        |                              |
-|   46    |       Pix Map Palette       |                              |
-|   47    |        Select Button        |                              |
-|   48    |         Text Button         |                              |
-|   49    |        Erase Button         |                              |
-|   50    |         Pen Button          |                              |
-|   51    |        Sucker Button        |                              |
-|   52    |        Bucket Button        |                              |
-|   53    |         Line Button         |                              |
-|   54    |      Rectangle Button       |                              |
-|   55    |   Filled Rectangle Button   |                              |
-|   56    |         Oval Button         |                              |
-|   57    |     Filled Oval Button      |                              |
-|   58    |           Pattern           |                              |
-|   59    |      Foreground Color       |                              |
-|   60    |      Background Color       |                              |
-|   61    |    Pix Map Palette Extra    |                              |
-|   62    |          Zoom Bar           |                              |
-|   63    |     Boolean True Label      |                              |
-|   64    |     Boolean False Label     |                              |
-|   65    |         Unit Label          |                              |
-|   66    |            Annex            |                              |
-|   67    |      Old Graph Cursor       |                              |
-|   68    |           Z Scale           |                              |
-|   69    |         Color Ramp          |                              |
-|   70    |      Output Indicator       |                              |
-|   71    |     X Scale Unit Label      |                              |
-|   72    |     Y Scale Unit Label      |                              |
-|   73    |     Z Scale Unit Label      |                              |
-|   74    |       Graph Move Tool       |                              |
-|   75    |       Graph Zoom Tool       |                              |
-|   76    |      Graph Cursor Tool      |                              |
-|   77    |       Graph X Format        |                              |
-|   78    |       Graph Y Format        |                              |
-|   79    |      Combo Box Button       |                              |
-|   80    |     Diagram Identifier      |                              |
-|   81    |      Menu Title Label       |                              |
-|   82    |           Caption           |                              |
-|   83    |        Refnum Symbol        |                              |
-|   85    |       Formerly Annex2       |                              |
-|   86    |        Boolean Light        |                              |
-|   87    |        Boolean Glyph        |                              |
-|   88    |        Boolean Divot        |                              |
-|   89    |       Boolean Shadow        |                              |
-|   90    |             Tab             |                              |
-|   91    |      Page List Button       |                              |
-|   92    |         Tab Caption         |                              |
-|   93    |       Tab Background        |                              |
-|   94    |         Scale Name          |                              |
-|   95    |          Slide Cap          |                              |
-|   97    |     Contained data type     |                              |
-|   98    |     Position data type      |                              |
-|   99    |          Tab Glyph          |                              |
-|   100   |            Grid             |                              |
-|   101   |          Num Label          |                              |
-|   102   |          Split Bar          |                              |
-|   103   |      Mutli Y-Scrollbar      |                              |
-|   104   |       Graph ViewPort        |                              |
-|   105   |         Grab Handle         |                              |
-|   106   |     Graph Splitter Bar      |                              |
-|   107   |      Graph Legend Area      |                              |
-|   108   |   Graph Legend Scrollbar    |                              |
-|   109   |     Data Binding Status     |                              |
-|   110   |        Ternary Text         |                              |
-|   111   |       Ternary Button        |                              |
-|   112   |  Multi-Segment Pipe Flange  |                              |
-|   113   |  Multi-Segment Pipe Elbow   |                              |
-|   114   |   Multi-Segment Pipe Pipe   |                              |
-|   115   |     Graph Legend Frame      |                              |
-|   116   |     Scene Graph Display     |                              |
-|   117   |       Overflow Status       |                              |
-|   118   |        Radix Shadow         |                              |
-|   119   |       Custom Cosmetic       |                              |
-|   120   |       Typedef Corner        |                              |
-|  8000   |     Non-Colorable Decal     |                              |
-|  8001   |       Digital Display       |                              |
-|  8002   |         Array Index         |                              |
-|  8003   |        Variant Index        |                              |
-|  8004   |       Listbox Display       |                              |
-|  8005   |        Data Display         |                              |
-|  8006   |        Measure Data         |                              |
-|  8007   |          kNotUsed4          | Apparently not a valid part. |
-|  8008   |         Tree Legend         |                              |
-|  8009   |      Color Ramp Array       |                              |
-|  8010   |     Type Def's Control      |                              |
-|  8011   |       Cursor Buttons        |                              |
-|  8012   |         High Color          |                              |
-|  8013   |          Low Color          |                              |
-|  8014   |        Graph Cursor         |                              |
-|  8015   |     Graph Scale-legend      |                              |
-|  8015   |            Table            |                              |
-|  8016   |      I/O Name Display       |                              |
-|  8017   |  Tab Control Page Selector  |                              |
-|  8018   |        Browse Button        |                              |
-|  8019   |      Graph Plot Legend      |                              |
+| Part ID |          Long Name          |          Description           |
+| :-----: | :-------------------------: | :----------------------------: |
+|    1    |          Cosmetic           |                                |
+|    2    |          Increment          |                                |
+|    3    |          Decrement          |                                |
+|    4    |       Large Increment       |                                |
+|    5    |       Large Decrement       |                                |
+|    6    |       Pixel Increment       |                                |
+|    7    |       Pixel Decrement       |                                |
+|    8    |           Housing           |                                |
+|    9    |            Frame            |                                |
+|   10    |        Numeric Text         |                                |
+|   11    |            Text             |                                |
+|   12    |          Ring Text          |                                |
+|   13    |          Scrollbar          |                                |
+|   14    |        Ring Picture         |                                |
+|   15    |            Radix            |                                |
+|   16    |         Name Label          |                                |
+|   17    |            Scale            |                                |
+|   18    |           X Scale           |                                |
+|   19    |           Y Scale           |                                |
+|   20    |      Out of Range Box       |                                |
+|   21    |       Boolean Button        |                                |
+|   22    |        Boolean Text         | Apparently lost "Size to Text" |
+|   23    |  Slider, Needle, or Thumb   |                                |
+|   24    |       Set to Default        |                                |
+|   25    |         Decoration          |                                |
+|   26    |          List Area          |                                |
+|   27    |        Scale Marker         |                                |
+|   28    |        Content Area         |                                |
+|   29    |          DDO Frame          |                                |
+|   30    |         Index Frame         |                                |
+|   31    |            Fill             |                                |
+|   32    |        Graph Legend         |                                |
+|   33    |        Graph Palette        |                                |
+|   34    |        X Fit Button         |                                |
+|   35    |        Y Fit Button         |                                |
+|   36    |      X Fit Lock Button      |                                |
+|   37    |      Y Fit Lock Button      |                                |
+|   38    |         X Scrollbar         |                                |
+|   39    |         Y Scrollbar         |                                |
+|   40    |         Scale Tick          |                                |
+|   41    |         Color Area          |                                |
+|   42    |     Palette Background      |                                |
+|   43    | Control or Indicator Symbol |                                |
+|   44    |      Extra Frame Part       |                                |
+|   45    |       Scale Min Tick        |                                |
+|   46    |       Pix Map Palette       |                                |
+|   47    |        Select Button        |                                |
+|   48    |         Text Button         |                                |
+|   49    |        Erase Button         |                                |
+|   50    |         Pen Button          |                                |
+|   51    |        Sucker Button        |                                |
+|   52    |        Bucket Button        |                                |
+|   53    |         Line Button         |                                |
+|   54    |      Rectangle Button       |                                |
+|   55    |   Filled Rectangle Button   |                                |
+|   56    |         Oval Button         |                                |
+|   57    |     Filled Oval Button      |                                |
+|   58    |           Pattern           |                                |
+|   59    |      Foreground Color       |                                |
+|   60    |      Background Color       |                                |
+|   61    |    Pix Map Palette Extra    |                                |
+|   62    |          Zoom Bar           |                                |
+|   63    |     Boolean True Label      |                                |
+|   64    |     Boolean False Label     |                                |
+|   65    |         Unit Label          |                                |
+|   66    |            Annex            |                                |
+|   67    |      Old Graph Cursor       |                                |
+|   68    |           Z Scale           |                                |
+|   69    |         Color Ramp          |                                |
+|   70    |      Output Indicator       |                                |
+|   71    |     X Scale Unit Label      |                                |
+|   72    |     Y Scale Unit Label      |                                |
+|   73    |     Z Scale Unit Label      |                                |
+|   74    |       Graph Move Tool       |                                |
+|   75    |       Graph Zoom Tool       |                                |
+|   76    |      Graph Cursor Tool      |                                |
+|   77    |       Graph X Format        |                                |
+|   78    |       Graph Y Format        |                                |
+|   79    |      Combo Box Button       |                                |
+|   80    |     Diagram Identifier      |                                |
+|   81    |      Menu Title Label       |                                |
+|   82    |           Caption           |                                |
+|   83    |        Refnum Symbol        |                                |
+|   85    |       Formerly Annex2       |                                |
+|   86    |        Boolean Light        |                                |
+|   87    |        Boolean Glyph        |                                |
+|   88    |        Boolean Divot        |                                |
+|   89    |       Boolean Shadow        |                                |
+|   90    |             Tab             |                                |
+|   91    |      Page List Button       |                                |
+|   92    |         Tab Caption         |                                |
+|   93    |       Tab Background        |                                |
+|   94    |         Scale Name          |                                |
+|   95    |          Slide Cap          |                                |
+|   97    |     Contained data type     |                                |
+|   98    |     Position data type      |                                |
+|   99    |          Tab Glyph          |                                |
+|   100   |            Grid             |                                |
+|   101   |          Num Label          |                                |
+|   102   |          Split Bar          |                                |
+|   103   |      Mutli Y-Scrollbar      |                                |
+|   104   |       Graph ViewPort        |                                |
+|   105   |         Grab Handle         |                                |
+|   106   |     Graph Splitter Bar      |                                |
+|   107   |      Graph Legend Area      |                                |
+|   108   |   Graph Legend Scrollbar    |                                |
+|   109   |     Data Binding Status     |                                |
+|   110   |        Ternary Text         |                                |
+|   111   |       Ternary Button        |                                |
+|   112   |  Multi-Segment Pipe Flange  |                                |
+|   113   |  Multi-Segment Pipe Elbow   |                                |
+|   114   |   Multi-Segment Pipe Pipe   |                                |
+|   115   |     Graph Legend Frame      |                                |
+|   116   |     Scene Graph Display     |                                |
+|   117   |       Overflow Status       |                                |
+|   118   |        Radix Shadow         |                                |
+|   119   |       Custom Cosmetic       |                                |
+|   120   |       Typedef Corner        |                                |
+|  8000   |     Non-Colorable Decal     |                                |
+|  8001   |       Digital Display       |                                |
+|  8002   |         Array Index         |                                |
+|  8003   |        Variant Index        |                                |
+|  8004   |       Listbox Display       |                                |
+|  8005   |        Data Display         |                                |
+|  8006   |        Measure Data         |                                |
+|  8007   |          kNotUsed4          |  Apparently not a valid part.  |
+|  8008   |         Tree Legend         |                                |
+|  8009   |      Color Ramp Array       |                                |
+|  8010   |     Type Def's Control      |                                |
+|  8011   |       Cursor Buttons        |                                |
+|  8012   |         High Color          |                                |
+|  8013   |          Low Color          |                                |
+|  8014   |        Graph Cursor         |                                |
+|  8015   |     Graph Scale-legend      |                                |
+|  8015   |            Table            |                                |
+|  8016   |      I/O Name Display       |                                |
+|  8017   |  Tab Control Page Selector  |                                |
+|  8018   |        Browse Button        |                                |
+|  8019   |      Graph Plot Legend      |                                |
 
 Each **Control** or **Indicator** in LabVIEW consists of **parts**. **Parts** are the individual elements which make up all [controls](https://labviewwiki.org/wiki/Control) within [Front Panel](https://labviewwiki.org/wiki/Front_Panel) of a [VI](https://labviewwiki.org/wiki/VI).
 
