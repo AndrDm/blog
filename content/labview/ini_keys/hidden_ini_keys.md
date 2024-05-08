@@ -61,3 +61,23 @@ to trigger the Ned Options Window
 
 Refer to [LabVIEW Wiki - Heap Peek](https://labviewwiki.org/wiki/Heap_Peek) & [Lava - Heap Peek](https://lavag.org/topic/12500-heap-peek-and-other-internal-debug-tools/).
 
+## Additional Options for Control's Customization
+
+```ini
+enableSecretPopups=True
+```
+
+Christina talks about it a bit [here on LAVA](https://lavag.org/topic/18469-i-found-some-more-hidden-ini-keys/?do=findComment&comment=110810). This will add new menu Items to popup for things like centering text, or having the boolean decal grow with the button resize.
+
+Links: [1](https://forums.ni.com/t5/LabVIEW/Boolean-text-Size-to-text-the-boolean-text-size-fixed-in-my/m-p/4371342#M1284794), [2](https://lavag.org/topic/18469-i-found-some-more-hidden-ini-keys/#comment-110810), [3](https://forums.ni.com/t5/Past-NIWeek-Sessions/Customizing-NI-LabVIEW-Controls-and-Indicators/ta-p/3497319).
+
+## Additional Private Property Nodes and Methods
+
+```ini
+SuperSecretPrivateSpecialStuff=True
+```
+
+---
+
+Some additional Info: [LabVIEW configuration file/Miscellaneous](https://labviewwiki.org/wiki/LabVIEW_configuration_file/Miscellaneous).
+
