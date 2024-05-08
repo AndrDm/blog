@@ -1,5 +1,5 @@
 {{- if not .Lastmod.IsZero }}
-{{- if ne .PublishDate .Lastmod }}
+{{ if ne (time.Format "2006-01-02" .Lastmod) (time.Format "2006-01-02" .Date) }}
 
 <div class="meta__item-datetime meta__item">
 	{{- if .Lastmod }}
