@@ -42,7 +42,7 @@ The Version will appear on ToolBar and in the Properties:
 
 Refer to [Preview Feature in LabVIEW 2024 Q1: Developing a LabVIEW Project in an Older Save Version File Format ](https://forums.ni.com/t5/LabVIEW-Public-Beta-Program-in/Preview-Feature-in-LabVIEW-2024-Q1-Developing-a-LabVIEW-Project/m-p/4350547)
 
-## Enabling Heap Peek
+## Enabling Heap Peek and Ned
 
 ```ini
 LVdebugKeys=True
@@ -54,6 +54,10 @@ Heap Peek is a debug feature which allows to view internal data structures creat
 
 - Open your VI
 - Press CTRL+SHIFT+D+H.
+
+to trigger the Ned Options Window
+
+- Press CTRL+SHIFT+D+N.
 
 Refer to [LabVIEW Wiki - Heap Peek](https://labviewwiki.org/wiki/Heap_Peek) & [Lava - Heap Peek](https://lavag.org/topic/12500-heap-peek-and-other-internal-debug-tools/).
 
