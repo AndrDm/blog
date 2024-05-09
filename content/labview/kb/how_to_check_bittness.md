@@ -8,6 +8,11 @@ categories:
   - Programming
 archives:
   - 2024-05
+keywords:
+  - x64
+  - x86
+  - application
+  - bittness
 tags: []
 draft: false
 ---
