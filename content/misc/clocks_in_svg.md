@@ -10,10 +10,13 @@ archives:
   - 2024-05
 tags:
   - SVG
-draft: false
+draft: true
 ---
 Two animated Clocks in SVG Format from Inkscape Examples — pretty interesting.
 <!--more-->
+
+Neet to use object tag instead
+https://www.svgator.com/help/getting-started/how-to-add-animated-svg-to-your-website
 
 ![](assets/animated-clock-1.svg)
 
