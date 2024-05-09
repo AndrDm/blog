@@ -91,7 +91,7 @@ Mnemonic rule for me: "32-bit" = Low; 64-bit looks like 64 where 6 is mirrored.
 
 In reality looks like that:
 
-![](assets/Screenshot 2024-05-08 14.19.05.png)
+![](assets/dll8664.png)
 
 ([from StackExchange](https://superuser.com/questions/358434/how-to-check-if-a-binary-is-32-or-64-bit-on-windows))
 
