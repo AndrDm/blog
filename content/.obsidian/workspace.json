@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc/clocks_in_svg.md",
+                "file": "labview/asm/dll_in_assembler.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc/clocks_in_svg.md",
+                "file": "labview/asm/dll_in_assembler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc/clocks_in_svg.md",
+                "file": "labview/asm/dll_in_assembler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc/clocks_in_svg.md"
+                "file": "labview/asm/dll_in_assembler.md"
               }
             }
           }
@@ -163,8 +164,10 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "labview/kb/how_to_check_bittness.md",
     "misc/clocks_in_svg.md",
+    "labview/asm/dll_in_assembler.md",
+    "labview/asm",
+    "labview/kb/how_to_check_bittness.md",
     "misc",
     "labview/kb/labview_control_part_ids.md",
     "Pasted image 20240507110302.png",
@@ -204,10 +207,8 @@
     "programming/Output Debug String/output debug string.md",
     "programming/OpenXML/openxml.md",
     "sandbox/subdir2/FARDC5A.tmp",
-    "sandbox/subdir2/subdir2/FARDC57.tmp",
     "sandbox/subdir2/subdir2/img3.png",
     "sandbox/subdir2/img3.png",
-    "sandbox/img2.png",
-    "sandbox/subdir3/_index.md"
+    "sandbox/img2.png"
   ]
 }

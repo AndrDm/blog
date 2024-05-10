@@ -30,9 +30,9 @@ Source code on [GitHub](https://github.com/vimux/mainroad). Documentation at [Ma
 
 ## About Poppins
 
-The Poppins Font was developed by Indian Type Foundry (ITF). The Devanagari was initially designed by Ninad Kale, while the Latin was initially designed by Jonny Pinhorn.
+The Poppins Font was developed by Indian Type Foundry (ITF). The Devanagari part was initially designed by Ninad Kale, while the Latin was initially designed by Jonny Pinhorn.
 
-Source code on [GitHub](https://github.com/itfoundry/poppins). This font is licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
+Source code on [GitHub](https://github.com/itfoundry/poppins), self hosted. This font is licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
 ## About Matomo
 
