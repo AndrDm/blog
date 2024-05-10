@@ -1,6 +1,6 @@
 baseurl = "/"
 uglyURLs = false
-title = "Andrey's Notes"
+title = "Andrey's Notes on Everything"
 languageCode = "en-us"
 paginate = "20" # Number of posts per page
 theme = "MainRoad"
@@ -8,6 +8,7 @@ themesDir = "themes"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 # googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 enableGitInfo = true
+generate-h1-from-title = true
 
 [taxonomies]
   category = 'categories'
