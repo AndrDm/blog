@@ -7,6 +7,7 @@
 	<meta name="google-site-verification" content="CCjDAo_n3FqqTOi7JEvNnX4i1JqdZreDUxjUmTDfo2w" />
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }}{{ end }}{{ end }}</title>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }} - {{ .Site.Title }}">
+	<link rel="icon" href="https://blog.dmitriev.de/favicon.svg" type="image/svg+xml">
 	<meta name="manuscript" content="{{ .Params.Manuscript }}">
 	{{- if .Site.Params.opengraph }}
 		{{ template "_internal/opengraph.html" . }}
