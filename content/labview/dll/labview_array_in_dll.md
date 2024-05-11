@@ -30,9 +30,18 @@ The first one is allocation in LabVIEW, then pass it to DLL as pointer to array 
 
 The  C code will looks like this:
 
-
-
-
+```c
+__declspec(dllexport) int __cdecl fnArr(int length, int* arr)
+{
+	if (arr){
+		for(int i = 0; i < length; i++){
+			arr[i] = i * i;
+		}
+		return 0;
+	}
+	else return 1; //indicate an error
+}
+```
 
 And according Block Diagram like this:
 
