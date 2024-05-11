@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/asm/dll_in_assembler.md",
+                "file": "labview/dll/labview_array_in_dll.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/asm/dll_in_assembler.md",
+                "file": "labview/dll/labview_array_in_dll.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/asm/dll_in_assembler.md",
+                "file": "labview/dll/labview_array_in_dll.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/asm/dll_in_assembler.md"
+                "file": "labview/dll/labview_array_in_dll.md"
               }
             }
           }
@@ -164,8 +163,11 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "misc/clocks_in_svg.md",
+    "labview/dll/Untitled.md",
+    "labview/dll/labview_array_in_dll.md",
     "labview/asm/dll_in_assembler.md",
+    "labview/dll",
+    "misc/clocks_in_svg.md",
     "labview/asm",
     "labview/kb/how_to_check_bittness.md",
     "misc",
@@ -204,9 +206,6 @@
     "programming/Differences between cdecl and stdcall/cdecl and stdcall.md",
     "programming/Assembler01/assembler01.md",
     "programming/Assembler Books/assembler books.md",
-    "programming/Output Debug String/output debug string.md",
-    "programming/OpenXML/openxml.md",
-    "sandbox/subdir2/FARDC5A.tmp",
     "sandbox/subdir2/subdir2/img3.png",
     "sandbox/subdir2/img3.png",
     "sandbox/img2.png"
