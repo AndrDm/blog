@@ -35,3 +35,9 @@ and edited with following command
 rundll32.exe sysdm.cpl,EditEnvironmentVariables
 ```
 
+or using PowerShell
+
+```
+[Environment]::GetFolderPath("Desktop")
+```
+

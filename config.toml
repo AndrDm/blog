@@ -38,7 +38,7 @@ generate-h1-from-title = true
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "programming_languages", "taglist", "archives"]
+  widgets = ["search", "recent", "categories", "programming_languages", "taglist", "archives", "social"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
@@ -46,6 +46,26 @@ generate-h1-from-title = true
   archives_counter = true
   categories_counter = true
   programming_languages_counter = true
+
+[Params.widgets.social]
+  cached = false # activate cache if true
+  # Enable parts of social widget
+  # facebook = "username"
+  # twitter = "username"
+  # instagram = "username"
+  linkedin = "andreydmitriev"
+  # telegram = "username"
+  # github = "username"
+  # gitlab = "username"
+  # bitbucket = "username"
+  # email = "example@example.com"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "NI Forum"
+  url = "https://forums.ni.com/t5/user/viewprofilepage/user-id/7545"
+  icon = "svg/ni.svg" # Optional. Path relative to "layouts/partials"
+  rel = "noopener noreferrer" # Set to false to remove the rel attribute
 
 [Params.style.vars]
   highlightColor = "#02a783" # org "#e22d30" wg "#02a783"
