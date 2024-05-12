@@ -5,7 +5,7 @@ authorbox: false
 sidebar: false
 description: LabVIEW Wait(ms) Timer
 thumbnail:
-  src: "wait(ms).png"
+  src: "/img/wait(ms).png"
   visibility:
     - list
 categories:

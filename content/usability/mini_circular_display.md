@@ -5,7 +5,7 @@ authorbox: false
 sidebar: false
 description: Some my concerns about MINI's new design for cockpit
 thumbnail:
-  src: "mini_logoS.jpg"
+  src: "/img/mini_logoS.jpg"
   visibility:
     - list
 categories:

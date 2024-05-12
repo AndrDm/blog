@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "usability/mini_circular_display.md",
+                "file": "labview/dll/dll_in_rust.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "usability/mini_circular_display.md",
+                "file": "labview/dll/dll_in_rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "usability/mini_circular_display.md",
+                "file": "labview/dll/dll_in_rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "usability/mini_circular_display.md"
+                "file": "labview/dll/dll_in_rust.md"
               }
             }
           }
@@ -163,13 +163,14 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "kb/windows_variables.md",
+    "labview/dll/dll_in_assembler.md",
+    "labview/dll/dll_in_rust.md",
     "usability/mini_circular_display.md",
+    "kb/windows_variables.md",
     "usability",
     "kb/lib_from_dll.md",
     "labview/dll/labview_array_in_dll.md",
     "labview/dll/Untitled.md",
-    "labview/asm/dll_in_assembler.md",
     "labview/dll",
     "misc/clocks_in_svg.md",
     "labview/asm",
@@ -205,7 +206,6 @@
     "algorithms/Haar Wavelet/haar wavelet.md",
     "programming/G110 & LUA Scripting/lua scripting.md",
     "programming/LabVIEW Error Cluster/error cluster.md",
-    "programming/Differences between cdecl and stdcall/cdecl and stdcall.md",
     "sandbox/subdir2/subdir2/img3.png",
     "sandbox/subdir2/img3.png",
     "sandbox/img2.png"
