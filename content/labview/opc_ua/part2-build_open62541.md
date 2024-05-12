@@ -151,7 +151,7 @@ If everything goes well, you will see at the end:
 
 ### Links
 
-# CMake projects in Visual Studio
+## CMake projects in Visual Studio
 
 ### Troubleshooting
 

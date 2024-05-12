@@ -171,11 +171,11 @@ Useful Tools to inspect Parts of the Controls (you need to enable "Debug Mode" i
 "LVdebugKeys=True"
 ```
 
-# Heap Peek
+## Heap Peek
 
 Heap Peek is a debug feature available at least since [LabVIEW 3.0](https://labviewwiki.org/wiki/LabVIEW_3.0). It allows to view internal data structures created for all loaded VI files, including Front Panel Heap and Block Diagram Heap. The feature is intended for use by LV R&D, though users may in some cases be instructed by LV Support to check something there.
 
-## Enabling Heap Peek
+### Enabling Heap Peek
 
 The Heap Peek keyboard shortcut is by default disabled in fresh installations of [LabVIEW](https://labviewwiki.org/wiki/LabVIEW). To enable it:
 
@@ -187,7 +187,7 @@ Then, to trigger the Heap Peek window:
 - Open your VI
 - Press CTRL+SHIFT+D+H. On Mac, use the command key instead of CTRL. This will open the Heap Peek window.
 
-## Using Heap Peek
+### Using Heap Peek
 
 The window is divided into 5 sections:
 
@@ -201,7 +201,7 @@ The first section, as for usage flow, is top-left one. Start there, by left clic
 
 **Note:** Heap Peek only displays information and does not have any ability to change the objects. It does, however, display the locations in memory where the information is stored, which makes it easy to use external memory editing software for this purpose.
 
-## Loaded Container Files list
+### Loaded Container Files list
 
 The list is divided into Contexts. In each of these, you can see memory location of the item (within LabVIEW process memory), and entries marked *BDHP* or *FPHP*.
 
@@ -210,7 +210,7 @@ The list is divided into Contexts. In each of these, you can see memory location
 
 **Note:** There are [VIs](https://labviewwiki.org/wiki/VI) in LV that are not real VIs (for example, a pseudo VI that is created to represent a Call By Reference to another application instance on another machine), and attempting to do Find to jump to their components can cause problems because those VIs never expect to actually draw themselves.
 
-## Heap View
+### Heap View
 
 Heap, for LV, is really a [Front Panel](https://labviewwiki.org/wiki/Front_Panel) or [Block Diagram](https://labviewwiki.org/wiki/Block_Diagram). Despite the name, they don't really have a heap-like structure. Both FP and BD are stored in form of a tree, strongly inspired by [XML format](https://en.wikipedia.org/wiki/XML). The main difference is - the LV Heap format is binary, not text-based.
 
@@ -220,7 +220,7 @@ The view for *FPHP* reveals that controls and indicators are composed of several
 
 **Note:** To learn more about LV Heaps, consider [exporting a few to XML](https://labviewwiki.org/wiki/Heap_storage_format), and looking at them there. The flat list visible in *Heap View* will be very helpful when you understand them, but it's not the best way to acquire that understanding.
 
-## Structure selection
+### Structure selection
 
 Here you can select one of the structures within VI files other than *FPHP*/*BDHP*. These are per-file, not per-heap - so you won't find any difference in them if you select different part of the same file in Loaded Container Files list.
 
@@ -245,7 +245,7 @@ The selectable options are:
 
 The *DS Fields* section contains some general information on [Data Space](https://labviewwiki.org/wiki/Data_Space) of the file, and then displays whole mapping of the Data Space (*DSTM*). As of LV2014 it doesn't show values stored in data space, but it shows offsets within said Data Space, and Type Map Entries (**TME**s) with information about which data type is stored there, with all its properties. The *DSTM* data in this section is cut to only show part of Data Space which is used for different purposes than Heap - the complete Data Space is always larger.
 
-## Toolbar
+### Toolbar
 
 The toolbar consists of several fields.
 
@@ -257,13 +257,13 @@ The toolbar consists of several fields.
 
 **Note:** A previous author said that few developers really know the capacities of heap peek. This is true... it's a debugging tool, and it gets hacked up to debug whatever anyone needs to debug.
 
-# Ned options
+## Ned options
 
 **Ned, the friendly configuration manager** is a debug feature of [LabVIEW](https://labviewwiki.org/wiki/LabVIEW) in form of a window with list of options. The private, internal set of settings available on that list allow changing various aspects of LabVIEW inner mechanisms.
 
 These settings are not saved across LabVIEW sessions, but many of the options are also valid [LabVIEW configuration file](https://labviewwiki.org/wiki/LabVIEW_configuration_file) keys.
 
-## Enabling Ned Options
+### Enabling Ned Options
 
 Like [Heap Peek](https://labviewwiki.org/wiki/Heap_Peek), Ned Options keyboard shortcut is by default disabled in fresh installations of [LabVIEW](https://labviewwiki.org/wiki/LabVIEW). To enable it:
 
@@ -275,11 +275,11 @@ Then, to trigger the Ned Options window:
 - Open your VI
 - Press CTRL+SHIFT+D+N. On Mac, use the command key instead of CTRL. This will open the Ned Options window.
 
-## Using Ned Options
+### Using Ned Options
 
 Clicking once on a option will switch it, cycling through two or more values.
 
-# Heap storage format
+## Heap storage format
 
 [Front Panel](https://labviewwiki.org/wiki/Front_Panel) and [Block Diagram](https://labviewwiki.org/wiki/Block_Diagram) of a [VI file](https://labviewwiki.org/wiki/VI) are internally called Heaps. Across versions of [LabVIEW](https://labviewwiki.org/wiki/LabVIEW), several storage formats were used for these heaps.
 
@@ -287,25 +287,23 @@ The format used in currently opened *VI file* can be selected in [Ned options](h
 
 **Note:** Changing the Heap Storage format in Ned may cause your VI to no longer open! Make sure to experiment on scrap copies of files.
 
-## Contents
-
-## Binary format 1
+### Binary format 1
 
 Used in first versions of LabVIEW. Has [Resource ID](https://labviewwiki.org/wiki/Resource_Container#Known_Resources) of *FPHP* and *BDHP*.
 
-## Binary format 2
+### Binary format 2
 
 First update of the format, prepared to handle separation of [Type Descriptors](https://labviewwiki.org/wiki/Type_descriptor) from heap data. Has [Resource ID](https://labviewwiki.org/wiki/Resource_Container#Known_Resources) of *FPHb* and *BDHb*.
 
-## Binary format 3
+### Binary format 3
 
 After this update, all data stored within heap was separated from the main heap tree, dividing heap into two blocks: structure and data. Has [Resource ID](https://labviewwiki.org/wiki/Resource_Container#Known_Resources) of *FPHc* and *BDHc*.
 
-## Verbose Tagged Text
+### Verbose Tagged Text
 
 A text based format, created to be easily readable by humans. Has [Resource ID](https://labviewwiki.org/wiki/Resource_Container#Known_Resources) of *FPHT* and *BDHT*.
 
-## XML format
+### XML format
 
 Since the structure of the heap fits XML format perfectly, would be a sin not to add such option. Has [Resource ID](https://labviewwiki.org/wiki/Resource_Container#Known_Resources) of *FPHX* and *BDHX*.
 
