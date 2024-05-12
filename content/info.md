@@ -5,7 +5,8 @@ sidebar: false
 menu: main
 draft: true
 ---
-  <div>
+
+<div>
   <link type="text/css" rel="stylesheet" href="https://www.meteoprog.com/css/winformer.min.css?id=100">
 
     <div class="meteoprog-informer" style="width: 260px" data-params='{"city_ids":"8545","domain":"https://www.meteoprog.com/en/","id":"66406c7c37b4561028029052","lang":"en"}'>
@@ -22,4 +23,4 @@ draft: true
       </a>
     </div>
     <script type="text/javascript" src="https://www.meteoprog.com/js/winformer.min.js?id=100"></script>
-     </div>
+</div>
