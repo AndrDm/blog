@@ -1029,6 +1029,8 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: bottom;
+	border-radius: 6px;
+	border-color: #c6c6c6;
 }
 
 iframe,
@@ -1037,6 +1039,49 @@ object,
 video {
 	max-width: 100%;
 }
+
+
+
+div.image_first		{margin-bottom:0.5em; margin-top:0;}
+div.image{
+	margin-bottom:0.5em; 
+	margin-top:0.5em; 
+	color:#c6c6c6; 
+	border-style:none;
+}
+div.image img{
+	border-radius: 6px;
+	border-color: #c6c6c6;
+}
+
+div.img-fluid{
+	margin-bottom:0.5em; 
+	margin-top:0.5em; 
+	color:#c6c6c6; 
+	border-style:none;
+}
+div.img-fluid img{
+	border-radius: 6px;
+	border-color: #c6c6c6;
+}
+
+div.image2		{margin-bottom:2em; margin-top:2em;}
+
+
+
+/*slide images*/
+img.slideshow:first-of-type {
+    position: static;
+}
+
+img.slideshow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
 
 /* Table */
 table {
