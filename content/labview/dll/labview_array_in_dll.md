@@ -45,7 +45,7 @@ __declspec(dllexport) int __cdecl fnArr(int length, int* arr)
 
 And according Block Diagram like this:
 
-
+![Block Diagram](<assets/Screenshot 2024-05-11 07.00.45.png>)
 
 Take a note, that you is responsinble for range control, attempt to write array's elements outhside of allocated memory will caused exception (crash).
 
@@ -57,11 +57,9 @@ For example, we will pass empty array (the array is empty, but the handle is cre
 
 
 
-
-
 And the LabVIEW code
 
-
+![Block Diagram - call with native type, handels by value](assets/Screenshot%202024-05-11%2007.04.13.png)
 
 The NumericResize called from LabVIEW.exe (or lvrt.dll if you in Run-Time). DLL linked with labview.lib.
 
@@ -101,7 +99,13 @@ Please take a note, that you shoukld be very accurate with this stuff. Wrong cal
 
 .
 
-Bot don't panic, just save your work every time when you run it. The LabVIEW is intellegent enough, will keep temporary copy of changed VI, and somethimes afer crash will offer to restore (but unfortunateky not always), so you may lost your work. But donÄt worry - you will not damage your computer or LabVIEW installation.
+Bot don't panic, just save your work every time when you run it. The LabVIEW is intellegent enough, will keep temporary copy of changed VI, and somethimes afer crash will offer to restore (but unfortunateky not always), so you may lost your work. 
+
+![image-20240512052711689](assets/image-20240512052711689.png)
+
+Technically saved in LabVIEW Data\LVAutoSave
+
+But donÄt worry - you will not damage your computer or LabVIEW installation.
 
 If crash happened, then you can take a look into report, then into dump, and if you will open dump in  debugger,l then sometimes will see where the crash happened (but this depends what you damaged exactly, sometimes not).
 

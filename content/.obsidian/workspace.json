@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/dll/labview_array_in_dll.md",
+                "file": "kb/windows_variables.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/dll/labview_array_in_dll.md",
+                "file": "kb/windows_variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/dll/labview_array_in_dll.md",
+                "file": "kb/windows_variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/dll/labview_array_in_dll.md"
+                "file": "kb/windows_variables.md"
               }
             }
           }
@@ -163,8 +163,10 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "labview/dll/Untitled.md",
+    "kb/lib_from_dll.md",
+    "kb/windows_variables.md",
     "labview/dll/labview_array_in_dll.md",
+    "labview/dll/Untitled.md",
     "labview/asm/dll_in_assembler.md",
     "labview/dll",
     "misc/clocks_in_svg.md",
@@ -183,7 +185,6 @@
     "labview/kb",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp.crdownload",
-    "kb/lib_from_dll.md",
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
@@ -205,7 +206,6 @@
     "programming/G110 & LUA Scripting/lua scripting",
     "programming/Differences between cdecl and stdcall/cdecl and stdcall.md",
     "programming/Assembler01/assembler01.md",
-    "programming/Assembler Books/assembler books.md",
     "sandbox/subdir2/subdir2/img3.png",
     "sandbox/subdir2/img3.png",
     "sandbox/img2.png"
