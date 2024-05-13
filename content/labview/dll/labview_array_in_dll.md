@@ -211,7 +211,7 @@ But don't worry — you will not damage your computer or LabVIEW installation.
 
 If crash happened, then you can take a look into report, then look into dump, and if you will open dump in  debugger, then sometimes will see where the crash happened (but this depends what you damaged exactly, sometimes not).
 
-And the last hint, often forgotten — you can't call 32-bit DLL from 64-bit LabVIEW and visa versa. If you need to support both LabVIEW's bittnesses, then you have to compile DLL twice for every bittness, then recommended to append to DLL's names postfixes 32 or 64, and then use asterisk pattern like *.dll  when using this DLL in Call External Code node, refer to the article "[Wildcards in the LabVIEW Call Library Node](https://blog.kalbermatter.nl/2021/10/12/wildcards-in-the-labview-call-library-node/)" from Rolf Kalbermatter.
+And the last hint, often forgotten — you can't call 32-bit DLL from 64-bit LabVIEW and visa versa. If you need to support both LabVIEW's bitnesses, then you have to compile DLL twice for every bitness, then recommended to append to DLL's names postfixes 32 or 64, and then use asterisk pattern like *.dll  when using this DLL in Call External Code node, refer to the article "[Wildcards in the LabVIEW Call Library Node](https://blog.kalbermatter.nl/2021/10/12/wildcards-in-the-labview-call-library-node/)" from Rolf Kalbermatter.
 
 | Filename        | resulting 32-bit filename | resulting 64-bit filename |
 | :-------------- | :------------------------ | :------------------------ |

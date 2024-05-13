@@ -1,5 +1,5 @@
 ---
-title: How to check App's Bittness — is this 32- or 64-bit?
+title: How to check App's Bitness — is this 32- or 64-bit?
 date: 2024-05-08
 authorbox: false
 sidebar: false
@@ -12,7 +12,7 @@ keywords:
   - x64
   - x86
   - application
-  - bittness
+  - bitness
 tags: []
 draft: false
 ---
@@ -76,7 +76,7 @@ FILE HEADER VALUES
                    Executable
                    Application can handle large (>2GB) addresses
 ```
-"machine" is clearly stated about bittness, as well as Large Address for 32-bit.
+"machine" is clearly stated about bitness, as well as Large Address for 32-bit.
 
 ## Non-official, but funny way
 Just open App in Notepad or any Text Editor, then check the first printable characters after the first occurrence of 'PE':
@@ -100,6 +100,6 @@ In reality looks like that:
 
 ([from StackExchange](https://superuser.com/questions/358434/how-to-check-if-a-binary-is-32-or-64-bit-on-windows))
 
-And don't forget that the bittness of the LabVIEW-based application should be the the same with bittness of the Run-Time Engine. 
+And don't forget that the bitness of the LabVIEW-based application should be the the same with bitness of the Run-Time Engine. 
 
 64-bit application obviously can't be executed on 32-bit OS, but 32-bit App will be fine with 64-bit OS.
