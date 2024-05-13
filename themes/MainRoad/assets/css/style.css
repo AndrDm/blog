@@ -1033,6 +1033,18 @@ img {
 	border-color: #c6c6c6;
 }
 
+img[src$='#floatleft']
+{
+	float:left;
+	margin-right: 10px;
+}
+
+img[src$='#floatright']
+{
+	float:right;
+	margin-left: 10px;
+}
+
 iframe,
 embed,
 object,
