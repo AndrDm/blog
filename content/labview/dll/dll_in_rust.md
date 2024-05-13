@@ -37,12 +37,13 @@ The first step is — how to create "minimal valuable" DLL in Rust. By default i
 
 All what you need is just two files Cargo.toml and lib.rs in \src SubFolder:
 
-```
-│  Cargo.toml
-│
-└─── src
-        lib.rs
-```
+
+<br>│<br>
+│  Cargo.toml<br>
+│<br>
+└─── src<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lib.rs<br><br>
+{.code_pseudo}
 
 Cargo.toml:
 
@@ -77,20 +78,20 @@ To compile this you will need to call
 
 Your library will be located in \target\release folder:
 
-```bash
-│   Cargo.toml
-│
-├─── src
-│       lib.rs
-│
-└─── target
-    │
-    └─── release
-        │   my_rust_lib.dll
-        │   my_rust_lib.dll.exp
-        │   my_rust_lib.dll.lib
-        │   my_rust_lib.pdb
-```
+
+<br>│   Cargo.toml<br>
+│<br>
+├─── src<br>
+│       lib.rs<br>
+│<br>
+└─── target<br>
+&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└─── release<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   my_rust_lib.dll<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   my_rust_lib.dll.exp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   my_rust_lib.dll.lib<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   my_rust_lib.pdb<br><br>
+{.code_pseudo}
 
 Now its a time to launch LabVIEW and configure Call Library Function Node:
 
@@ -228,21 +229,20 @@ My experience is that the C code compiled with highly optimizing compiler like I
 
 Technically for optimization you should place **config.toml** into **.cargo** SubFolder:
 
-```
-│   Cargo.toml                   
-│                                
-├───.cargo                       
-│       config.toml              
-│                                
-├───src                          
-│       lib.rs                   
-│                                
-└───target                       
-    │                            
-    └───release                  
-        │   my_rust_lib.dll      
-        │   _tester_.vi          
-```
+<br>│   Cargo.toml<br>
+│<br>
+├───.cargo<br>
+│       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;config.toml<br>
+│<br>
+├───src<br>
+│       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lib.rs<br>
+│<br>
+└───target<br>
+&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└───release<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   my_rust_lib.dll<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│   _tester_.vi<br><br>
+{.code_pseudo}
 
 And in config.toml you have to place options:
 
