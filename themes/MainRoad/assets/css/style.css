@@ -305,7 +305,7 @@ figcaption h4 {
 
 pre,
 code,
-.code_pseudo,
+code_pseudo,
 samp {
 	font-family: {{ $fontFamilySecondary }};
 	font-size: inherit;
@@ -330,7 +330,7 @@ kbd {
 
 pre,
 code,
-.code_pseudo {
+code_pseudo {
 	background-color: #f5f5f5;
 	border: 1px solid #ebebeb;
 }
@@ -341,7 +341,7 @@ code {
 	color: #c33;
 }
 
-.code_pseudo {
+code_pseudo {
 	padding: 0 5px;
 	line-height: 1.2;
 	color: #00a;
