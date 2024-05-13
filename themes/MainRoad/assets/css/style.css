@@ -305,6 +305,7 @@ figcaption h4 {
 
 pre,
 code,
+code_pseudo,
 samp {
 	font-family: {{ $fontFamilySecondary }};
 	font-size: inherit;
@@ -328,15 +329,24 @@ kbd {
 
 
 pre,
-code {
+code,
+code_pseudo {
 	background-color: #f5f5f5;
 	border: 1px solid #ebebeb;
 }
 
 code {
 	padding: 0 5px;
+/*	line-height: 1.0; */
 	color: #c33;
 }
+
+code_pseudo {
+	padding: 0 5px;
+	line-height: 1.0;
+	color: #c33;
+}
+
 
 pre {
 	display: block;
@@ -367,7 +377,8 @@ blockquote {
 	padding: 5px 0 5px 15px;
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
-	line-height: 1.6;
+/*	line-height: 1.6;*/
+	line-height: 1.0;
 	border-left: 5px solid {{ $highlightColor }};
 }
 

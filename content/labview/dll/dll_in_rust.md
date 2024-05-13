@@ -38,9 +38,9 @@ The first step is — how to create "minimal valuable" DLL in Rust. By default i
 All what you need is just two files Cargo.toml and lib.rs in \src SubFolder:
 
 ```
-│   Cargo.toml
+│  Cargo.toml
 │
-└───src
+└─── src
         lib.rs
 ```
 
@@ -77,15 +77,15 @@ To compile this you will need to call
 
 Your library will be located in \target\release folder:
 
-```
+```bash
 │   Cargo.toml
 │
-├───src
+├─── src
 │       lib.rs
 │
-└───target
+└─── target
     │
-    └───release
+    └─── release
         │   my_rust_lib.dll
         │   my_rust_lib.dll.exp
         │   my_rust_lib.dll.lib
