@@ -119,6 +119,7 @@ body {
 	padding: 0;
 	margin: 0;
 	/* clear: both; */
+	clear: both;
 	line-height: 0;
 	visibility: hidden;
 	content: "";
