@@ -28,11 +28,11 @@ Good exercise is to create your own in different form and experiment with it.
 
 The very first thing to check is the bitness. You can't call 32-bit DLL from 64-bit LabVIEW and visa versa. In attempt to load "wrong one" you will get the following message:
 
-![](assets/Screenshot 2024-05-13 14.08.22.png)
+![](assets/Screenshot_2024-05-13_14.08.22.png)
 
 Good idea to add bitness to the name. Usually I adding 32 or 64 at the end, and this make possible to work with 32/64 mixed environment, because proper DLL will be loaded automatically if named with wildcard:
 
-![](assets/Screenshot 2024-05-13 14.16.55.png)
+![](assets/Screenshot_2024-05-13_14.16.55.png)
 
 ### How to check bitness?
 
@@ -83,13 +83,13 @@ In this case both DLLs shall be available (better to put both into the same fold
 
 If you have missing nested DLL, then the error looks like this:
 
-![](assets/Screenshot 2024-05-13 14.21.26.png)
+![](assets/Screenshot_2024-05-13_14.21.26.png)
 
 How to check dependencies? I would like to recommend to use [Dependencies Tool](https://github.com/lucasg/Dependencies).
 
 This is how it looks in my particular case:
 
-![](assets/Screenshot 2024-05-13 14.25.16.png)
+![](assets/Screenshot_2024-05-13_14.25.16.png)
 
 From the screenshot above we can see that our DLL depends on kernel32/user32, but also from cvirte.dll, which is a part of [CVI Run-Time](https://www.ni.com/en/support/downloads/software-products/download.labwindows-cvi-runtime.html#352886), but SubDLL32.dll is not found, therefore VI gets broken.
 
