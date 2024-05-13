@@ -17,7 +17,7 @@ archives:
   - 2024-05
 tags:
   - DLL
-draft: true
+draft: false
 ---
 Calling external code from different languages is great feature of LabVIEW. In general you can wrap almost anything into DLL, then call it by Call Library Function Node. This time we will mix Rust code with LabVIEW.
 <!--more-->
