@@ -16,7 +16,7 @@ archives:
   - 2024-05
 tags:
   - DLL
-draft: true
+draft: false
 ---
 This is a question, raised again and again on the forums about third-party DLLs: "...whatever I do I cannot get the library to work in LabVIEW. I get the error "The library for this node cannot be found or cannot be loaded....". Below short "check list" with some explanations.
 <!--more-->
