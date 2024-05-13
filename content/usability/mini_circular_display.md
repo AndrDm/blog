@@ -9,12 +9,13 @@ thumbnail:
   visibility:
     - list
 categories:
-  - Design & Usability
+  - Design and Usability
 archives:
   - 2024-05
 tags:
   - MINI
   - CAR
+  - HMI
 draft: false
 ---
 A big circular OLED display and Experience Modes to let you change the sounds, projections and vibes of your interior with just a toggle...
@@ -31,3 +32,19 @@ Design before:
 ![](assets/1715184633584.jpg)
 
 Just keep it.
+
+Another views of the new cockpit equipped with circular OLED (seems to be designed by [Behr-Hella Thermocontrol (BHTC)](https://www.bhtc.com/en/products/hmi), which is leading HMI company):
+
+![](assets/1694434758202.jpg)
+
+![](assets/1715590808661.jpg)
+
+![](assets/1715590806978.jpg)
+
+Nice examples of the modern HMI Designs (but I'm still in humble opinion that not everything can be replaced with touch screens)
+
+Images Sources: 
+
+[The Center Display of The New All-Electric Mini Cooper](https://www.linkedin.com/pulse/center-display-new-all-electric-mini-cooper-bhtc/?trackingId=C4UIi8pHTgWxDcqosDxQQQ%3D%3D).
+
+[State-of-the-art OLED technology](https://www.linkedin.com/feed/update/urn:li:activity:7195709392447557633/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7195709392447557633%29).
