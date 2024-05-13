@@ -105,7 +105,7 @@ One important point is alignment.  Take a note, that lv_prolog.h/lv_epilog.h wil
 
 ![](assets/Screenshot%202024-05-11%2006.08.39.png)
 
-T![Screenshot 2024-05-11 06.08.39](assets/Screenshot%202024-05-11%2006.08.39-1715574436782-2.png)he header files as well as libraries for linking can be taken from LabVIEW cintools folder:
+The header files as well as libraries for linking can be taken from LabVIEW cintools folder:
 
 ![image-20240513062824297](assets/image-20240513062824297.png)
 
