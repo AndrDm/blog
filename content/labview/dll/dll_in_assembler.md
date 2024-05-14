@@ -38,7 +38,9 @@ Here one important point to understand is that you have two possibilities - cdec
 | Name-decoration convention       | Underscore character (_) is prefixed to names, except when __cdecl functions that use C linkage are exported. |
 | Case-translation convention      | No case translation performed.                               |
 
-If the return values are Integer values or memory addresses they are put into the EAX [register](https://en.wikipedia.org/wiki/Processor_register) by the callee, whereas floating point values are put in the ST0 [x87](https://en.wikipedia.org/wiki/X87) register. Registers EAX, ECX, and EDX are caller-saved, and the rest are callee-saved. 
+##### Return values
+
+If the return values are Integer values or memory addresses they are put into the **EAX** [register](https://en.wikipedia.org/wiki/Processor_register) by the callee, whereas floating point values are put in the ST0 [x87](https://en.wikipedia.org/wiki/X87) register. Registers EAX, ECX, and EDX are caller-saved, and the rest are callee-saved. 
 
 #### [stdcall](https://learn.microsoft.com/en-us/cpp/cpp/stdcall?view=msvc-170) calling convention
 
@@ -51,6 +53,8 @@ The **`__stdcall`** calling convention is used to call Win32 API functions. The 
 | Stack-maintenance responsibility | Called function pops its own arguments from the stack.       |
 | Name-decoration convention       | An underscore (`_`) is prefixed to the name. The name is followed by the at sign (`@`) followed by the number of bytes (in decimal) in the argument list. Therefore, the function declared as `int func( int a, double b )` is decorated as follows: `_func@12` |
 | Case-translation convention      | None                                                         |
+
+Functions declared using the **`__stdcall`** modifier return values the same way as functions declared using [`__cdecl`](https://learn.microsoft.com/en-us/cpp/cpp/cdecl?view=msvc-170).
 
 ### 64-bit calling convention
 
@@ -66,9 +70,15 @@ By default, [the x64 calling convention](https://learn.microsoft.com/en-us/cpp/b
 
 Important point: The x64 ABI considers the registers RAX, RCX, RDX, R8, R9, R10, R11, and XMM0-XMM5 volatile. When present, the upper portions of YMM0-YMM15 and ZMM0-ZMM15 are also volatile. On AVX512VL, the ZMM, YMM, and XMM registers 16-31 are also volatile. When AMX support is present, the TMM tile registers are volatile. Consider volatile registers destroyed on function calls unless otherwise safety-provable by analysis such as whole program optimization.
 
-The x64 ABI considers registers RBX, RBP, RDI, RSI, RSP, R12, R13, R14, R15, and XMM6-XMM15 nonvolatile. They must be saved and restored by a function that uses them. That is.
+The x64 ABI considers registers RBX, RBP, RDI, RSI, RSP, R12, R13, R14, R15, and XMM6-XMM15 nonvolatile. They must be saved and restored by a function that uses them. 
 
-Now we're ready to departure.
+#### Return values
+
+A scalar return value that can fit into 64 bits, including the **`__m64`** type, is returned through **RAX**. Non-scalar types including floats, doubles, and vector types such as [`__m128`](https://learn.microsoft.com/en-us/cpp/cpp/m128?view=msvc-170), [`__m128i`](https://learn.microsoft.com/en-us/cpp/cpp/m128i?view=msvc-170), [`__m128d`](https://learn.microsoft.com/en-us/cpp/cpp/m128d?view=msvc-170) are returned in XMM0. The state of unused bits in the value returned in RAX or XMM0 is undefined.
+
+User-defined types can be returned by value from global functions and static member functions. To return a user-defined type by value in RAX, it must have a length of 1, 2, 4, 8, 16, 32, or 64 bits. 
+
+That is. Now we're ready to departure.
 
 ## Assembler
 
@@ -157,7 +167,13 @@ ENDP fnAsm64
 ENDPROGRAM AsmDLL64
 ```
 
-Compile with same command.
+We receiving our parameters via RCX/RDX and then return result to RAX.
+
+Compile with same command:
+
+```
+> euroasm.exe ASMDLL64.asm
+```
 
 Calling as easy as:
 
