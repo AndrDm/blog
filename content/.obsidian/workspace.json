@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/dll/vi_dll_broken.md",
+                "file": "labview/exper/large_file_io.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,8 +79,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/dll/vi_dll_broken.md",
+                "file": "labview/exper/large_file_io.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/dll/vi_dll_broken.md",
+                "file": "labview/exper/large_file_io.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/dll/vi_dll_broken.md"
+                "file": "labview/exper/large_file_io.md"
               }
             }
           }
@@ -153,19 +152,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "labview/dll/dll_in_rust.md",
     "labview/dll/vi_dll_broken.md",
+    "labview/exper/large_file_io.md",
+    "labview/exper",
+    "labview/dll/dll_in_rust.md",
     "labview/dll/dll_in_assembler.md",
     "usability/mini_circular_display.md",
     "kb/windows_variables.md",
@@ -194,7 +195,6 @@
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
     "kb/aipd_in_imagej",
-    "kb",
     "about.md",
     "labview/forum/web_page.md",
     "Pasted image 20240417160149.png",
@@ -206,7 +206,6 @@
     "template/index.md",
     "hardware/Memory Benchmarks/memory benchmark.md",
     "algorithms/Haar Wavelet/haar wavelet.md",
-    "programming/G110 & LUA Scripting/lua scripting.md",
     "sandbox/subdir2/subdir2/img3.png",
     "sandbox/subdir2/img3.png",
     "sandbox/img2.png"
