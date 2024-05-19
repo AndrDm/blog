@@ -74,6 +74,19 @@ Interesting that single thread has more performance, but 2, 3 and 4 threads work
 
 This measurement can be different on different SSDs and PC Configurations, of course.
 
+Samsung 870 EVO on i7-7700:
+
+|        | 1 Thread | 2 Threads | 3 Threads | 4 Threads |
+| ------ | -------- | --------- | --------- | --------- |
+| 512 B  | 94,68    | 125,01    | 70,04     | 89,04     |
+| 2 KB   | 356,69   | 105,70    | 153,52    | 185,32    |
+| 8 KB   | 400,14   | 323,52    | 379,25    | 411,00    |
+| 32 KB  | 394,29   | 445,07    | 311,05    | 410,40    |
+| 128 KB | 461,78   | 403,30    | 439,52    | 523,10    |
+| 512 KB | 484,78   | 499,46    | 531,30    | 531,77    |
+| 2 MB   | 462,56   | 530,17    | 531,63    | 531,53    |
+| 8 MB   | 475,75   | 529,21    | 530,33    | 530,14    |
+
 But in general this is expected results, the same can be obtained with traditional benchmark, for example, single thread:
 
 ![image-20240519092629443](assets/image-20240519092629443.png)
