@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/exper/large_file_io.md",
+                "file": "calendars/2024-ferien.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/exper/large_file_io.md",
+                "file": "calendars/2024-ferien.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/exper/large_file_io.md",
+                "file": "calendars/2024-ferien.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/exper/large_file_io.md"
+                "file": "calendars/2024-ferien.md"
               }
             }
           }
@@ -163,8 +163,15 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "labview/dll/vi_dll_broken.md",
+    "2024-05-20.md",
+    "calendars/2024-ferien.md",
+    "calendars",
+    "labview/timer/timer.md",
+    "labview/perf/Untitled.md",
+    "labview/perf",
+    "labview/timer/wait(ms).png",
     "labview/exper/large_file_io.md",
+    "labview/dll/vi_dll_broken.md",
     "labview/exper",
     "labview/dll/dll_in_rust.md",
     "labview/dll/dll_in_assembler.md",
@@ -190,24 +197,17 @@
     "kb/alt_tab_windows11_fix.md",
     "labview/kb",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
-    "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp.crdownload",
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
-    "kb/aipd_in_imagej",
     "about.md",
     "labview/forum/web_page.md",
     "Pasted image 20240417160149.png",
     "hardware/Memory Benchmarks/index.md",
     "2023-04-02.md",
-    "hugo/image.md",
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
-    "template/index.md",
-    "hardware/Memory Benchmarks/memory benchmark.md",
-    "algorithms/Haar Wavelet/haar wavelet.md",
     "sandbox/subdir2/subdir2/img3.png",
-    "sandbox/subdir2/img3.png",
-    "sandbox/img2.png"
+    "sandbox/subdir2/img3.png"
   ]
 }
