@@ -40,7 +40,11 @@ Theoretically I can turn off Rapid Mode, as well as write caching, but this expe
 
 ## Read Experiment
 
-Now we will read large file back with standard LabVIEW's File I/O functions. There are two parameters which can be changed — block size to be read in single operation and amount of threads. My test laptop have 4 cores, so I'll check from single to 4 threads and iterate over different block sizes starting from from 512 bytes:
+Before starting with LabVIEW just check reading speed to \\\?\nul\ in Far Manager:
+
+![](assets/Screenshot%202024-05-20%2022.44.56.png)
+
+OK, 509 MB/s. Now we will read large file back with standard LabVIEW's File I/O functions. There are two parameters which can be changed — block size to be read in single operation and amount of threads. My test laptop have 4 cores, so I'll check from single to 4 threads and iterate over different block sizes starting from from 512 bytes:
 
 ![](assets/write_snippet-1716103299429-1.png)
 
