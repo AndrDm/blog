@@ -243,9 +243,9 @@ Well, now we can compute first 2K elements and measure the time using Performanc
 
 and the result:
 
-![image-20240520170450069](assets/image-20240520170450069.png)
+![image-20240521183248999](assets/image-20240521183248999.png)
 
-For N=1000 we have something around 500 ns, and clearly recognized "steps", because Performance Counter have discrete values at 100 ns resolution and for example, between 1000 and 1300 we have almost no intermediate values, because the only 5 ticks increment according to this interval.
+For N=1000 we have something around 300 ns, and clearly recognized "steps", because Performance Counter have discrete values at 100 ns resolution and for example, between 800 and 1200 we have almost no intermediate values, because the only 3 ticks increment according to this interval.
 
 Well, if our theory about High Resolution Counter is correct, then we should get the same by multiplication results to 10000000:
 
@@ -253,9 +253,9 @@ Well, if our theory about High Resolution Counter is correct, then we should get
 
 And it is:
 
-![image-20240520171219178](assets/image-20240520171219178.png)
+![image-20240521183416205](assets/image-20240521183416205.png)
 
-Same discrete steps in same range (not exactly, because some overhead from calling VIs, plus some rounding error, and in additional I have a feeling that NI subtracted a little bit from result). But behaviour is exactly the same.
+Same discrete steps in same range (not exactly, because some overhead from calling VIs, plus some rounding error. But behaviour is exactly the same and that means that behind High Resolution Relative Seconds is exactly QueryPerformanceCounter and to get "RAW" increments you just need to multiply output by 10000000. 
 
 ## Rtdsc
 
@@ -298,9 +298,15 @@ Its because my CPU operates at 2,9 GHz:
 
 ![image-20240520175400338](assets/image-20240520175400338.png)
 
+On the other PC this will give other results:
+
+![image-20240521184433802](assets/image-20240521184433802.png)
+
+
+
 Obviosly this counter will be not incremented if CPU on halt (PC in standby).
 
-The resolution 2,9 GHz means 0,345 nanoseconds or 345 picoseconds per increment.
+The resolution on the 2,9 GHz means 0,345 nanoseconds or 345 picoseconds per increment, but on the 3,9 GHz — 0,256 ns/increment.
 
 Now we can repeat measuement of the test function, but with Rdtsc function as was done above with Performance Counter:
 
@@ -308,9 +314,11 @@ Now we can repeat measuement of the test function, but with Rdtsc function as wa
 
 And the results:
 
-![image-20240520180731674](assets/image-20240520180731674.png)
+![image-20240521184715732](assets/image-20240521184715732.png)
 
-Now we have no more visible discrete steps, because resolution is much higher and where we have had only one increment per 100 ns now we have 289 increments per 100 ns.
+
+
+Now we have no more visible discrete steps, because resolution is much higher and where we have had only one increment per 100 ns now we have around 400 increments per 100 ns, therefore graph is smooth, continuously increased, and we are able to see "fine" differences.
 
 Usually RDTSC is rarely used because High Res Timer is sufficient for most application, and very low level RDTSC intendent for "fine" profiling, sometimes used with C code or in Assembly to check needed tacts for instructions sequences.
 
