@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "calendars/2024-ferien.md",
+                "file": "misc/wc.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "calendars/2024-ferien.md",
+                "file": "misc/wc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "calendars/2024-ferien.md",
+                "file": "misc/wc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "calendars/2024-ferien.md"
+                "file": "misc/wc.md"
               }
             }
           }
@@ -163,8 +163,9 @@
   },
   "active": "36c43911229266cd",
   "lastOpenFiles": [
-    "2024-05-20.md",
     "calendars/2024-ferien.md",
+    "misc/wc.md",
+    "2024-05-20.md",
     "calendars",
     "labview/timer/timer.md",
     "labview/perf/Untitled.md",
@@ -204,7 +205,6 @@
     "labview/forum/web_page.md",
     "Pasted image 20240417160149.png",
     "hardware/Memory Benchmarks/index.md",
-    "2023-04-02.md",
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
     "sandbox/subdir2/subdir2/img3.png",
