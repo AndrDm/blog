@@ -11,6 +11,7 @@ archives:
 tags:
   - template
 draft: true
+slug: wc
 ---
 Text before Cut.
 <!--more-->
