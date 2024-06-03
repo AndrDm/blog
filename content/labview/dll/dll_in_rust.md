@@ -5,12 +5,12 @@ authorbox: false
 sidebar: false
 description: Step by step instruction — how to write simple DLL in Rust, then call it from LabVIEW
 thumbnail:
-  src: "/img/rust_logo.png"
+  src: /img/rust_logo.png
   visibility:
     - list
 programming_languages:
-    - LabVIEW
-    - Rust
+  - LabVIEW
+  - Rust
 categories:
   - Programming
 archives:
@@ -18,6 +18,7 @@ archives:
 tags:
   - DLL
 draft: false
+slug: write-dll-rust-call-labview
 ---
 Calling external code from different languages is great feature of LabVIEW. In general you can wrap almost anything into DLL, then call it by Call Library Function Node. This time we will mix Rust code with LabVIEW.
 <!--more-->
