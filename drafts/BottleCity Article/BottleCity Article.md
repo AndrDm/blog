@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-Выше я воспользовался perplexity.ai. Я в основном использую этот сервис, потому что он из немногих, не заблокированных у меня на работе, где гайки закручены - у меня там нет никаких ИИ, нет облаков, соцсетей кроме хабра да линкедина тоже нет, ну что поделать, полиси такое.
+Выше я воспользовался perplexity.ai. Я в основном использую этот сервис, потому что он из немногих, не заблокированных у меня на работе, где гайки закручены — у меня там нет никаких ИИ, нет облаков, соцсетей кроме хабра да линкедина тоже нет, ну что поделать, полиси такое.
 
 Пока что мы не будем включать мозги, а просто снабдим этот код выводом интенсивностей пикселей. ИИ, кстати забыл, что она вычисляется как 1-d*Z/w+s, нет проблем, добавляем, я покажу скриншот, как это у меня выглядит, оно даже компиляется в лёт без единого предупреждения:
 
@@ -72,7 +72,9 @@ I = 0.000000 @ pix 5990
 
 В принципе понятно — все переменные объявлены как целые, по другому и быть не может.
 
-Поскольку мозги мы всё ещё не хотим включать, пропробуем chatGPT
+Поскольку мозги мы всё ещё не хотим включать, попробуем chatGPT
+
+(SPOILER)
 
 ```c
 #include <stdio.h>
@@ -137,7 +139,350 @@ int main() {
 
 О, как, он даже сделал попытку вывода в псевдографике, но нет, результат по-прежнему неверный.
 
-Тут я подумал, что не может быть, чтобы хоть кто-то да не разобрался в этом несложном скрипте, и точно - вот этот код "разложенный" по полочкам:
+Тут я подумал, что не может быть, чтобы хоть кто-то да не разобрался в этом несложном скрипте, и точно, ссылка в одном из постов была приведена — вот этот код "разложенный" по полочкам — [Decoding A City In A Bottle](https://observablehq.com/@darabos/decoding-a-city-in-a-bottle).
+
+Тут я подумал, что на отладочном выводе в окошко рендеринга я далеко не уеду, и хотя в Visual Studio можно доставить Node.js, но это чересчур тяжеловесное решение для столь простенькой задачки, так что я поискал возможности запускать JavaScript в VScode, и набрёл на расширение [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner). Всё, что ему требуется — это установленный [Node.js](https://nodejs.org/en/download/prebuilt-installer). Горячо рекомендую. Написание "Привет, мир" ещё не было столь простым:
+
+![image-20240612123855797](assets/image-20240612123855797.png)
 
 
 
+Код рисования, слегка почищенный выглядит вот так:
+
+```js
+function verboseDraw(t) {
+  const w = 99;
+  for(let i=6000;i--;) { // World space coordinates.
+    let X=t;
+    let Y=1;
+    let Z; // Ray direction in world space.
+    let a=i%w/50-1;
+    let b=1-i/4000;
+    let d=1; // Light.
+    let s = b; // Background
+    // Ray tracing!
+    for (Z=2; Z<w; ++Z) {
+      if (isThereAnythingAt(X, Y, Z)) { // We hit the model.
+        const last_d = d;
+        // The texture.
+        s = (X&Y&Z)%3; //  TEXTURE==='Striped'? Y&4: //0 - None
+        s/=Z; // Fog.
+        a=b=1; // New direction, toward the light.
+        d=Z/w;
+        if (last_d < 1) break; // Effectively the same as the ||d|(...) part.
+      }
+      X+=a;
+      Y-=b;
+    }
+    let darkness = s+1-d*Z/w; // Texture + lighting.
+    console.log(strip(darkness))
+  }
+}
+```
+
+Самая главная функция
+
+```js
+function isThereAnythingAt(X, Y, Z) { // The random building height comes from (X^Z)*8.
+      return Y>=GROUND_PLANE-(CITY_DISTANCE<Z&AVENUE_WIDTH<X%AVENUE_PERIOD&&X/BUILDING_WIDTH^Z/BUILDING_DEPTH)*8%(BUILDING_HEIGHT+1);
+}
+```
+
+Вообще я был изначально уверен, что дело в приоритетах операций, поэтому пробовал расставлять скобочки и так и сяк, но на самом деле там два виновника торжества.
+
+Давайте перепишем код вот так (на самом деле нам это поможет легче переложить его на LabVIEW, ниже вы увидите почему):
+
+```js
+function isThereAnythingAt(X, Y, Z) { // The random building height comes from (X^Z)*8.
+    let temp1 = X / BUILDING_WIDTH;
+    let temp2 = Z / BUILDING_DEPTH;
+    let temp3 = temp1 ^ temp2;
+    let temp4 = X % AVENUE_PERIOD;
+    let temp5 = CITY_DISTANCE < Z;
+    let temp6 = AVENUE_WIDTH < temp4;
+    let temp7 = temp5 & temp6;
+    let temp8 = temp7 && temp3;
+    let temp9 = temp8 * 8;
+    let temp10 = BUILDING_HEIGHT + 1;
+    let temp11 = temp9 % temp10;
+    let Hit = GROUND_PLANE - temp11;
+    
+    return Y>= Hit
+}
+```
+
+Теперь просто сравнивая значения временных переменных можно легко увидеть, в каком месте результат начинает отличаться от референсного. Вот эквивалентный Си код:
+
+```cpp
+bool isThereAnythingAt(double X, double Y, int Z) 
+{
+    int temp1 = X / BUILDING_WIDTH;
+    int temp2 = Z / BUILDING_DEPTH;
+    int temp3 = temp1 ^ temp2;
+    double temp4 = fmod(X, (double)AVENUE_PERIOD); //double temp4 = (int)X%AVENUE_PERIOD;
+    bool temp5 = CITY_DISTANCE < Z;
+    bool temp6 = AVENUE_WIDTH < temp4;
+    int temp7 = temp5 & temp6;
+    int temp8 = temp7 ? temp3 : 0; //int temp8 = temp7&&temp3;
+    int temp9 = temp8 * 8;
+    int temp10 = BUILDING_HEIGHT + 1;
+    int temp11 = temp9 % temp10;
+    int Hit = GROUND_PLANE - temp11;
+
+    return (Y >= Hit);
+}
+```
+
+Вот полный LabVIEW код:
+
+![](assets/CityFinal.png)
+
+Выглядит ли это спагетти нагляднее, чем текстовый код? Не думаю.
+
+Если вы хотите поиграть с ним самостоятельно, то можете скачать LabVIEW Comunity Edition. 
+
+На этом можно было бы и закончить, но у нас остался рабочий Си код, и хотя мавр сделал своё дело, но жалко же выбрасывать, давайте оформим его во-что-то более работоспособное, разве что минимально причешем перед этим, хотя бы вот так:
+
+```cpp
+bool isThereAnythingAt(double X, double Y, int Z)
+{ // The random building height comes from (X^Z)*8.
+    int temp1 = (int)(X / BUILDING_WIDTH) ^ (Z / BUILDING_DEPTH);
+    int temp2 = (CITY_DISTANCE < Z) & (AVENUE_WIDTH < fmod(X, (double)AVENUE_PERIOD));
+    int temp3 = temp2 ? temp1 : 0;     //int temp8 = temp7&&temp3;
+    int Hit = GROUND_PLANE - (temp3 * 8) % (BUILDING_HEIGHT + 1);
+    return (Y >= Hit);
+}
+
+void verboseDraw(int t, float* data) {
+    const int w = 99;
+    for (int i = 6000; i--;) { // World space coordinates.
+        double X = t;
+        double Y = 1.0;
+        int Z; // Ray direction in world space.
+        double a = i % w / 50.0 - 1.0;
+        double b = 1.0 - (double)i / 4000.0;
+        double d = 1.0; // Light.
+        double s = b; // Background
+        for (Z = 2; Z < w; ++Z) { // Ray tracing!
+            if (isThereAnythingAt(X, Y, Z)) { // We hit the model, ray tracing...
+                double last_d = d;
+                s = ((int)X & (int)Y & Z) % 3; // The texture.
+                s /= (double)Z; // Fog.
+                a = b = 1.0; // New direction, toward the light.
+                d = (double)Z / w;
+                if (last_d < 1) break; // Effectively the same as the ||d|(...) part.
+            }
+            X += a;
+            Y -= b;
+        }
+        double darkness = d * Z / w - s; // Texture + lighting.
+        data[i] = (float)darkness;
+    }
+}
+```
+
+
+
+### Прикручиваем OpenCV и Nuklear
+
+Основной вопрос тут в том, как наиболее простым способом показать картинку на экране, и поскольку у нас в руках массив из пикселей, то, вероятно самое прростое решение — воспользоваться OpenCV, эта библиотека умеет отображать в том числе изображения в формате с плавающей точкой, даже преобразовывать в диапазон 0...255 не потребуется, тем же OpenCV удобно будет увеличить размер картинки с интерполяцией.
+
+Всего-то кода надо будет:
+
+```c++
+#include "opencv2/opencv.hpp"
+using namespace cv;
+
+int main()
+{
+    float* city;
+
+    city = (float*)malloc(6000 * sizeof(float));
+    Mat City = Mat(60, 99, CV_32F, city);
+    Mat Display = Mat(240, 400, CV_32F);
+
+    namedWindow("City", 1);
+
+    int t = 0;
+    while (true) {
+        verboseDraw(t++, city);
+        resize(City, Display, Size(600, 360), INTER_LINEAR);
+        imshow("City", Display);
+        if(waitKey(33) == 27) break; //Wait for Esc
+    }
+    free(city);
+}
+```
+
+Выше на LabVIEW у нас ещё были ползунки для тонкой настройки параметров. Есть куча способов сделать такой приложение, хоть на WinForms, хоть на C#/WPF, я воспользуюсь легковесной Nuklear.
+
+Чтобы всё было поаккуратнее, переложим код рендеринга в отдельный поток:
+
+```cpp
+DWORD WINAPI ThreadFunc(void* data) {
+    float* city = (float*)malloc(6000 * sizeof(float));
+    if (!city) { running = 0; return 0; }
+    Mat City = Mat(60, 99, CV_32F, city);
+    Mat Display = Mat(240, 400, CV_32F);
+
+    namedWindow("City");
+    moveWindow("City", 20, 10);
+
+    int t = 0;
+    while (getWindowProperty("City", 0) != -1) {
+        verboseDraw(t++, city);
+        resize(City, Display, Size(600, 360), INTER_LINEAR);
+        imshow("City", Display);
+        if (waitKey(33) == 27) break; //Wait for Esc
+    }
+    free(city);
+
+    running = 0;
+
+    return 0;
+}
+```
+
+Который запустим перед входом в цикл опроса слайдеров:
+
+```cpp
+    HANDLE thread = CreateThread(NULL, 0, ThreadFunc, NULL, 0, NULL);
+
+    while (running)
+    {
+        /* Input */
+        MSG msg;
+        nk_input_begin(ctx);
+        if (needs_refresh == 0) {
+            if (GetMessageW(&msg, NULL, 0, 0) <= 0) running = 0;
+            else {
+                TranslateMessage(&msg);
+                DispatchMessageW(&msg);
+            }
+            needs_refresh = 1;
+        } else needs_refresh = 0;
+
+        while (PeekMessageW(&msg, NULL, 0, 0, PM_REMOVE)) {
+            if (msg.message == WM_QUIT) running = 0;
+            TranslateMessage(&msg);
+            DispatchMessageW(&msg);
+            needs_refresh = 1;
+        }
+        nk_input_end(ctx);
+
+        /* GUI */
+        if (nk_begin(ctx, "Demo", nk_rect(0, 0, 600, 600), 0)) {
+
+            nk_layout_row_dynamic(ctx, 32, 1);
+
+            nk_label(ctx, "Ground Plane :", NK_TEXT_LEFT);
+            nk_slider_int(ctx, 1, &GROUND_PLANE, 100, 1);
+
+            nk_label(ctx, "Distance to the City:", NK_TEXT_LEFT);
+            nk_slider_int(ctx, 1, &CITY_DISTANCE, 100, 1);
+...
+```
+
+Полный код лежит на гитхабе.
+
+### Rust
+
+В принципе имея на руках работоспособный Си-код можно переложить эту игрушку на что угодно, вот, например на Раст. Прелесть раста заключается в том, что для отображения картинки на экране у нас есть крейт [show_image](https://crates.io/crates/show-image), который как раз то, что нам надо и нет необходимости в OpenCV.
+
+Из ингредиентов нам понадобятся следующие зависимости:
+
+```rust
+use image::GrayImage;
+use ndarray::Array1;
+use show_image::{ImageView, ImageInfo, create_window};
+use std::{thread, time};
+```
+
+Основной цикл:
+
+```Rust
+#[show_image::main]
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+
+	let window = create_window("City", Default::default())?;
+	let width = 100;
+	let height = 60;
+	let mut t = 0;
+	let w = 99;
+
+	println!("Hello, City, Hit Ctrl+C to Quit");
+	loop {
+		let mut array: Array1<u8> = Array1::zeros(6000); // 100x60
+		let mut i = 6000;
+		for _row in 0..height {
+			for _col in 0..width {
+				i -= 1;
+				let mut x = t as f64;
+				let mut y = 1.0;
+				let mut last_z: i32 = 0;
+				let mut a: f64 = (i % w) as f64 / 50.0 - 1.0;
+				let mut b: f64 = 1.0 - (i as f64) / 4000.0;
+				let mut  d = 1.0; // Light.
+				let mut  s = b; // Background
+				for z in 2..w { // Ray tracing!
+					last_z = z + 1;
+					if is_there_anything_at(x, y, z) { // We hit the model
+						let last_d = d;
+						s = (((x as i32) & (y as i32) & z) % 3) as f64; // Texture.
+						s /= z as f64; // Fog.
+						a = 1.0; // New direction, toward the light.
+						b = 1.0; // New direction, toward the light.
+						d = (z as f64) / (w as f64);       
+						if last_d < 1.0 {
+							last_z = z;
+							break; // Effectively the same as the ||d|(...) part.
+						}
+					}
+					x += a;
+					y -= b;
+				}
+				let darkness = (d * last_z as f64 / w as f64 - s) * 255.0; // Texture + light.
+				array[i as usize] = darkness as u8;
+			} // cols
+		} // rows
+
+		let image = array_to_image(array, width-1, height);
+		let image_display = ImageView::new(ImageInfo::mono8((width-1) as u32, height as u32), &image);
+		window.set_image("City", image_display)?;
+		thread::sleep(time::Duration::from_millis(33));
+		t += 1;
+	} // loop
+} //fn main
+```
+
+Ну а пара функций для переброса массива в картинку да самая главная для трейсинга:
+
+```rust
+fn array_to_image(arr: Array1<u8>, width: usize, height: usize) -> GrayImage {
+	let raw = arr.into_raw_vec();
+	GrayImage::from_raw(width as u32, height as u32, raw).expect("correct size")
+}
+
+fn is_there_anything_at(x: f64, y: f64, z: i32) -> bool {
+
+	let ground_plane = 6;
+	let city_distance = 32;
+	let avenue_width = 27.0;
+	let avenue_period = 99.0;
+	let building_width = 9.0;
+	let building_depth = 8;
+	let building_height = 45;
+
+	let temp1 = (x / building_width) as i32 ^ (z / building_depth);	
+	let temp2 = (city_distance < z) & (avenue_width < x % avenue_period);
+	let mut temp3 = 0;
+	if temp2 {temp3 = temp1};
+	let hit = ground_plane - (temp3 * 8) % (building_height + 1);
+
+	y >= hit as f64 
+}
+```
+
+В принципе там выше можно немного пооптимизировать (убрать два цикла и т.д.), но результат в общем и так достигнут.
+
+В принципе можно прикрутить и интерфейс по вкусу для изменения параметров (есть [egui](https://www.egui.rs), либо [iced](https://iced.rs) или [tauri](https://tauri.app)), но данное упражнение выходит за рамки статьи.
