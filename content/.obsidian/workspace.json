@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "17ffce34cb6371d6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "b4c336a43c7c32c2",
@@ -161,7 +172,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "36c43911229266cd",
+  "active": "17ffce34cb6371d6",
   "lastOpenFiles": [
     "calendars/2024-ferien.md",
     "misc/wc.md",
