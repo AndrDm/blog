@@ -28,9 +28,19 @@
                 "currentVersion": "1.6.5"
               }
             }
+          },
+          {
+            "id": "c4854107a4d6f27a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "b4c336a43c7c32c2",
@@ -163,16 +173,16 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "17ffce34cb6371d6",
+  "active": "c4854107a4d6f27a",
   "lastOpenFiles": [
     "calendars/2024-ferien.md",
     "misc/wc.md",
