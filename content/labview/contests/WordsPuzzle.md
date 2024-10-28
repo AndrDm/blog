@@ -1,7 +1,21 @@
-# Words Puzzle
-
+---
+title: Words Puzzle
+date: 2024-10-28
+authorbox: false
+sidebar: false
+description: Some notes about contest
+categories:
+  - Programming
+archives:
+  - 2024-10
+tags:
+  - Contest
+draft: true
+programming_languages:
+  - LabVIEW
+---
 At Week #25 of 2024 I've participated in "Word Puzzle" challenge. Was interesting experience, which I would like to share, may be will be useful for someone.
-
+<!--more-->
 Usually I do not participating in "performance" LabVIEW challenges, because I don't see any reason to perform optimizations tasks on the environment, which is in general not intendent for faster machine code generation. Almost any trivial LabVIEW code can be beat with equivalent C code, just because more optimal code generation, especially by modern compilers. And usually in such challenges is prohibited to use external code called via 'CLFN' (Call Library Function Node). But this time the rules was defined as:
 
 ![image-20240623162732140](assets/image-20240623162732140.png)
