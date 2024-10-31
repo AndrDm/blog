@@ -37,12 +37,14 @@
             "id": "c4854107a4d6f27a",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.6.7"
+                "file": "labview/snippets/np/NP Snippet.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.6.7"
+              "title": "NP Snippet"
             }
           }
         ],
@@ -118,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 533.5
   },
   "right": {
     "id": "c47ee55e83f711c5",
@@ -180,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc/wc.md"
+                "file": "labview/snippets/np/NP Snippet.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of wc"
+              "title": "Outline of NP Snippet"
             }
           }
         ],
@@ -206,6 +208,10 @@
   },
   "active": "c4854107a4d6f27a",
   "lastOpenFiles": [
+    "2023-01-31.md",
+    "labview/snippets/np/NP Snippet.md",
+    "labview/snippets/np",
+    "labview/snippets",
     "calendars/2024-ferien.md",
     "misc/wc.md",
     "2024-05-20.md",
@@ -235,19 +241,15 @@
     "labview/kb/decimal_separator.md",
     "labview/Experiments/Timer/Timer.md",
     "labview/Experiments/Timer",
-    "labview/Experiments",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
     "kb/alt_tab_windows11_fix.md",
-    "labview/kb",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "search.md",
     "about.md",
-    "labview/forum/web_page.md",
     "Pasted image 20240417160149.png",
-    "hardware/Memory Benchmarks/index.md",
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
     "sandbox/subdir2/subdir2/img3.png",
