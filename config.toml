@@ -28,7 +28,7 @@ generate-h1-from-title = true
   author.avatar = "img/avatar.png"
   pager = true
   post_meta = ["date", "lastmod", "categories"] # Order of post meta information
-  mainSections = ["kb", "xray", "ndt", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo", "misc", "usability"]
+  mainSections = ["kb", "xray", "ndt", "history", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo", "misc", "usability"]
 
 [Params.logo]
   subtitle = "Just my online notepad" # Logo subtitle

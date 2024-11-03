@@ -5,8 +5,8 @@ authorbox: false
 sidebar: false
 description: Ferien Hamburg 2024
 categories: 
-archives: 
-tags: 
+archives: 2024-01 
+tags: Ferien
 draft: true
 ---
 Ferien Hamburg 2024
