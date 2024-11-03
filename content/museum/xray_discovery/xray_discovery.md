@@ -18,3 +18,7 @@ I was very curious about the very first appearance of the X-ray discovery publis
 It is in Science Magazine, New Series, Vol. 3, No. 57, Jan. 31, 1896:
 
 ![](assets/x-ray1st.jpg)
+
+Full article:
+
+{{< carousel4 items="1" height="70" unit="%" >}}
