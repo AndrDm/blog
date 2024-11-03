@@ -28,6 +28,6 @@ END
 
 
 TEST Carousel
-{{< carousel3 items="1" width="1230" height="500" unit="px" >}}
+{{< carousel3 items="1" width="1230" height="40" unit="%" >}}
 END
 
