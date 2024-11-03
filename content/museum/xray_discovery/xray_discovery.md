@@ -22,3 +22,7 @@ It is in Science Magazine, New Series, Vol. 3, No. 57, Jan. 31, 1896:
 Full article:
 
 {{< carousel4 items="1" height="70" unit="%" >}}
+
+Electrical engineering article:
+
+{{< carousel2 items="1" height="70" unit="%" >}}
