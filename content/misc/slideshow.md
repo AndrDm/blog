@@ -10,7 +10,7 @@ archives:
   - Jan-2023
 tags:
   - template
-draft: true
+draft: false
 slug: slideshow
 ---
 Text before Cut.
@@ -28,6 +28,6 @@ END
 
 
 TEST Carousel
-{{< carousel items="1" height="500" unit="px" duration="7000" >}}
+{{< carousel3 items="1" width="1230" height="500" unit="px" >}}
 END
 
