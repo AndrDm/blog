@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "museum/xray_discovery/xray_discovery.md",
+                "file": "labview/threads/call_from_third_party.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "museum/xray_discovery/xray_discovery.md",
+                "file": "labview/threads/call_from_third_party.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "museum/xray_discovery/xray_discovery.md",
+                "file": "labview/threads/call_from_third_party.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "museum/xray_discovery/xray_discovery.md"
+                "file": "labview/threads/call_from_third_party.md"
               }
             }
           }
@@ -175,19 +175,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "c4854107a4d6f27a",
   "lastOpenFiles": [
-    "labview/snippets/np/NP Snippet.md",
     "museum/xray_discovery/xray_discovery.md",
+    "labview/threads/call_from_third_party.md",
+    "labview/threads",
+    "labview/snippets/np/NP Snippet.md",
     "2023-01-31.md",
     "labview/snippets/np",
     "labview/snippets",
@@ -219,14 +221,12 @@
     "Pasted image 20240507110302.png",
     "labview/kb/decimal_separator.md",
     "labview/Experiments/Timer/Timer.md",
-    "labview/Experiments/Timer",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
     "kb/alt_tab_windows11_fix.md",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
     "ndt/diconde_validation/dvtk_validation.md",
     "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
-    "search.md",
     "Pasted image 20240417160149.png",
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
