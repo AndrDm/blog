@@ -88,6 +88,8 @@ The LabVIEW "do something" code will be as simple as following:
 
 Then C-code (CVI was used):
 
+{{% expand "Expand CVI Code example" %}}
+
 ```c
 #include <ansi_c.h>
 #include <utility.h>
@@ -137,7 +139,11 @@ int CVICALLBACK ThreadFunction2 (void *functionData)
 }
 ```
 
+{{% /expand %}}
+
 Or in case of Python something like that:
+
+{{% expand "Expand Python Code example" %}}
 
 ```python
 import ctypes
@@ -180,7 +186,10 @@ print(f"Two threads took {result:.6f} seconds")
 
 ```
 
+{{% /expand %}}
+
 Now both "single thread" LabVIEW functions called in parallel, the overall execution speed is still around 1 second in both environments:
+
 
 ```
 >DLL_Test.exe

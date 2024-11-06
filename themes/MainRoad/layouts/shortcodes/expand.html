@@ -1,0 +1,101 @@
+﻿{{ $text := (.Get 0) | markdownify | default "Expand" }}
+{{ $icon := (.Get 1) | default "↕" }}
+{{ $id :=  index (seq 1000 | shuffle) 0 }}
+{{ $headingId := $text | anchorize }}
+{{ $collapseIcon := partial "inline-svg" "chevron-up" }}
+{{ printf "<div id=\"%s\" class=\"md-expand\">" $headingId | htmlUnescape | safeHTML }}
+{{ printf "<label for=\"expander-%d\">" $id | htmlUnescape | safeHTML }}
+{{ printf "<div class=\"md-expand-head\">" | htmlUnescape | safeHTML }}
+{{ printf "<span>%s</span>" $text | htmlUnescape | safeHTML }}
+{{ printf "<span>%s</span>" $icon | htmlUnescape | safeHTML }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}
+{{ printf "</label>" | htmlUnescape | safeHTML }}
+{{ printf "<input id=\"expander-%d\" type=\"checkbox\" class=\"hidden\" />" $id | htmlUnescape | safeHTML }}
+{{ printf "<div class=\"md-expand-content markdown-inner\">" | htmlUnescape | safeHTML }}
+{{ printf "<div class=\"md-content\">" | htmlUnescape | safeHTML }}
+{{ .Inner | safeHTML }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}
+{{ printf "<label for=\"expander-%d\" class=\"tag md-collapse tooltipped tooltipped-w\" aria-label=\"Collapse '%s'\">%s</label>" $id $text $collapseIcon | htmlUnescape | safeHTML }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}
+{{ printf "<div class=\"md-footer\"></div>" | htmlUnescape | safeHTML }}
+{{ printf "</div>" | htmlUnescape | safeHTML }}
+
+<style>
+
+.hidden {
+    display: none;
+}
+
+.md-expand {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  border: 1px solid #f4f4f4;
+  border-radius: $border-radius;
+
+  .md-expand-head {
+    display: flex;
+    justify-content: space-between;
+	color: #013025;
+    background: #f4f4f4;
+    font-size: 110%; 
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  .md-expand-content {
+    display: grid;
+    grid-template-columns: auto 2em;
+    min-height: 0; // Work around
+    min-width: 0; // Work around
+
+    padding: 1rem;
+    padding-right: 0;
+  }
+
+  .md-content {
+    grid-column: 1;
+    min-height: 0; // Work around
+    min-width: 0; // Work around
+
+    margin-top: -1em;
+    margin-bottom: -1em;
+    padding-right: 0;
+  }
+
+  .md-collapse {
+    position: -webkit-sticky;
+    position: sticky;
+
+    grid-column: 2;
+    align-self: end;
+
+    bottom: 3rem;
+
+    width: 2em;
+
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .md-footer {
+    background: var(--md-bg-color-light);
+    padding: 0.5rem 1rem;
+  }
+
+  input[type="checkbox"]:not(:checked)+.md-expand-content {
+    visibility: hidden;
+    max-height: 0;
+    padding: 0;
+  }
+
+  input[type="checkbox"]:not(:checked)~.md-footer {
+    visibility: hidden;
+    padding: 0;
+  }
+}
+
+</style>
