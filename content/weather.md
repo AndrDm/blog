@@ -3,7 +3,7 @@ title: Weather
 authorbox: false
 sidebar: false
 menu: main
-date: 2023-11-07
+date: 2024-11-07
 ---
 
 Weather in Ahrensburg
