@@ -99,3 +99,6 @@ generate-h1-from-title = true
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
+
+[frontmatter]
+glastmod = [':git', ':fileModTime']
