@@ -25,10 +25,17 @@ Full article:
 
 {{< carousel4 items="1" height="70" unit="%" >}}
 
+
 Electrical engineering article:
 
 {{< carousel2 items="1" height="70" unit="%" >}}
 
+
 Röntgen rays: memoirs by Röntgen, Stokes, and J.J. Thomson
 
 {{< iframe_web_archive "https://archive.org/embed/rontgenraysmemoir00ront" >}}
+
+
+Selected Articles as single PDF:
+
+{{< embed-pdf url="./xraymemories.pdf" >}}
