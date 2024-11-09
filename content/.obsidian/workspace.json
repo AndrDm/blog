@@ -4,56 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "1b138d4ea3136825",
+        "id": "da34f473ba737fa3",
         "type": "tabs",
         "children": [
           {
-            "id": "36c43911229266cd",
+            "id": "a1dbf855463c1876",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc/wc.md",
+                "file": "labview/net/netFrameworkCoreStandard.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "17ffce34cb6371d6",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
-            }
-          },
-          {
-            "id": "c4854107a4d6f27a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labview/threads/call_from_third_party.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "b4c336a43c7c32c2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2470b7987a6368bc",
-            "type": "leaf",
-            "state": {
-              "type": "hugo-preview-view",
-              "state": {}
             }
           }
         ]
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/threads/call_from_third_party.md",
+                "file": "labview/net/netFrameworkCoreStandard.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/threads/call_from_third_party.md",
+                "file": "labview/net/netFrameworkCoreStandard.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/threads/call_from_third_party.md"
+                "file": "labview/net/netFrameworkCoreStandard.md"
               }
             }
           }
@@ -184,17 +147,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c4854107a4d6f27a",
+  "active": "a1dbf855463c1876",
   "lastOpenFiles": [
-    "museum/xray_discovery/xray_discovery.md",
+    "labview/net/netFrameworkCoreStandard.md",
+    "labview/net",
+    "misc/wc.md",
     "labview/threads/call_from_third_party.md",
+    "museum/xray_discovery/xray_discovery.md",
     "labview/threads",
     "labview/snippets/np/NP Snippet.md",
     "2023-01-31.md",
     "labview/snippets/np",
     "labview/snippets",
     "calendars/2024-ferien.md",
-    "misc/wc.md",
     "2024-05-20.md",
     "calendars",
     "labview/timer/timer.md",
@@ -216,7 +181,6 @@
     "misc/clocks_in_svg.md",
     "labview/asm",
     "labview/kb/how_to_check_bittness.md",
-    "misc",
     "labview/kb/labview_control_part_ids.md",
     "Pasted image 20240507110302.png",
     "labview/kb/decimal_separator.md",
@@ -226,7 +190,6 @@
     "kb/alt_tab_windows11_fix.md",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
     "ndt/diconde_validation/dvtk_validation.md",
-    "kb/aipd_in_imagej/how_to_open_aipd_in_imagej.md",
     "Pasted image 20240417160149.png",
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
