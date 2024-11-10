@@ -37,52 +37,7 @@ with Language support C# 12.0, F# 8.0, Visual Basic 16.9
 There is also .NET 9.0 is available as SDK 9.0.100-rc.2 included in Visual Studio 2022 Preview (v17.12 latest preview) with support C# 13.0.
 
 {{% expand ".NET Timeline" %}}
-
-| Version                  | Start Date    | End Date      |
-| :----------------------- | ------------- | ------------- |
-| .NET Framework 4.8.1     | 9. Aug. 2022  |               |
-| .NET Framework 4.8-4.8.1 | 18. Apr. 2019 |               |
-| .NET Framework 4.7-4.7.2 | 11. Apr. 2017 |               |
-| .NET Framework 4.6-4.6.2 | 29. Jul. 2015 | 12. Jan. 2027 |
-| .NET Framework 4.5-4.5.2 | 9. Oct. 2012  | 26. Apr. 2022 |
-| .NET Framework 4.0       | 12. Apr. 2010 | 12. Jan. 2016 |
-| .NET Framework 3.5 SP1   | 19. Nov. 2007 | 9. Jan. 2029  |
-| .NET Framework 3.0       | 21. Nov. 2006 | 12. Jul. 2011 |
-| .NET Framework 2.0       | 17. Feb. 2006 | 12. Jul. 2011 |
-
-Combined table:
-
-| Version                | Start Date    | End Date      |
-| :--------------------- | ------------- | ------------- |
-| .NET 8.0 (latest LTS)   | Nov 14, 2023 | Nov 10, 2026 |
-| .NET 7.0 (Out of Support) | Nov 8, 2022  | May 14, 2024 |
-| .NET Framework 4.8.1     | 9. Aug.2022 |             |
-| .NET 6.0 (LTS)          | Nov 8, 2021  | Nov 12, 2024 |
-| .NET 5.0                | Nov 10, 2020 | May 10, 2022 |
-| .NET Core 3.0—3.1 (LTS) | Sept. 23, 2019 | Dec 13, 2022 |
-| .NET Framework 4.8 | 18. Apr. 2019 |             |
-| .NET Core 2.0—2.1 (LTS) | Aug 14, 2017 | Oct 1, 2018  |
-| .NET Framework 4.7-4.7.2 | 11. Apr. 2017 |             |
-| .NET Core 1.0—1.1       | Jun 27, 2016 | Jun 27, 2019 |
-| .NET Framework 4.6-4.6.2 | 29.Jul.2015 | 12. Jan. 2027 |
-| .NET Framework 4.5-4.5.2 | 9.Oct.2012 | 26. Apr. 2022 |
-| .NET Framework 4.0     | 12. Apr. 2010 | 12. Jan. 2016 |
-| .NET Framework 3.5 SP1 | 19. Nov. 2007 | 9. Jan. 2029  |
-| .NET Framework 3.0     | 21. Nov. 2006 | 12. Jul. 2011 |
-| .NET Framework 2.0     | 17. Feb. 2006 | 12. Jul. 2011 |
-
-{{% /expand %}}
-
-IN CLU  DE   TEST 
-
 {{% include_md tables.md %}}
-
-IN CLUD E   TEST            2
-
-{{% expand ".NET Timeline" %}}
-
-{{% include_md tables.md %}}
-
 {{% /expand %}}
 
 
@@ -116,9 +71,31 @@ As stated above, there are three ways to create .NET Library - Framework, Core a
 
 I will start with classical .NET Framework:
 
+![image-20241110102542464](assets/image-20241110102542464.png)
+
+On the next page you will configure the project and choose target framework:
+
+![image-20241110105648166](assets/image-20241110105648166.png)
+
 The code created is simple - just one method, which adds two integers:
 
+```
+namespace NET_Framework_Class_Library
+{
+    public class NetFrameworkClass
+    {
+        public string Info => ".NET Framework 4.8.1 Library";
+        public int Add(int x, int y)
+        {
+            return x + y;
+        }
+    }
+}
+```
+
 This will create DLL, which can be called from LabVIEW like this:
+
+![](assets/netframeeworksnip.png)
 
 So far so good, now I will do the same with Core:
 
