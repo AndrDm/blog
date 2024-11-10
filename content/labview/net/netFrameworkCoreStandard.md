@@ -59,6 +59,14 @@ To make existing libraries port easily between Framework and Core, Microsoft int
 
 If you want to develop in .NET, forget about Core 1.0-3.1, which are out of support and Framework as well; target the latest long-term support release of .NET (which is 8.0). If you need to support older versions of .NET, you can targeting .NET Standard, which will give your libraries the broadest reach.
 
+So:
+
+```mermaid
+graph 
+A(.NET Framework) --> |API|B(".NET Standard")
+C(.NET Core Framework) --> |API|B
+```
+
 ---
 
 Well, now from theory we can do some practical exercises.
@@ -130,13 +138,29 @@ namespace NET_Core_Class_Library;
 
 Take a note, that the code slightly more simply.
 
-Now, before calling this DLL the support is necessary to be enabled in the Settings: 
+Now, before calling this DLL the support is necessary to be enabled in the Options:
+
+![image-20241110160141829](assets/image-20241110160141829.png)
 
 This will enable .NET Core in the Constructor:
 
+![image-20241110160342173](assets/image-20241110160342173.png)
+
+Class needs to be selected:
+
+![image-20241110162220393](assets/image-20241110162220393.png)
+
+
+
+In case if you will get message like this:
+
+![image-20241110160850722](assets/image-20241110160850722.png)
+
+Just navigate to latest .NET, download and install SDK.
+
 In LabVIEW will be called like this:
 
-
+![](assets/core_snip.png)
 
 with obviously same result.
 
@@ -157,7 +181,7 @@ then build or publish:
 >dotnet publish
 ```
 
-Finally I will create Standard Library. Everything the same - starting with this Wizard and the code behind:
+Finally I will create .NET Standard Library. Everything the same - starting with this Wizard and the code behind:
 
 ![image-20241110141033867](assets/image-20241110141033867.png)
 
