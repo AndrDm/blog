@@ -79,18 +79,30 @@ On the next page you will configure the project and choose target framework:
 
 The code created is simple - just one method, which adds two integers:
 
-```
+```c#
 namespace NET_Framework_Class_Library
 {
     public class NetFrameworkClass
     {
         public string Info => ".NET Framework 4.8.1 Library";
-        public int Add(int x, int y)
-        {
-            return x + y;
-        }
+        public int Add(int x, int y) => x + y;
     }
 }
+```
+
+Take a note that 
+
+```c#
+    public int Add(int x, int y) => x + y;
+```
+
+is syntax sugar for 
+
+```c#
+    public int Add(int x, int y)
+    {
+        return x + y;
+    }
 ```
 
 This will create DLL, which can be called from LabVIEW like this:
@@ -101,7 +113,11 @@ So far so good, now I will do the same with Core:
 
 And the code:
 
+
+
 Take a note, that the code slightly more simply.
+
+Now, before calling this DLL the support nees 
 
 In LabVIEW will be called like this:
 
@@ -109,7 +125,7 @@ In LabVIEW will be called like this:
 
 By the way, there is other way to create DLL and later console:
 
-\>dotnert new
+\>dotnet new
 
 Then you can use vscode instead of VisualStudio (you can do with .NET Framework as well, but it is slightly more complicated).
 
