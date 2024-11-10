@@ -36,7 +36,7 @@ with Language support C# 12.0, F# 8.0, Visual Basic 16.9
 
 There is also .NET 9.0 is available as SDK 9.0.100-rc.2 included in Visual Studio 2022 Preview (v17.12 latest preview) with support C# 13.0.
 
-{{% expand ".NET Timeline" %}}
+{{% expand ".NET Timeline 2006—2024" %}}
 {{% include_md tables.md %}}
 {{% /expand %}}
 
@@ -111,37 +111,65 @@ This will create DLL, which can be called from LabVIEW like this:
 
 So far so good, now I will do the same with Core:
 
+![image-20241110132659816](assets/image-20241110132659816.png)
+
+On the next screen you can select target framework, I will choose .NET 8.0:
+
+![image-20241110132834898](assets/image-20241110132834898.png)
+
 And the code:
 
-
+```C#
+namespace NET_Core_Class_Library;
+	public class NetCoreClass
+    {
+		public string Info => ".NET 8.0 Library";
+		public int Add(int x, int y) => x + y;
+    }
+```
 
 Take a note, that the code slightly more simply.
 
-Now, before calling this DLL the support nees 
+Now, before calling this DLL the support is necessary to be enabled in the Settings: 
+
+This will enable .NET Core in the Constructor:
 
 In LabVIEW will be called like this:
 
 
 
+with obviously same result.
+
 By the way, there is other way to create DLL and later console:
 
-\>dotnet new
+```
+>mkdir "NET Core Class Library"
+>cd "NET Core Class Library"
+>dotnet new classlib
+```
 
-Then you can use vscode instead of VisualStudio (you can do with .NET Framework as well, but it is slightly more complicated).
+then modify your class as needed in any text editor (also Notepad is OK, the Visual Studio Code is recommended)
 
-Finally I will create Standard Library. Everything the same - starting with this Wizard and th code behind:
+then build or publish:
 
-If you will try to use "Standard" Library in LabVIEW, then you wll get this:
+```
+>dotnet build
+>dotnet publish
+```
 
-So, currently this is not applicable (can be changed in future versions, when .net Framework/.NET Core support will be improved.
+Finally I will create Standard Library. Everything the same - starting with this Wizard and the code behind:
+
+![image-20241110141033867](assets/image-20241110141033867.png)
+
+
 
 But why do we need Standard at all? To illustrate this I can create two console applications and call these DLLs from both.
 
-The first one is .NET Framework - bsed app. Again with Wizard, selecting appropriate framework:
+The first one is .NET Framework - based app. Again with Wizard, selecting appropriate framework:
 
 Now I need to put my Class Library to the dependencies, and call like this:
 
-I can reference both .NET Framework and .NET Standard, but attempt to cll .NET Core App from this applicationcaused Error:
+I can reference both .NET Framework and .NET Standard, but attempt to call .NET Core Library from this applicationcaused Error:
 
 
 
@@ -180,28 +208,4 @@ Useful tools for .NET
 IlDasm
 
 IlSpy
-
----
-
-https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-and-net-core
-
-https://learn.microsoft.com/de-de/lifecycle/products/microsoft-net-framework
-
-https://devblogs.microsoft.com/dotnet/net-framework-4-5-2-4-6-4-6-1-will-reach-end-of-support-on-april-26-2022/
-
-https://www.google.com/search?q=DIFFERENCES+BETWEEN+%3ANET+CORE+AND+FRAMEWORK&sourceid=chrome&ie=UTF-8
-
-https://www.microfocus.com/documentation/visual-cobol/vc70/VS2017/GUID-3EF28F11-9A12-4E80-9BF7-A16D25626C64.html
-
-https://www.reddit.com/r/csharp/comments/11oom0f/net_framework_vs_net_core/?rdt=64196
-
-https://learn.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server
-
-https://www.c-sharpcorner.com/article/net-framework-vs-net-core-vs-net-standard2/#:~:text=NET%20Framework%20is%20Windows-based,NET%20platform.
-
-https://learn.microsoft.com/en-us/archive/msdn-magazine/2017/september/net-standard-demystifying-net-core-and-net-standard
-
-https://stackoverflow.com/questions/76748330/differences-between-net-vs-net-core-vs-net-standard-vs-net-framework-and-res
-
-https://code-maze.com/differences-between-net-framework-net-core-and-net-standard/
 
