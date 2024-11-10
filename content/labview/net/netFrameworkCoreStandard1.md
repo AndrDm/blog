@@ -73,18 +73,7 @@ Combined table:
 
 {{% /expand %}}
 
-IN CLU  DE   TEST 
-
-{{% include_md tables.md %}}
-
-IN CLUD E   TEST            2
-
-{{% expand ".NET Timeline" %}}
-
-{{% include_md tables.md %}}
-
-{{% /expand %}}
-
+{{% include tables.md %}}
 
 Summary: 
 
