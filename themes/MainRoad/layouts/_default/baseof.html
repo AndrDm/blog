@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="google-site-verification" content="CCjDAo_n3FqqTOi7JEvNnX4i1JqdZreDUxjUmTDfo2w" />
-	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }}{{ end }}{{ end }}</title>
+	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }}{{ end }}{{ if .IsHome }}{{ .Site.Title }}{{ end }}{{ end }}</title>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }} - {{ .Site.Title }}">
 	<link rel="icon" href="https://blog.dmitriev.de/favicon.svg" type="image/svg+xml">
 	<meta name="manuscript" content="{{ .Params.Manuscript }}">
