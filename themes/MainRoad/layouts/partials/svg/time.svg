@@ -12,20 +12,7 @@
      id="namedview1"
      pagecolor="#ffffff"
      bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="22.607143"
-     inkscape:cx="-2.1674566"
-     inkscape:cy="8.5150079"
-     inkscape:window-width="1600"
-     inkscape:window-height="829"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     borderopacity="0.25"  />
   <path
      d="m 15,0 a 14,14 0 1 1 0,28 14,14 0 0 1 0,-28 m 0,3 a 11,11 0 1 0 0,22 11,11 0 0 0 0,-22 m 1,4 h -2 v 8.4 L 20.8,19.8 22,18 16,14.2 Z"
      id="path1" />
