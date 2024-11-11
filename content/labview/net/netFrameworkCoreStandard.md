@@ -9,7 +9,8 @@ categories:
 archives:
   - 2024-11
 tags:
-  - template
+  - .NET
+  - DLL
 programming_languages:
   - LabVIEW
   - C#
