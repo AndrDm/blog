@@ -10,7 +10,10 @@ archives:
   - 2024-11
 tags:
   - template
-draft: true
+programming_languages:
+  - LabVIEW
+  - C#
+draft: false
 ---
 Many beginner users may be frustrated with .net and how it used in LabVIEW as well as why .NET Core and .NET Framework exists and what the differences. Since last LabVIEW 2024 supported both Core and Standard below is "demystification" with practical examples and some notes. 
 <!--more-->
@@ -181,7 +184,7 @@ then build or publish:
 >dotnet publish
 ```
 
-Finally I will create .NET Standard Library. Everything the same - starting with this Wizard and the code behind:
+Finally I will create .NET Standard Library. Everything the same — starting with this Wizard and the code behind:
 
 ![image-20241110141033867](assets/image-20241110141033867.png)
 
@@ -189,47 +192,130 @@ Finally I will create .NET Standard Library. Everything the same - starting with
 
 But why do we need Standard at all? To illustrate this I can create two console applications and call these DLLs from both.
 
-The first one is .NET Framework - based app. Again with Wizard, selecting appropriate framework:
+The first one is .NET Core — based app. Again with Wizard, selecting appropriate framework:
 
 Now I need to put my Class Library to the dependencies, and call like this:
 
-I can reference both .NET Framework and .NET Standard, but attempt to call .NET Core Library from this applicationcaused Error:
+```c#
+Console.WriteLine("Hello, .NET 8.0!");
 
+var core = new NET_Core_Class_Library.NetCoreClass();
+Console.WriteLine(core.Info);
+Console.WriteLine(core.Add(1, 2));
 
+var standard = new NET_Standard_Class_Library.NetStandardClass();
+Console.WriteLine(standard.Info);
+Console.WriteLine(standard.Add(3, 4));
 
-Now do the same for .NET Core based app:
+var framework = new NET_Framework_Class_Library.NetFrameworkClass();
+Console.WriteLine(framework.Info);
+Console.WriteLine(framework.Add(5, 6));
+```
 
-Here I can obviously call .NET DLL, but also .NET Standard. Interesting fact that I can call .NET Framework as well, but I guess, this will work not for every assebly.
+As you can see, all three Class Libraries can be referenced from .NET Console App and works:
 
-Anyway, you can call .NET Standard from both and you can supply this for modern and for "legcy apps.
+```
+>NET Core Console.exe
+Hello, .NET!
+.NET 8.0 Library
+3
+.NET Standard 2.1 Library
+7
+.NET Framework 4.8.1 Library
+11
+```
 
-Unfortunately it is impossible to call .NET Standrd from LABIVEW, but hopefully this gets improved in a future.
+So far so good, but now I will create .NET Framework Console App and this attempt will be failed with following message:
+
+![image-20241111102453997](assets/image-20241111102453997.png)
+
+Obviously you can't call .NET 8.0 Class Library from .NET Framework 4.8.1 project as well as .NET Standard 2.1. To be able to load .NET Standard Class Library you should build it with 2.0, then could be loaded:
+
+![image-20241111102819735](assets/image-20241111102819735.png)
+
+Now can be called:
+
+```c#
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, .NET Framework 4.8.1!");
+
+        //var core = new NET_Core_Class_Library.NetCoreClass();
+        //Console.WriteLine(core.Info);
+        //Console.WriteLine(core.Add(1, 2));
+
+        var standard = new NET_Standard_Class_Library.NetStandardClass();
+        Console.WriteLine(standard.Info);
+        Console.WriteLine(standard.Add(3, 4));
+
+        var framework = new NET_Framework_Class_Library.NetFrameworkClass();
+        Console.WriteLine(framework.Info);
+        Console.WriteLine(framework.Add(5, 6));
+    }
+}
+```
+
+And works:
+
+```
+>Net Framework Console.exe
+Hello, .NET Framework 4.8.1!
+.NET Standard 2.0 Library
+7
+.NET Framework 4.8.1 Library
+11
+```
+
+So, you can use .NET Standard 2.0 Class Library in both .NET and .NET Framework Applications.
+
+Now the last question is — can you load .NET Standard 2.x Class Library into LabVIEW?
+
+Yes, you can, and in case if this is .NET Standard 2.0, then it can be loaded as both .NET Framework and .NET Core,  buth selecting Traget as .NET Standard 2.1 will allow to load this as .NET Core only (which is expected behaviour):
+
+![](assets/three_snip.png)
+
+### Troubleshooting
 
 Now, what to do if you have .NET Assembly in your hands, which can't be used in LabVIEW?
 
-Thre are different possbilkitties.
+In most cases it looks like this:
 
-If you have a very old DLL, then you can try to create config file, whcih will allow to load such DLL. This file should have content like this:
+![image-20241111110019501](assets/image-20241111110019501.png)
 
-<...>
+In the example above I selected .NET Standard 2.1 Class Library as .NET Framework, and this doesn't work, because not compatible. So, at the beginning you must be sure about target framework used as well as about dependencies.
 
-and saved as LabVIEW.exe.config, placed near LabVIEW App.
+If you have a very old "legacy" DLL, then you can try to create configuration file, which will allow to load such DLL. This file should have content like this:
 
-In case of builded application you should name it as the name of the executable, then place in the asme folder.
+```xml
+<?xml version ="1.0" encoding="utf-8" ?>
+<configuration>
+   <startup useLegacyV2RuntimeActivationPolicy="true">
+      <supportedRuntime version="v4.0"/>
+   </startup>
+</configuration> 
+```
 
-If this not work, then you can try to recompilke DLL. Kind of refverce engineering.  The source could be done with help of IlSpy (there are may "disassemblers available, but htis one is really good. As result you will get ViszualStudio Project, where you can change used frameworks. This will work for simple assemblies without "heavy weight" dependencies (we should keep in mind, that different versions of the frameworks could have some "breaking" differences. The project files are just text files, btu manual tqmpering sjhall be done carefully. How beginning of the file looks for all three:
+and saved as LabVIEW.exe.config, placed near LabVIEW.exe. Don't forget to do the same for builded application!
 
-And migration tool form .NET Framework to .-net core is also exists Ucheck it)
+If this not work, then you can try to recompile DLL (kind of reverse engineering).  The source could be done with help of IlSpy (there are may "disassemblers available, but this one is really good). As result you will get Visual Studio Project, where you can change used frameworks. This will work for simple assemblies without "heavy weight" dependencies (we should keep in mind, that different versions of the frameworks could have some "breaking" differences).
 
-To deploy appliction whre .NET is used, the appropriate Run-Time is required, and for .NET Core can be downloaded for free from here:
+To deploy application where .NET is used, the appropriate .NET Run-Time is required, and for .NET Core can be downloaded for free from here.
 
 Actual version as per Nov 2024 is 8.0 (Check it).
 
-If you have "unknown" ,NET DLL in your hands, then the useful free tool is JetBrains peek, which allow to get info ybout header.
+If you have "unknown" ,NET DLL in your hands, then the useful free tool is Jet Brains Peek, which allow to get info about header.
 
-Useful tools for .NET
+### Useful tools for .NET
 
-IlDasm
+[Ildasm.exe (IL Disassembler)](https://learn.microsoft.com/en-us/dotnet/framework/tools/ildasm-exe-il-disassembler)
 
-IlSpy
+[ILSpy is the open-source .NET assembly browser and decompiler.](https://github.com/icsharpcode/ILSpy)
+
+[dotPeek Free .NET Decompiler and Assembly Browser.](https://www.jetbrains.com/decompiler/)
+
+
 

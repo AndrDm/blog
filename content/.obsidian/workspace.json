@@ -16,10 +16,27 @@
                 "file": "labview/net/netFrameworkCoreStandard.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "netFrameworkCoreStandard"
+            }
+          },
+          {
+            "id": "176a8cf82472caf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "markdown/Markdown-Mermaid.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Markdown-Mermaid"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
             }
           },
           {
@@ -62,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
             }
           }
         ]
@@ -85,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labview/net/netFrameworkCoreStandard.md",
+                "file": "markdown/Markdown-Mermaid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Markdown-Mermaid"
             }
           },
           {
@@ -102,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "labview/net/netFrameworkCoreStandard.md",
+                "file": "markdown/Markdown-Mermaid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Markdown-Mermaid"
             }
           },
           {
@@ -116,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
             }
           },
           {
@@ -125,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/net/netFrameworkCoreStandard.md"
-              }
+                "file": "markdown/Markdown-Mermaid.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура Markdown-Mermaid"
             }
           }
         ],
@@ -147,8 +178,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a1dbf855463c1876",
+  "active": "176a8cf82472caf4",
   "lastOpenFiles": [
+    "assets/image-20240513085414147.png",
+    "markdown/Markdown-Mermaid.md",
+    "markdown",
     "labview/net/netFrameworkCoreStandard.md",
     "labview/net",
     "misc/wc.md",
@@ -179,7 +213,6 @@
     "labview/dll/Untitled.md",
     "labview/dll",
     "misc/clocks_in_svg.md",
-    "labview/asm",
     "labview/kb/how_to_check_bittness.md",
     "labview/kb/labview_control_part_ids.md",
     "Pasted image 20240507110302.png",
@@ -187,9 +220,7 @@
     "labview/Experiments/Timer/Timer.md",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
-    "kb/alt_tab_windows11_fix.md",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
-    "ndt/diconde_validation/dvtk_validation.md",
     "Pasted image 20240417160149.png",
     "hugo/hugo-logo-narrow.svg",
     "hugo/hugo-logo-wide.svg",
