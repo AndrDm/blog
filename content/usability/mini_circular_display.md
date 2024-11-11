@@ -48,3 +48,11 @@ Images Sources:
 [The Center Display of The New All-Electric Mini Cooper](https://www.linkedin.com/pulse/center-display-new-all-electric-mini-cooper-bhtc/?trackingId=C4UIi8pHTgWxDcqosDxQQQ%3D%3D).
 
 [State-of-the-art OLED technology](https://www.linkedin.com/feed/update/urn:li:activity:7195709392447557633/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7195709392447557633%29).
+
+---
+
+Update 11-NOV-2024:
+
+My daughter have seen this on Exhibition in Hamburg: 
+
+![image-20241111065535287](assets/image-20241111065535287.png)
