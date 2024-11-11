@@ -40,7 +40,7 @@ with Language support C# 12.0, F# 8.0, Visual Basic 16.9
 There is also .NET 9.0 is available as SDK 9.0.100-rc.2 included in Visual Studio 2022 Preview (v17.12 latest preview) with support C# 13.0.
 
 {{% expand ".NET Timeline 2006—2024" %}}
-{{% include_md tables.md %}}
+{{% include_md tables.mdi %}}
 {{% /expand %}}
 
 
