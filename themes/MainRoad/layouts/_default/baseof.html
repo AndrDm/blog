@@ -66,6 +66,14 @@
   })();
 </script>
 <!-- End Matomo Code -->
+
+<!-- Math Code -->
+  {{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
+  {{ end }}
+<!-- End Math Code -->
+
+
 </head>
 <body class="body">
 	<div class="container container--outer">

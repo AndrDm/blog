@@ -31,6 +31,7 @@ generate-h1-from-title = true
   pager = true
   post_meta = ["date", "lastmod", "categories"] # Order of post meta information
   mainSections = ["kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "sandbox", "hugo", "misc", "usability"]
+  math = true
 
 [Params.logo]
   subtitle = "Just my online notepad" # Logo subtitle
@@ -99,6 +100,13 @@ generate-h1-from-title = true
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
+	[markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
 
 [frontmatter]
 glastmod = [':git', ':fileModTime']
