@@ -4,11 +4,8 @@
    height="16"
    viewBox="0 0 30 32"
    version="1.1"
-   id="svg1"
    xmlns="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
   <path
      d="m 15,0 a 14,14 0 1 1 0,28 14,14 0 0 1 0,-28 m 0,3 a 11,11 0 1 0 0,22 11,11 0 0 0 0,-22 m 1,4 h -2 v 8.4 L 20.8,19.8 22,18 16,14.2 Z"
-     id="path1" />
+   />
 </svg>
