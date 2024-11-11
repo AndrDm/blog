@@ -1,0 +1,4 @@
+https://gitlab.com/AndyDm/blog-blob/-/raw/main/files/DVTk-DICOM-Editor-5.2.1.msi.7z
+https://gitlab.com/AndyDm/blog-blob/-/raw/main/files/DVTk-DVT-5.2.1.msi.7z
+https://gitlab.com/AndyDm/blog-blob/-/blob/main/files/Definitions-1.1.10.0.msi.7z
+https://gitlab.com/AndyDm/blog-blob/-/raw/main/files/dicondeExampleFiles.zip.7z
