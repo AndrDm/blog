@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "markdown/Markdown-math.md",
+                "file": "labview/python/NetworkCommunication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Markdown-math"
+              "title": "NetworkCommunication"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "markdown/Markdown-math.md"
+                "file": "labview/python/NetworkCommunication.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Markdown-math"
+              "title": "Структура NetworkCommunication"
             }
           }
         ],
@@ -180,6 +180,8 @@
   },
   "active": "176a8cf82472caf4",
   "lastOpenFiles": [
+    "labview/python/NetworkCommunication.md",
+    "labview/python",
     "markdown/Markdown-Mermaid.md",
     "markdown/Markdown-math.md",
     "assets/image-20240513085414147.png",
@@ -212,13 +214,11 @@
     "kb/lib_from_dll.md",
     "labview/dll/labview_array_in_dll.md",
     "labview/dll/Untitled.md",
-    "labview/dll",
     "misc/clocks_in_svg.md",
     "labview/kb/how_to_check_bittness.md",
     "labview/kb/labview_control_part_ids.md",
     "Pasted image 20240507110302.png",
     "labview/kb/decimal_separator.md",
-    "labview/Experiments/Timer/Timer.md",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
