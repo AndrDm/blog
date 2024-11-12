@@ -13,7 +13,11 @@ My personal reading list, which could be interesting for everyone.
 ### The Mythical Man-Month — Frederick Brooks
 
 ![image-20240513085414147](assets/image-20240513085414147.png#floatleft)
-Few books on software project management have been as influential and timeless as The Mythical Man-Month. With a blend of software engineering facts and thought-provoking opinions, Fred Brooks offers insight for anyone managing complex projects. These essays draw from his experience as project manager for the IBM System/360 computer family and then for OS/360, its massive software system. Now, 20 years after the initial publication of his book, Brooks has revisited his original ideas and added new thoughts and advice, both for readers already familiar with his work and for readers discovering it for the first time. [Amazon](https://www.amazon.com/dp/0201835959).  
+Few books on software project management have been as influential and timeless as The Mythical Man-Month. With a blend of software engineering facts and thought-provoking opinions, Fred Brooks offers insight for anyone managing complex projects. These essays draw from his experience as project manager for the IBM System/360 computer family and then for OS/360, its massive software system. Now, 20 years after the initial publication of his book, Brooks has revisited his original ideas and added new thoughts and advice, both for readers already familiar with his work and for readers discovering it for the first time.
+
+The added chapters contain (1) a crisp condensation of all the propositions asserted in the original book, including Brooks' central argument in **The Mythical Man-Month:** that large programming projects suffer management problems different from small ones due to the division of labor; that the conceptual integrity of the product is therefore critical; and that it is difficult but possible to achieve this unity; (2) Brooks' view of these propositions a generation later; (3) a reprint of his classic 1986 paper "No Silver Bullet"; and (4) today's thoughts on the 1986 assertion, "There will be no silver bullet within ten years."
+
+ [Amazon](https://www.amazon.com/dp/0201835959).  
 
 ---
 
