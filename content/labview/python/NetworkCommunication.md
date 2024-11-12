@@ -13,7 +13,7 @@ tags:
 programming_languages:
   - LabVIEW
   - Python
-draft: true
+draft: false
 ---
 A very simple and basic TCP communication example for Python and LabVIEW
 <!--more-->
