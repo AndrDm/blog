@@ -6,7 +6,7 @@
 	<h1 class="main__title">Archives - All Notes</h1>
       {{ .Content }}
 
-	{{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+	{{ $pages := where site.RegularPages "Type" "in" site.Params.allSections }}
 	{{ range $pages.GroupByPublishDate "2006-01" }}
 	<h2 class="archive-year" id="{{.Key | urlize}}">{{.Key}}</h2>
 		<ul class="year-of-posts">
