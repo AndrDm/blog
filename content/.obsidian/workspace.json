@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/python/NetworkCommunication.md",
+                "file": "kb/drive_d/mapped_drive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NetworkCommunication"
+              "title": "mapped_drive"
             }
           }
         ],
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/python/NetworkCommunication.md"
+                "file": "kb/drive_d/mapped_drive.md"
               },
               "icon": "lucide-list",
-              "title": "Структура NetworkCommunication"
+              "title": "Структура mapped_drive"
             }
           }
         ],
@@ -181,6 +181,8 @@
   "active": "176a8cf82472caf4",
   "lastOpenFiles": [
     "labview/python/NetworkCommunication.md",
+    "kb/drive_d/mapped_drive.md",
+    "kb/drive_d",
     "labview/python",
     "markdown/Markdown-Mermaid.md",
     "markdown/Markdown-math.md",
@@ -210,7 +212,6 @@
     "labview/dll/dll_in_assembler.md",
     "usability/mini_circular_display.md",
     "kb/windows_variables.md",
-    "usability",
     "kb/lib_from_dll.md",
     "labview/dll/labview_array_in_dll.md",
     "labview/dll/Untitled.md",
@@ -218,7 +219,6 @@
     "labview/kb/how_to_check_bittness.md",
     "labview/kb/labview_control_part_ids.md",
     "Pasted image 20240507110302.png",
-    "labview/kb/decimal_separator.md",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
     "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
