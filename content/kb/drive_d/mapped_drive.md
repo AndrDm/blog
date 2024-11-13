@@ -14,7 +14,7 @@ draft: false
 ---
 In some cases we need to have dedicated Drive in absence of the physical Drive. In this case we can add drive mapped to the Folder. Typically this could be done using **SUBST** command, but there is more convenient way.
 <!--more-->
-Typically we using SUBST command:
+ For example, you need to move dropbox folder to the other drive, or some software will expect some data on the dedicated drive, etc. Typically we using SUBST command:
 
 ```
 >SUBST /?
