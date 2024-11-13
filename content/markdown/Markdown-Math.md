@@ -72,5 +72,20 @@ $$
 x+1\over\sqrt{1-x^2}\label{ref1}\tag{1}
 $$
 
+### Line Break
+
+Line break within math mode.
+```
+$$ 
+x + y = 2\\x - y = 4 
+$$
+```
+
+$$
+x + y = 2\\x - y = 4
+$$
+
+
+
 TeX Command not supported in Hugo
 
