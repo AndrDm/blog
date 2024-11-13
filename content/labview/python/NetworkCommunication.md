@@ -110,4 +110,43 @@ b'Thank you for connecting'
 
 In both cases 24 bytes string was transferred.
 
+### Variable Length
+
+To handle messages with variable length you need to transmit the length in first bytes (consider to have one, two or four depends on max possible length), something like that:
+
+```python
+import socket
+import struct
+
+def send_string(sock, message):
+    # Encode the string to bytes
+    message_bytes = message.encode('ascii') #utf-8
+    
+    # Get the length of the message
+    message_length = len(message_bytes)
+    
+    # Pack the length into 4 bytes (big-endian unsigned integer)
+    length_prefix = struct.pack('>I', message_length)
+    
+    # Combine the length prefix and the message
+    full_message = length_prefix + message_bytes
+    
+    # Send the full message
+    sock.sendall(full_message)
+
+# Example usage
+HOST = '127.0.0.1'  # The server's hostname or IP address
+PORT = 40674        # The port used by the server
+
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    s.connect((HOST, PORT))
+    send_string(s, "Hello, World!") # 13 bytes
+    send_string(s, "Hello, LabVIEW!") # 14 bytes
+    send_string(s, "Stop") # 4 bytes
+```
+
+ The LabVIEW's Snippet:
+
+![](assets/snippet.png)
+
 Refer to [Python Network Programming](https://www.geeksforgeeks.org/python-network-programming/) and [NI Forum](https://forums.ni.com/t5/LabVIEW/i-am-facing-error-56-issue-while-connecting-to-python-how-to/td-p/4408227).
