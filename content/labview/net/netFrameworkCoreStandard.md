@@ -32,16 +32,13 @@ a lot of new ideas: designing and building in the open, working on any platform,
 
 | Implementation | Included versions                           | Last Update            |
 | :------------- | :------------------------------------------ | ---------------------- |
-| .NET (Core)    | .NET Core 1.0 - 3.1, .NET 5.0-8.0 and later | v.8.0 - 8th Oct 2024   |
+| .NET (Core)    | .NET Core 1.0 - 3.1, .NET 5.0-9.0 and later | v.9.0 - 8th Oct 2024   |
 | .NET Framework | .NET Framework 1.0 - 4.8                    | v.4.8.1 — 9th Aug 2022 |
 
-Currently active .NET  version is 8.0 - SDK   8.0.403/RunTime 8.0.10 included in Visual Studio 2022 (17.11.5)
-with Language support C# 12.0, F# 8.0, Visual Basic 16.9
-
-There is also .NET 9.0 is available as SDK 9.0.100-rc.2 included in Visual Studio 2022 Preview (v17.12 latest preview) with support C# 13.0.
+Currently (as per 14th November) active .NET  version is 9.0 - SDK   9.0.100/RunTime 9.0.0 [announced 12th November 2024](https://devblogs.microsoft.com/dotnet/announcing-dotnet-9/) included in [Visual Studio 2022 (17.12)](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-v17-12-with-dotnet-9/) with Language support [C# 13.0](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-versioning), [F# 9.0](https://learn.microsoft.com/en-us/dotnet/fsharp/whats-new/fsharp-9) and Visual Basic 16.9
 
 {{% expand ".NET Timeline 2006—2024" %}}
-{{% include_md tables.mdi %}}
+{{% include_md tables.markdown %}}
 {{% /expand %}}
 
 
@@ -127,7 +124,9 @@ So far so good, now I will do the same with Core:
 
 On the next screen you can select target framework, I will choose .NET 8.0:
 
-![image-20241110132834898](assets/image-20241110132834898.png)
+![image-20241114090306284](assets/image-20241114090306284.png)
+
+Technically the .NET 9.0 is also available, but LabVIEW currently supported 8.0 only, therefore LTS version was selected.
 
 And the code:
 
@@ -160,7 +159,7 @@ In case if you will get message like this:
 
 ![image-20241110160850722](assets/image-20241110160850722.png)
 
-Just navigate to latest .NET, download and install SDK.
+Just navigate to [.NET SDKs for Visual Studio](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks), download and install [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 
 In LabVIEW will be called like this:
 
@@ -234,6 +233,8 @@ Obviously you can't call .NET 8.0 Class Library from .NET Framework 4.8.1 projec
 
 ![image-20241111102819735](assets/image-20241111102819735.png)
 
+Refer to [.NET Standard](https://dotnet.microsoft.com/en-us/platform/dotnet-standard) and [.NET Standard 2.0 Compatibility Chart](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0).
+
 Now can be called:
 
 ```c#
@@ -306,7 +307,7 @@ If this not work, then you can try to recompile DLL (kind of reverse engineering
 
 To deploy application where .NET is used, the appropriate .NET Run-Time is required, and for .NET Core can be downloaded for free from here.
 
-Actual version as per Nov 2024 is 8.0 (Check it).
+Actual version compatible with LabVIEW 2024 Q3 as per Nov 2024 is 8.0 LTS, most recent, but not compatible with LabVIEW is .NET 9.0.
 
 If you have "unknown" ,NET DLL in your hands, then the useful free tool is Jet Brains Peek, which allow to get info about header.
 
