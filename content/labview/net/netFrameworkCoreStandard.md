@@ -32,7 +32,7 @@ a lot of new ideas: designing and building in the open, working on any platform,
 
 | Implementation | Included versions                           | Last Update            |
 | :------------- | :------------------------------------------ | ---------------------- |
-| .NET (Core)    | .NET Core 1.0 - 3.1, .NET 5.0-9.0 and later | v.9.0 - 8th Oct 2024   |
+| .NET (Core)    | .NET Core 1.0 - 3.1, .NET 5.0-9.0 and later | v.9.0 - 12th Nov 2024  |
 | .NET Framework | .NET Framework 1.0 - 4.8                    | v.4.8.1 — 9th Aug 2022 |
 
 Currently (as per 14th November) active .NET  version is 9.0 - SDK   9.0.100/RunTime 9.0.0 [announced 12th November 2024](https://devblogs.microsoft.com/dotnet/announcing-dotnet-9/) included in [Visual Studio 2022 (17.12)](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-v17-12-with-dotnet-9/) with Language support [C# 13.0](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-versioning), [F# 9.0](https://learn.microsoft.com/en-us/dotnet/fsharp/whats-new/fsharp-9) and Visual Basic 16.9
