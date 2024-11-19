@@ -1,0 +1,12 @@
+https://www.agner.org/optimize
+
+https://www.agner.org/optimize/optimizing_cpp.pdf
+
+https://www.agner.org/optimize/optimizing_assembly.pdf
+
+https://www.agner.org/optimize/instruction_tables.pdf
+
+https://faculty.cs.niu.edu/~winans/notes/patmc.pdf
+
+https://stackoverflow.com/questions/692718/how-many-cpu-cycles-are-needed-for-each-assembly-instruction
+

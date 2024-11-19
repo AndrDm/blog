@@ -10,6 +10,8 @@ archives:
   - 2024-05
 tags:
   - Benchmark
+programming_languages:
+  - LabVIEW
 draft: true
 ---
 Usually to measure execution Time in LabVIEW the GetTickCount is used, and HighRedolution Counter. How to measure short intervals with high precision? 
