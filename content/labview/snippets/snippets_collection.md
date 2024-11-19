@@ -22,3 +22,7 @@ These Snippets could be moved to Block Diagram by Drag & Drop
 Useful to load Files from Local Folder (same as VI or App) as well as App Settings:
 
 ![](assets/app_path_snippet.png)
+
+### Close Application on Exit
+
+![](assets/CloseApp.png)
