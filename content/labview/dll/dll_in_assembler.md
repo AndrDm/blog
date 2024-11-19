@@ -90,7 +90,7 @@ At the beginning we will create simple DLL for 32-bit LabVIEW. we will just add 
 
 This is the code, save is under ASMDLL32.asm:
 
-```assembly
+```nasm
 AsmDLL32 PROGRAM FORMAT=DLL, MODEL=FLAT
 
 EXPORT fnAsmCdecl
@@ -153,7 +153,7 @@ This is how call configured:
 
 This is more simple than 32-bit, following calling conventions (save this as ASMDLL64.asm):
 
-```assembly
+```nasm
 EUROASM CPU=X64
 AsmDLL64 PROGRAM FORMAT=DLL, MODEL=FLAT, WIDTH=64
 

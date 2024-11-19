@@ -11,6 +11,7 @@ thumbnail:
 programming_languages:
   - LabVIEW
   - Rust
+  - Assembly
 categories:
   - Programming
 archives:
@@ -158,7 +159,7 @@ Technically Rust positioned as fast and safe alternative to C. Programming in Ru
 
 This is how Add(int a, int b) compiled:
 
-```assembly
+```nasm
 public Add
 	proc near
 	addsd   xmm0, xmm1
@@ -170,7 +171,7 @@ Everything like in learning book, no questions. Two parameters passed via xmm0 a
 
 SumArray is not very optimal, but fully acceptable:
 
-```assembly
+```nasm
                 public SumArray
 SumArray        proc near               ; DATA XREF: .rdata:off_18001CD98↓o
                 test    rdx, rdx
@@ -255,7 +256,7 @@ rustflags = ["-O", "-C", "target-cpu=native"]
 
 Of course, be careful with "target-cpu=native", because it will work only on the same CPU architecture where it compiled, but this make sense, for example the assembly listing with default release flag:
 
-```assembly
+```nasm
 loc_180001190:                          ; CODE XREF: ffc_rust+18B↓j
 	movq    xmm2, qword ptr [rcx+r11*2]
 	movq    xmm3, qword ptr [rdx+r11*2]
@@ -276,7 +277,7 @@ loc_180001190:                          ; CODE XREF: ffc_rust+18B↓j
 
 and with enabled optimization we can see
 
-```assembly
+```nasm
 loc_180001210:                          ; CODE XREF: ffc_rust+587↓j
 	vmovdqu xmm2, xmmword ptr [rcx+r11*2]
 	vmovdqu xmm3, xmmword ptr [rcx+r11*2+10h]

@@ -20,7 +20,7 @@ In some cases we need to measure a very short intervals (hundreds of the CPU Tac
 <!--more-->
 The idea behind is that the [RDTSC](https://www.felixcloutier.com/x86/rdtsc) will read Time-Stamp Counter.
 Here is how to get it:
-```assembly
+```nasm
         align 16
 EXPORT fnRtdsc_get
 fnRtdsc_get PROC
@@ -47,7 +47,7 @@ ENDP fnRtdsc_get
 ```
 Now to profile a piece of the code we need to read rdtsc twice and take difference:
 
-```assembly
+```nasm
 		align 16
 EXPORT fnRtdsc_empty
 fnRtdsc_empty PROC
@@ -92,7 +92,7 @@ I will put first part to the prolog.asm and second part to epilog.asm toe get ev
 
 Now we can perform simple benchmark:
 
-```assembly
+```nasm
 		align 16
 EXPORT fnProfile1
 fnProfile1 PROC
@@ -114,7 +114,7 @@ ENDP fnProfile1
 
 or like this:
 
-```assembly
+```nasm
 		align 16
 EXPORT fnProfile2
 fnProfile2 PROC
@@ -143,7 +143,7 @@ The first code is much slower than second one. This is how it called from LabVIE
 Simple but powerful technique.
 
 {{% expand "Prolog.asm" %}}
-```assembly
+```nasm
 	push rsi
 	push rdi
 	push rbx
@@ -161,7 +161,7 @@ Simple but powerful technique.
 
 
 {{% expand "Epilog.asm" %}}
-```assembly
+```nasm
 	cpuid ; wait for FDIV to complete before RDTSC
 	rdtsc ; read time stamp counter
 	sub eax, edi ; subtract the most recent CPU ticks from the original CPU ticks
@@ -179,7 +179,7 @@ Simple but powerful technique.
 
 
 {{% expand "Full RtdscLV.asm code for EuroAssembler" %}}
-```assembly
+```nasm
  EUROASM DEBUG=OFF,PROFILE=OFF,AUTOSEGMENT=ON,LIST=ON, DUMP=ON, DUMPWIDTH=25, DUMPALL=OFF, CPU=X64, SIMD=AVX512, MVEX=ENABLED, EVEX=ENABLED
  EUROASM NoWarn=2101, NoWarn=2461, MMX=ENABLED, AMD=ENABLED
  EUROASM ListRepeat=yes, ListMacro=yes, ListVar=yes ; Only if you want to debug the listing.

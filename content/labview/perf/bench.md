@@ -12,6 +12,7 @@ tags:
   - Benchmark
 programming_languages:
   - LabVIEW
+  - Assembly
 draft: true
 ---
 Usually to measure execution Time in LabVIEW the GetTickCount is used, and HighRedolution Counter. How to measure short intervals with high precision? 
@@ -209,7 +210,7 @@ So, if we will multiply result of this VI by 10000000, then we will get back "RA
 
 But to measure such "fine" delay we need a code which will delay execution for nanoseconds. Let say, I have around 3 GHz CPU, so it means 0,3 ns per tact and we need around three CPU commands one tact each one. I will do it on Assembler, its much more simple to have such low level control. In test function we will compute sum of indexes, so we can put three simple commands one tact each into the loop.
 
-```assembly
+```nasm
 EXPORT fnSumAsm_
 fnSumAsm_ proc
                 xor     rax, rax
