@@ -26,3 +26,13 @@ Useful to load Files from Local Folder (same as VI or App) as well as App Settin
 ### Close Application on Exit
 
 ![](assets/CloseApp.png)
+
+### Float Point Compare
+
+![](assets/FPCompare.png)
+
+usage:
+
+![](assets/FPCompareUsage.png)
+
+Refer to [Re: -0.002 and -0.002 are not equal](https://forums.ni.com/t5/LabVIEW/0-002-and-0-002-are-not-equal/m-p/4410266#M1299609).
