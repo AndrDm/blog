@@ -42,7 +42,7 @@ generate-h1-from-title = true
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "programming_languages", "taglist", "archives", "social"]
+  widgets = ["search", "favorites", "recent", "categories", "programming_languages", "taglist", "archives", "social"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget

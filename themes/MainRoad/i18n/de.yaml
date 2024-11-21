@@ -61,6 +61,10 @@
 - id: recent_title
   translation: "Letzte Beiträge"
 
+# Favorites Posts widget
+- id: favorites_title
+  translation: "Favoriten"
+
 # Social widget
 - id: social_title
   translation: "Soziale Netzwerke"

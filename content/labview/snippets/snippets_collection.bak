@@ -11,7 +11,15 @@ archives:
 tags:
   - Snippet
 draft: false
-favorites: true
+favorites: pinned
+Type: tutorials
+
+{{- $favorites := where  .Site.RegularPages "Type" "tutorials" }}
+{{- $favorites_num := (.Site.Params.widgets.recent_num | default 10) }}
+
+https://stackoverflow.com/questions/71551364/how-to-filter-post-by-category-in-hugo
+
+Pinned: true
 programming_languages:
   - LabVIEW
 ---

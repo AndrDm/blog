@@ -1,0 +1,16 @@
+{{- $taxo := "favorites" -}}
+{{- with .Param $taxo -}}
+<div class="meta__item-favorites meta__item">
+	{{- partial "svg/programming_language.svg" (dict "class" "meta__icon") -}}
+	<span class="meta__text">
+		{{- range $index, $favorites := . }}
+			{{- $url := urls.Parse ($favorites | urlize) -}}
+			{{- $path := $url.Path -}}
+			{{- with $.Site.GetPage (printf "/%s/%s" $taxo $path) }}
+				{{- if gt $index 0 }}, {{ end -}}
+				<a class="meta__link" href="{{ .RelPermalink }}" rel="favorites">{{ .Title }}</a>
+			{{- end }}
+		{{- end }}
+	</span>
+</div>
+{{- end }}
