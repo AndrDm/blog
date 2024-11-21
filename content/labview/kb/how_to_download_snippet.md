@@ -63,3 +63,5 @@ https://ni.i.lithium.com/t5/image/serverpage/image-id/340566iF9B1AC35575C9CD6
 Currently both direct links working: [Link 1](https://forums.ni.com/t5/image/serverpage/image-id/340566iF9B1AC35575C9CD6) and [Link 2](https://ni.i.lithium.com/t5/image/serverpage/image-id/340566iF9B1AC35575C9CD6).
 
 Now you can save this image as png (on the Desktop, for example), then just drag and drop image on the BD, that is.
+
+Take a note - sometimes some browsers can "save" the cached image instead of "native" and you will get again just "preview" image without data. In this case just open another browser (for example, normally I using Vivaldi, but to download Snippet I using Edge).
