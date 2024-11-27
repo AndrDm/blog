@@ -12,7 +12,7 @@ keywords:
   - snippet
 tags:
   - Snippet
-draft: true
+draft: false
 ---
 It is a very funny fact that the NI'S Web Site doesn't support NI's Snippets properly, especially on NI Forum, where the Snippets used actively to exchange the small pieces of the LabVIEW code. Here how you can get code from such snippets.
 <!--more-->
@@ -67,4 +67,5 @@ https://ni.i.lithium.com/t5/image/serverpage/image-id/340566iF9B1AC35575C9CD6
 ```
 
 Currently both direct links working: [Link 1](https://forums.ni.com/t5/image/serverpage/image-id/340566iF9B1AC35575C9CD6) and [Link 2](https://ni.i.lithium.com/t5/image/serverpage/image-id/340566iF9B1AC35575C9CD6).
+
 
