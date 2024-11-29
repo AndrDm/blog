@@ -19,6 +19,12 @@ Collection of useful small Snippets
 <!--more-->
 These Snippets could be moved to Block Diagram by Drag & Drop
 
+## IMAQ Vision
+
+### Fill U16 Image with random pixels
+
+![Fill U16 Image with random pixels](assets/FillU16Image.png)
+
 ### Get Application Folder
 Useful to load Files from Local Folder (same as VI or App) as well as App Settings:
 
