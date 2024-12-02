@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/kb/how_to_download_snippet.md",
+                "file": "kb/ps-benchmark.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how_to_download_snippet"
+              "title": "ps-benchmark"
             }
           }
         ],
@@ -196,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/kb/how_to_download_snippet.md"
+                "file": "kb/ps-benchmark.md"
               },
               "icon": "lucide-list",
-              "title": "Структура how_to_download_snippet"
+              "title": "Структура ps-benchmark"
             }
           }
         ],
@@ -222,8 +222,9 @@
   },
   "active": "9a9d37527ad56d7e",
   "lastOpenFiles": [
-    "labview/snippets/snippets_collection.md",
     "labview/kb/how_to_download_snippet.md",
+    "kb/ps-benchmark.md",
+    "labview/snippets/snippets_collection.md",
     "kb/cpu_name.md",
     "Pasted image 20241113090324.png",
     "kb/prevent_win_updates/metered_connection.md",
@@ -260,7 +261,6 @@
     "usability/mini_circular_display.md",
     "kb/windows_variables.md",
     "kb/lib_from_dll.md",
-    "labview/dll/labview_array_in_dll.md",
     "Pasted image 20240507110302.png",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
