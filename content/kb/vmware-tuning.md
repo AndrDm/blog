@@ -1,5 +1,5 @@
 ---
-title: vmware-tuning
+title: VMWare Workstation — Performance tuning
 date: 2024-12-02
 authorbox: false
 sidebar: false
@@ -12,7 +12,9 @@ tags:
   - VMWare
 draft: false
 ---
-I was experiencing extremely poor performance of the VMWare Workstation on a Xeon PC running Windows 11 LTSC 24H2.
+I was experiencing extremely poor performance of the VMWare Workstation on a Xeon PC running Windows 11 LTSC 24H2. Below the command with some magic.
+
+<!--more-->
 
 The command which was very helpful is the following:
 
