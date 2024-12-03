@@ -44,6 +44,6 @@ TotalMilliseconds : 8576,4768
 
 Originally from [Vmware 17 Pro very slow on Windows 11 22H2](https://community.broadcom.com/vmware-cloud-foundation/discussion/vmware-17-pro-very-slow-on-windows-11-22h2).
 
-But be careful - different versions of PS may give different performance:
+But be careful - different versions of PS may give different performance
 
-![](C:\Users\Andrey\Desktop\blog\content\kb\assets\PS.PNG)
+![](assets/PS-1733208694701-1.PNG)
