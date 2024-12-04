@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/ps-benchmark.md",
+                "file": "ndt/diconde_standard/VR.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ps-benchmark"
+              "title": "VR"
             }
           }
         ],
@@ -100,7 +100,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -196,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/ps-benchmark.md"
+                "file": "ndt/diconde_standard/VR.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of ps-benchmark"
+              "title": "Структура VR"
             }
           }
         ],
@@ -211,18 +211,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "9a9d37527ad56d7e",
   "lastOpenFiles": [
-    "labview/kb/how_to_download_snippet.md",
     "kb/ps-benchmark.md",
+    "ndt/diconde_standard/VR.md",
+    "ndt/diconde_standard",
+    "labview/kb/how_to_download_snippet.md",
     "labview/snippets/snippets_collection.md",
     "kb/cpu_name.md",
     "Pasted image 20241113090324.png",
@@ -251,7 +254,6 @@
     "calendars",
     "labview/timer/timer.md",
     "labview/perf/Untitled.md",
-    "labview/perf",
     "labview/timer/wait(ms).png",
     "labview/exper/large_file_io.md",
     "labview/dll/vi_dll_broken.md",
@@ -259,7 +261,6 @@
     "labview/dll/dll_in_assembler.md",
     "usability/mini_circular_display.md",
     "kb/windows_variables.md",
-    "kb/lib_from_dll.md",
     "Pasted image 20240507110302.png",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
