@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/ps-benchmark.md",
+                "file": "kb/PowerToys_in_trouble.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ps-benchmark"
+              "title": "PowerToys_in_trouble"
             }
           }
         ],
@@ -196,10 +196,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/ps-benchmark.md"
+                "file": "kb/PowerToys_in_trouble.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of ps-benchmark"
+              "title": "Outline of PowerToys_in_trouble"
             }
           }
         ],
@@ -211,6 +211,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -221,8 +222,10 @@
   },
   "active": "9a9d37527ad56d7e",
   "lastOpenFiles": [
-    "labview/kb/how_to_download_snippet.md",
     "kb/ps-benchmark.md",
+    "kb/PowerToys_in_trouble.md",
+    "windows",
+    "labview/kb/how_to_download_snippet.md",
     "labview/snippets/snippets_collection.md",
     "kb/cpu_name.md",
     "Pasted image 20241113090324.png",
@@ -251,7 +254,6 @@
     "calendars",
     "labview/timer/timer.md",
     "labview/perf/Untitled.md",
-    "labview/perf",
     "labview/timer/wait(ms).png",
     "labview/exper/large_file_io.md",
     "labview/dll/vi_dll_broken.md",
@@ -259,7 +261,6 @@
     "labview/dll/dll_in_assembler.md",
     "usability/mini_circular_display.md",
     "kb/windows_variables.md",
-    "kb/lib_from_dll.md",
     "Pasted image 20240507110302.png",
     "labview/kb/decimal_sep.png",
     "Pasted image 20240504111308.png",
