@@ -15,7 +15,7 @@ draft: false
 ---
 Today I noticed that my computer was slower than usual. A brief investigation revealed that PowerLauncher.exe was causing other running MSI installers to fail when setting up shortcuts.<!--more-->
 
-I observed unusually high SSD activity. The tool I typically use in such cases is Process Monitor from Sysinternals, and here's what I observed:
+The reason was [Power Toys](https://learn.microsoft.com/en-us/windows/powertoys/). I observed unusually high SSD activity. The tool I typically use in such cases is Process Monitor from Sysinternals, and here's what I observed:
 
 ![image-20241207061240640](assets/image-20241207061240640.png)
 
