@@ -4,81 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "da34f473ba737fa3",
+        "id": "216da4ab3ac395a3",
         "type": "tabs",
         "children": [
           {
-            "id": "a1dbf855463c1876",
+            "id": "1c300ef98ee88435",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/net/netFrameworkCoreStandard.md",
+                "file": "plc/state_machine.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "netFrameworkCoreStandard"
-            }
-          },
-          {
-            "id": "176a8cf82472caf4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "kb/drive_d/mapped_drive.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "mapped_drive"
-            }
-          },
-          {
-            "id": "918e4162fd07fa29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "kb/prevent_win_updates/metered_connection.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "metered_connection"
-            }
-          },
-          {
-            "id": "1d39a221ca0e238a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "kb/cpu_name.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "cpu_name"
-            }
-          },
-          {
-            "id": "9a9d37527ad56d7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ndt/diconde_standard/VR.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VR"
+              "title": "state_machine"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 533.5
+    "width": 200
   },
   "right": {
     "id": "c47ee55e83f711c5",
@@ -196,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ndt/diconde_standard/VR.md"
+                "file": "plc/state_machine.md"
               },
               "icon": "lucide-list",
-              "title": "Структура VR"
+              "title": "Структура state_machine"
             }
           }
         ],
@@ -207,7 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 436.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,53 +163,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9a9d37527ad56d7e",
+  "active": "1c300ef98ee88435",
   "lastOpenFiles": [
-    "kb/ps-benchmark.md",
+    "plc/assets/TrafficLight.png.bak",
+    "plc/assets/image-20241211165036609.png.bak",
+    "plc/assets/image-20241211165004289.png.bak",
+    "plc/assets/image-20241211164904784.png.bak",
+    "plc/assets/image-20241211164729090.png.bak",
+    "plc/assets/image-20241211161446677.png.bak",
+    "plc/assets/image-20241211160535653.png.bak",
+    "plc/assets/image-20241211160240617.png.bak",
+    "plc/assets/image-20241211160049291.png.bak",
+    "plc/assets/image-20241211155957727.png.bak",
+    "plc/assets/image-20241211155730913.png.bak",
+    "plc/assets/TrafficLight.png",
+    "plc/assets/tl1.gif",
+    "plc/assets/tl.gif",
+    "plc/assets/image-20241211165036609.png",
+    "plc/assets/image-20241211165004289.png",
+    "plc/assets/image-20241211164904784.png",
+    "plc/assets/image-20241211164729090.png",
+    "plc/assets/plc_log.gif",
+    "plc/assets/image-20241211161446677.png",
+    "plc/assets/image-20241211160535653.png",
+    "plc/Без названия.md",
+    "plc/state_machine.md",
+    "labview/net/netFrameworkCoreStandard.md",
+    "kb/drive_d/mapped_drive.md",
+    "kb/prevent_win_updates/metered_connection.md",
+    "kb/cpu_name.md",
     "ndt/diconde_standard/VR.md",
-    "ndt/diconde_standard",
+    "kb/ps-benchmark.md",
     "labview/kb/how_to_download_snippet.md",
     "labview/snippets/snippets_collection.md",
-    "kb/cpu_name.md",
-    "Pasted image 20241113090324.png",
-    "kb/prevent_win_updates/metered_connection.md",
-    "kb/prevent_win_updates",
     "labview/python/NetworkCommunication.md",
-    "kb/drive_d/mapped_drive.md",
-    "kb/drive_d",
-    "labview/python",
     "markdown/Markdown-Mermaid.md",
     "markdown/Markdown-math.md",
-    "assets/image-20240513085414147.png",
-    "markdown",
-    "labview/net/netFrameworkCoreStandard.md",
-    "labview/net",
     "misc/wc.md",
     "labview/threads/call_from_third_party.md",
     "museum/xray_discovery/xray_discovery.md",
-    "labview/threads",
     "labview/snippets/np/NP Snippet.md",
     "2023-01-31.md",
-    "labview/snippets/np",
-    "labview/snippets",
     "calendars/2024-ferien.md",
     "2024-05-20.md",
-    "calendars",
     "labview/timer/timer.md",
     "labview/perf/Untitled.md",
-    "labview/timer/wait(ms).png",
     "labview/exper/large_file_io.md",
     "labview/dll/vi_dll_broken.md",
-    "labview/dll/dll_in_rust.md",
-    "labview/dll/dll_in_assembler.md",
-    "usability/mini_circular_display.md",
-    "kb/windows_variables.md",
-    "Pasted image 20240507110302.png",
-    "labview/kb/decimal_sep.png",
-    "Pasted image 20240504111308.png",
-    "kb/fixing-the-alt-tab-freeze-bug-in-windows-11.webp",
-    "Pasted image 20240417160149.png",
-    "hugo/hugo-logo-narrow.svg",
-    "hugo/hugo-logo-wide.svg"
+    "labview/dll/dll_in_rust.md"
   ]
 }
