@@ -224,7 +224,6 @@ struct Red
 		control.context().countRed = 0;
 		CountDown = DurationRed + DurationYellow + 2;
 		TraceMessage("Red");
-		
 	}
 
 	// state can initiate transitions to _any_ other state
@@ -254,7 +253,7 @@ struct YellowDownwards
 	}
 
 	void update(FullControl& control) {
-		if (control.context().countYellow++ > DurationYellow) { //was 3
+		if (control.context().countYellow++ > DurationYellow) {
 			control.changeTo<Green>();
 		}
 		CountDown--;
@@ -396,5 +395,9 @@ This is how it works:
 ![](assets/tl1.gif)
 
 [GitHub Project](https://github.com/AndrDm/AmpelBR).
+
+**Note.** Don't try to use this header in AS4, it will not work, because the AS 4 is equipped with old GCC 6.3. The AS 6 have new GCC 11.3 and only with the toolchain, Automation Studio now support C++17, (as well as C++20 experimental, and C17), which is required to run this code.
+
+Refer to [B&R Automation Studio 6 Features](https://community.br-automation.com/t/b-r-automation-studio-6-features/2979)
 
 Happy coding!
