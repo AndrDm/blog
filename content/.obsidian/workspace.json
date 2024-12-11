@@ -165,6 +165,13 @@
   },
   "active": "1c300ef98ee88435",
   "lastOpenFiles": [
+    "kb/assets/image-20241207061902817.png",
+    "kb/assets/image-20241207061622882.png",
+    "kb/assets/image-20241207061516895.png",
+    "kb/assets/image-20241207061347154.png",
+    "kb/assets/image-20241207061240640.png",
+    "kb/PowerToys_in_trouble.md",
+    "benchmarks/i7-3520M@3400 MHz + Intel HD 4000 - AIDA64 CPUID 2.png",
     "plc/assets/TrafficLight.png.bak",
     "plc/assets/image-20241211165036609.png.bak",
     "plc/assets/image-20241211165004289.png.bak",
@@ -175,17 +182,11 @@
     "plc/assets/image-20241211160240617.png.bak",
     "plc/assets/image-20241211160049291.png.bak",
     "plc/assets/image-20241211155957727.png.bak",
-    "plc/assets/image-20241211155730913.png.bak",
     "plc/assets/TrafficLight.png",
     "plc/assets/tl1.gif",
     "plc/assets/tl.gif",
     "plc/assets/image-20241211165036609.png",
     "plc/assets/image-20241211165004289.png",
-    "plc/assets/image-20241211164904784.png",
-    "plc/assets/image-20241211164729090.png",
-    "plc/assets/plc_log.gif",
-    "plc/assets/image-20241211161446677.png",
-    "plc/assets/image-20241211160535653.png",
     "plc/Без названия.md",
     "plc/state_machine.md",
     "labview/net/netFrameworkCoreStandard.md",
@@ -209,7 +210,6 @@
     "labview/timer/timer.md",
     "labview/perf/Untitled.md",
     "labview/exper/large_file_io.md",
-    "labview/dll/vi_dll_broken.md",
-    "labview/dll/dll_in_rust.md"
+    "labview/dll/vi_dll_broken.md"
   ]
 }
