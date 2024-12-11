@@ -3,7 +3,7 @@ title: How to setup simple State Machine using C++ in B&R PLC
 date: 2024-12-11
 authorbox: false
 sidebar: false
-description: My Template.
+description: How to setup simple State Machine using C++ in B&R PLC
 categories:
   - Programming
 archives:
@@ -11,14 +11,17 @@ archives:
 tags:
   - B&R
   - OPCUA
-draft: true
+programming_languages:
+  - LabVIEW
+  - C++
+draft: false
 ---
 B&R PLC could be programmed with C++. State Machine is common used pattern. There are lot of examples of how to implement State Machines in C++. One of the example was taken and turned to B&R State Machine
 <!--more-->
 
 In this exercise I'll use latest available AS v.6.0.2.177 (25-Jun-2024):
 
-![image-20241211155212633](assets/image-20241211155212633.png)
+![image-20241211170910677](assets/image-20241211170910677.png)
 
 
 ### Start with new Project
@@ -380,12 +383,18 @@ Mapping is trivial:
 
 (you have to add DefaultView first to get this in the Project).
 
-Finally will create simple LabVIEW VI using OPC UA Toolkit to get simple SCADA:
+These appeared now in UA Expert:
+
+![](assets/uaexpert.gif)
+
+Finally I will create simple LabVIEW VI using OPC UA Toolkit to get simple SCADA:
 
 ![](assets/TrafficLight.png)
 
 This is how it works:
 
 ![](assets/tl1.gif)
+
+[GitHub Project](https://github.com/AndrDm/AmpelBR).
 
 Happy coding!
