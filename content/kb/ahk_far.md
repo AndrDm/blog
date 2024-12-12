@@ -10,11 +10,12 @@ archives: 2024-12
 tags:
   - AHK
   - Far
-draft: true
+draft: false
 ---
 
 It is necessary to set Working Directory, otherwise ConEmu will not start Far Manager.
-The script for Win+F:
+
+The [AutoHotkey](https://www.autohotkey.com) script for <kbd>Win</kbd>+<kbd>F</kbd>:
 
 ```
 #Requires AutoHotkey v2.0
