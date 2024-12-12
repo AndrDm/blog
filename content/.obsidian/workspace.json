@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "plc/state_machine.md",
+                "file": "kb/ahk_far.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "state_machine"
+              "title": "ahk_far"
             }
           }
         ]
@@ -43,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "plc/state_machine.md"
+                "file": "kb/ahk_far.md"
               },
               "icon": "lucide-list",
-              "title": "Структура state_machine"
+              "title": "Outline of ahk_far"
             }
           }
         ],
@@ -154,17 +154,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "1c300ef98ee88435",
   "lastOpenFiles": [
+    "plc/state_machine.md",
+    "kb/ahk_far.md",
     "plc/FARA825.tmp",
     "plc/FARA824.tmp",
     "plc/assets/Pasted image 20241211155347.png",
@@ -185,10 +187,8 @@
     "plc/assets/image-20241211161446677.png.bak",
     "plc/assets/image-20241211160535653.png.bak",
     "plc/assets/image-20241211160240617.png.bak",
-    "plc/assets/image-20241211160049291.png.bak",
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
-    "plc/state_machine.md",
     "labview/net/netFrameworkCoreStandard.md",
     "kb/drive_d/mapped_drive.md",
     "kb/prevent_win_updates/metered_connection.md",
