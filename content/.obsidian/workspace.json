@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "plc/using_assembly/using_assembly_in_plc.md",
+                "file": "plc/sha256_in_plc/sha256_in_plc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "using_assembly_in_plc"
+              "title": "sha256_in_plc"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "plc/using_assembly/using_assembly_in_plc.md"
+                "file": "plc/sha256_in_plc/sha256_in_plc.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of using_assembly_in_plc"
+              "title": "Outline of sha256_in_plc"
             }
           }
         ],
@@ -165,7 +165,11 @@
   },
   "active": "14bfda6615835edf",
   "lastOpenFiles": [
+    "2024-12-15.md",
+    "plc/sha256_in_plc/sha256_in_plc.md",
+    "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
+    "plc/sha256_in_plc",
     "plc/using_assembly",
     "kb/ahk_far.md",
     "plc/state_machine.md",
@@ -187,7 +191,6 @@
     "plc/assets/image-20241211164904784.png.bak",
     "plc/assets/image-20241211164729090.png.bak",
     "plc/assets/image-20241211161446677.png.bak",
-    "plc/assets/image-20241211160535653.png.bak",
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
@@ -207,9 +210,6 @@
     "labview/snippets/np/NP Snippet.md",
     "2023-01-31.md",
     "calendars/2024-ferien.md",
-    "2024-05-20.md",
-    "labview/timer/timer.md",
-    "labview/perf/Untitled.md",
-    "labview/exper/large_file_io.md"
+    "2024-05-20.md"
   ]
 }
