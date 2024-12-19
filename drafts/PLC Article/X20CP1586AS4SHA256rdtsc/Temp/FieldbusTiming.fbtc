@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Minimum calculated cycle time." Type="fbtc">
+    <Group ID="X2X[0]">
+      <Property ID="NumberOfStations" Value="2" />
+      <Property ID="TotalCableLength" Value="0" />
+      <Property ID="InputDataSize" Value="6" />
+      <Property ID="OutputDataSize" Value="2" />
+      <Property ID="Address" Value="IF6" />
+      <Property ID="CycleTime" Value="187" />
+      <Property ID="AdjustedCycleTime" Value="2000" />
+    </Group>
+  </Element>
+</Configuration>

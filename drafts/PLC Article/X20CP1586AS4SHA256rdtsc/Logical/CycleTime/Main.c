@@ -20,7 +20,6 @@ uint64_t rdtsc() {
 void _INIT ProgramInit(void)
 {
 	cycles_saved = rdtsc();
-
 }
 
 void _CYCLIC ProgramCyclic(void)

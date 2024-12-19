@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.12.5.95 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="CycleTime"
+      Disable="false"
+      Source="CycleTime"
+      Language="ANSIC">
+      <File
+        Path="C:\projects\X20CP1586AS4SHA256rdtsc\Logical\CycleTime\Types.typ" />
+      <File
+        Path="C:\projects\X20CP1586AS4SHA256rdtsc\Logical\CycleTime\Variables.var" />
+    </Task>
+    <Task
+      Name="SHA256"
+      Disable="false"
+      Source="SHA256"
+      Language="ANSIC">
+      <File
+        Path="C:\projects\X20CP1586AS4SHA256rdtsc\Logical\SHA256\Types.typ" />
+      <File
+        Path="C:\projects\X20CP1586AS4SHA256rdtsc\Logical\SHA256\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2" />
+</ConfigInfo>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
+  <TreeView ID="BR.AS.SystemConfiguration.Presentation-X20CP1586" EditColumn="1" TopRow="71" HorizontalScrollOffset="0" SortedColumn="0">
+    <Columns>
+      <Column Index="0" Width="156" Position="0" />
+      <Column Index="1" Width="95" Position="1" />
+      <Column Index="2" Width="42" Position="2" />
+      <Column Index="3" Width="100" Position="3" />
+      <Column Index="4" Width="0" Position="4" />
+    </Columns>
+    <ExpandedNodes>
+      <ExpandedNode Row="0" />
+      <ExpandedNode Row="68" />
+      <ExpandedNode Row="71" />
+      <ExpandedNode Row="72" />
+      <ExpandedNode Row="79" />
+      <ExpandedNode Row="86" />
+      <ExpandedNode Row="93" />
+      <ExpandedNode Row="100" />
+      <ExpandedNode Row="121" />
+      <ExpandedNode Row="212" />
+      <ExpandedNode Row="213" />
+      <ExpandedNode Row="218" />
+      <ExpandedNode Row="228" />
+      <ExpandedNode Row="229" />
+    </ExpandedNodes>
+    <SelectedNodes>
+      <SelectedNode Row="73" />
+    </SelectedNodes>
+    <ZoomIndices />
+  </TreeView>
+  <Versatile ID="BR.AS.SystemConfiguration.Presentation-EditorState-X20CP1586">
+    <Property Name="advancedparametervisibility" Value="False" />
+  </Versatile>
+</State>

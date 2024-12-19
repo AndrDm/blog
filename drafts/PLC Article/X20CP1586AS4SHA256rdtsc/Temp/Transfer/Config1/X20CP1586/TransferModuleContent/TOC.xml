@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toc Version="2" MinorVersion="0">
+	<Application>
+		<Class Name="AddonsData">
+			<Folder Name="OPCUA" ProjectDependent="1" IgnoreDifference="0" IsGroup="1">
+				<Folder Name="NodeSet" ProjectDependent="1" IgnoreDifference="0">
+					<Folder Name="Generated" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="OpcUaMap.uar.gz" Size="432" HashValue="91C629B278658DEF381A90D194B745B6" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+					<Folder Name="Vendor" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="plc.aprol.uanodeset" Size="6712" HashValue="08ADF5B15D3AF0566E164F0E4D4FB418" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="plc.br.pv.uanodeset" Size="7103" HashValue="682E7CDF6F09940F70D6CA1CC158D516" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="plc.plcopen.pv.uanodeset" Size="19824" HashValue="0ACC12204AA326E4FC509E697ACBB201" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="plc.uanodeset" Size="67077" HashValue="DCE8C1A8096A925A9DCF5ADE9FD8EC20" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+				</Folder>
+			</Folder>
+		</Class>
+		<Class Name="Os">
+			<Folder Name="Brm" ProjectDependent="1" IgnoreDifference="0">
+				<File Name="@cfX20CP1586.br" Size="5176" HashValue="BE55DE93EC481C0AAC0B5AA99CA039BD" ProjectDependent="1" IgnoreDifference="0" />
+				<File Name="@sbX20CP1586.br" Size="2448" HashValue="891646E31A970621DE2836666AD63441" ProjectDependent="1" IgnoreDifference="0" />
+			</Folder>
+			<Folder Name="System" ProjectDependent="1" IgnoreDifference="0">
+				<Folder Name="BASE" ProjectDependent="1" IgnoreDifference="0">
+					<Folder Name="COMPONENTS" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="ArLcTextP.br" Size="298208" HashValue="C6DFC41EF8C31381FD8C0357751A81C3" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="ArUnitSys.br" Size="476228" HashValue="CE3F96837303ADA6203FFEA1FCD8E225" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+					<Folder Name="FW" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="0030#0.bl.gz" Size="34359" HashValue="4E89C62BBDA9586923F8E899686E821A" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+					<Folder Name="HWD" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="AsHwdhw_upl.xml.gz" Size="16671" HashValue="E6F488F6887AF286764F40CF53A0C237" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="AsHwdx20cpx58x.xml.gz" Size="17339" HashValue="4272F0DE3C090B33D5702C466B4B9B1F" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+				</Folder>
+				<Folder Name="DKM" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="dkm_gdbserver_brelf.out" Size="209352" HashValue="6315964CC252E8BE9F0C5351DB618AD7" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_gdbserver_ipa.out" Size="30674" HashValue="EE042697CF3A3FEAB08E0C52BAA0DADF" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_opcua.out.gz" Size="976514" HashValue="E50DE8BF379E25FE857CA93407A9141C" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_rbac.out" Size="27365" HashValue="7C6582D077A2AF4683782FFB876FD579" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_scm.out" Size="115866" HashValue="D98801551EF3D7F254249089114406D2" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkms.xml" Size="656" HashValue="8317A83A43FD7B4F870F953AE642D75D" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="SDM" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="arsdm.tar.gz" Size="506478" HashValue="7B1D09ABE8787060C2CAF59821F78AD9" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="TOC" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="ftoc.xml" Size="185" HashValue="5236588FC50BAFD15276E800159B75C0" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="WEBSERV" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="ArWebServ.br" Size="108916" HashValue="A433CD9A370CE0712D8CF87D6EC45AA2" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+			</Folder>
+		</Class>
+		<Memory Name="SYSROM">
+			<Module Name="::$$sysconf" Type="129" Size="69616" Modified="2024-12-19 18:41:46" Version="4.93" ProjectDependent="1" Reboot="1" />
+			<Module Name="::TCData" Type="209" Size="3791872" Modified="2024-12-18 18:47:13" Version="1.00" ProjectDependent="1" />
+			<Module Name="::arconfig" Type="132" Size="3892" Modified="2024-12-18 18:47:12" Version="1.00" ProjectDependent="1" Reboot="1" />
+			<Module Name="::asfw" Type="67" Size="292468" Modified="2024-12-18 18:47:13" Version="1.00" ProjectDependent="1" Reboot="1" />
+			<Module Name="::ashwd" Type="67" Size="3044" Modified="2024-12-18 18:47:13" Version="1.00" ProjectDependent="1" Reboot="1" />
+		</Memory>
+		<Memory Name="USERROM">
+			<Module Name="::CycleTime" Type="17" Size="1796" Modified="2024-12-19 17:01:15" Version="1.00" ProjectDependent="1" />
+			<Module Name="::FWRules" Type="136" Size="456" Modified="2024-12-18 18:47:11" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Role" Type="136" Size="760" Modified="2024-12-18 18:47:11" Version="1.00" ProjectDependent="1" />
+			<Module Name="::SHA256" Type="17" Size="3480" Modified="2024-12-18 18:47:07" Version="1.00" ProjectDependent="1" />
+			<Module Name="::User" Type="136" Size="648" Modified="2024-12-18 18:47:11" Version="1.00" ProjectDependent="1" />
+			<Module Name="::ashwac" Type="136" Size="212" Modified="2024-12-18 18:47:11" Version="1.00" ProjectDependent="1" />
+			<Module Name="::iomap" Type="50" Size="15672" Modified="2024-12-18 18:47:12" Version="1.00" ProjectDependent="1" />
+			<Module Name="::udbdef" Type="210" Size="70264" Modified="2014-04-10 10:00:00" Version="0.01" ProjectDependent="1" />
+		</Memory>
+	</Application>
+</Toc>
