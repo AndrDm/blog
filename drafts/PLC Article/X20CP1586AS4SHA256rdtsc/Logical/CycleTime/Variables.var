@@ -1,5 +1,0 @@
-VAR
-	Zhopa : USINT;
-	Counter : USINT;
-	CycleTimeTicks : UDINT;
-END_VAR
