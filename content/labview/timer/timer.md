@@ -324,3 +324,43 @@ It is not, the rate will be around 500-600 Hz only. But if you will set Timer to
 ![](assets/wait_until2.png)
 
 Now FPS will be around 800 Hz, but not 1000 anyway.
+
+### Windows 11
+
+**Global timer resolution requests (Windows 11)**
+
+The behaviour of the timer resolution on Windows changed with the release of Windows 10 v2004 to be per-process instead of system-wide as previously. This resulted in processes not setting a specific timer resolution on their own falls back to using the default timer resolution of 15,625 ms (64 Hz).
+
+Technically it means that by default you still have 1 ms resolution when LabVIEW in foreground, but when minimized, then goes back to 15 ms:
+
+![](assets/1ms1.gif)
+
+Most easiest way is to execute following command:
+
+```
+powercfg /powerthrottling disable /path "C:\Program Files\National Instruments\LabVIEW 2024\LabVIEW.exe"
+```
+
+You can check if disabled throttling active or not with the following command:
+
+```
+powercfg /powerthrottling LIST
+```
+
+You will see the following output:
+
+```
+Battery Usage Settings By App
+=============================
+
+Application: C:\Program Files\National Instruments\LabVIEW 2024\LabVIEW.exe
+        Never On
+```
+
+To reset it back you can execute:
+
+```
+powercfg /powerthrottling reset /path "C:\Program Files\National Instruments\LabVIEW 2024\LabVIEW.exe"
+```
+
+It is also applicable to builded application, just use path to the app instead of LabVIEW's path.
