@@ -1,1 +1,0 @@
--force-include-file "BottleCity2.c";"c:\Users\Andrey\Desktop\BottleCity Article\code\Step1\BottleCity2.c" 
