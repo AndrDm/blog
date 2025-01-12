@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/opc_ua/opc_ua_certificates.md",
+                "file": "kb/Checksums.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "opc_ua_certificates"
+              "title": "Checksums"
             }
           }
         ]
@@ -43,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/opc_ua/opc_ua_certificates.md"
+                "file": "kb/Checksums.md"
               },
               "icon": "lucide-list",
-              "title": "Структура opc_ua_certificates"
+              "title": "Outline of Checksums"
             }
           }
         ],
@@ -154,19 +154,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "14bfda6615835edf",
   "lastOpenFiles": [
-    "plc/sha256_in_plc/sha256_in_plc.md",
     "labview/opc_ua/opc_ua_certificates.md",
+    "kb/Checksums.md",
+    "plc/sha256_in_plc/sha256_in_plc.md",
     "2024-12-15.md",
     "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
@@ -209,7 +210,6 @@
     "labview/threads/call_from_third_party.md",
     "museum/xray_discovery/xray_discovery.md",
     "labview/snippets/np/NP Snippet.md",
-    "2023-01-31.md",
-    "calendars/2024-ferien.md"
+    "2023-01-31.md"
   ]
 }
