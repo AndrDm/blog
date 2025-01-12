@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/20250112-winget.md",
+                "file": "kb/20250112-intel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20250112-winget"
+              "title": "20250112-intel"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/20250112-winget.md"
+                "file": "kb/20250112-intel.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 20250112-winget"
+              "title": "Outline of 20250112-intel"
             }
           }
         ],
@@ -166,6 +166,7 @@
   "active": "14bfda6615835edf",
   "lastOpenFiles": [
     "kb/20250112-winget.md",
+    "kb/20250112-intel.md",
     "labview/opc_ua/opc_ua_certificates.md",
     "kb/Checksums.md",
     "plc/sha256_in_plc/sha256_in_plc.md",
@@ -209,7 +210,6 @@
     "markdown/Markdown-math.md",
     "misc/wc.md",
     "labview/threads/call_from_third_party.md",
-    "museum/xray_discovery/xray_discovery.md",
-    "labview/snippets/np/NP Snippet.md"
+    "museum/xray_discovery/xray_discovery.md"
   ]
 }
