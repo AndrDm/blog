@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc/2025.md",
+                "file": "labview/opc_ua/opc_ua_certificates.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025"
+              "title": "opc_ua_certificates"
             }
           }
         ]
@@ -43,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc/2025.md"
+                "file": "labview/opc_ua/opc_ua_certificates.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025"
+              "title": "Структура opc_ua_certificates"
             }
           }
         ],
@@ -154,25 +154,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "14bfda6615835edf",
   "lastOpenFiles": [
-    "misc/wc.md",
-    "misc/2025.md",
-    "misc/table.md",
-    "misc/slideshow.md",
-    "misc/clocks_in_svg.md",
-    "misc/city2.md",
-    "misc/city.md",
     "plc/sha256_in_plc/sha256_in_plc.md",
+    "labview/opc_ua/opc_ua_certificates.md",
     "2024-12-15.md",
     "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
@@ -210,6 +204,12 @@
     "labview/snippets/snippets_collection.md",
     "labview/python/NetworkCommunication.md",
     "markdown/Markdown-Mermaid.md",
-    "markdown/Markdown-math.md"
+    "markdown/Markdown-math.md",
+    "misc/wc.md",
+    "labview/threads/call_from_third_party.md",
+    "museum/xray_discovery/xray_discovery.md",
+    "labview/snippets/np/NP Snippet.md",
+    "2023-01-31.md",
+    "calendars/2024-ferien.md"
   ]
 }
