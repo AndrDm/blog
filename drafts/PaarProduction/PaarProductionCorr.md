@@ -10,13 +10,13 @@ Here I would like to add some remarks. First of all, the electron and positron a
 
 If you take a look at the picture, you might get the wrong impression that positrons are 'ejected' from the nucleus. This is not the case. There are no positrons inside the nucleus; the nucleus of an atom consists of protons and neutrons. The protons are indeed positively charged, therefore marked '+' on the picture above, but protons and positrons are not the same at all. The term 'pair' in pair production refers to the simultaneous creation of two new particles from energy. Pair production does not occur within the nucleus or involve the electrons already present in an atom. Instead, the photon interacts with the strong electric field surrounding the nucleus, not the nucleus itself.
 
-The required minimum photon energy level (stated as 'X-ray > 1 MeV' in the Fig. 5-2) must be greater than 1.022 MeV, to be exact (you will understand why later).
+The required minimum photon energy level (stated as 'X-ray > 1 MeV' in Fig. 5-2) must be greater than 1.022 MeV, to be exact (you will understand why later). Also, there is no strict boundary between 'X-rays' and 'gamma rays', but generally everything above 1 MeV is considered gamma radiation. However, below this energy, I will use the term 'X-ray' for lower energies.
 
 The most interesting question is — what happens with the positron and electron after that? As you have read in many science fiction books, when antimatter collides with matter, a 'boom' occurs, releasing a huge amount of energy. For example, the USS Enterprise from Star Trek uses antimatter as fuel for its warp drive:
 
 ![image-20250113052434886](assets/image-20250113052434886.png)
 
-And this is exactly what happens here — this process is called electron-positron annihilation. The annihilation results in the creation of two new energetic photons, each with an energy of 511 keV. So, your part under inspection in general acts as a secondary 511 keV X-Ray source.
+And this is exactly what happens here — this process is called electron-positron annihilation. The annihilation results in the creation of two new energetic photons, each with an energy of 511 keV. So, your part under inspection in general acts as a secondary 511 keV X-Ray source, fueled by antimatter.
 
 If you have a curious mind, you might ask yourself — why exactly 511 keV? Is it always 511? Why not less or more?
 
