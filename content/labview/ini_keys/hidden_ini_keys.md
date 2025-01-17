@@ -17,6 +17,13 @@ draft: false
 ---
 There are some "hidden" INI keys available in LabVIEW, which I often forgot
 <!--more-->
+
+## Maximal amount of threads in a parallel for loop
+
+```
+ParallelLoop.MaxNumLoopInstances=256
+```
+
 ## Save for Previous Version
 Introduced in LabVIEW 2024 
 
