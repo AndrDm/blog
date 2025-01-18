@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/kb/how_to_set_par_threads.md",
+                "file": "ndt/paar_bildung/pair_production.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how_to_set_par_threads"
+              "title": "pair_production"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/kb/how_to_set_par_threads.md"
+                "file": "ndt/paar_bildung/pair_production.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of how_to_set_par_threads"
+              "title": "Outline of pair_production"
             }
           }
         ],
@@ -165,8 +165,10 @@
   },
   "active": "14bfda6615835edf",
   "lastOpenFiles": [
-    "kb/20250112-intel.md",
     "labview/kb/how_to_set_par_threads.md",
+    "ndt/paar_bildung/pair_production.md",
+    "ndt/paar_bildung",
+    "kb/20250112-intel.md",
     "ndt/book",
     "kb/20250112-winget.md",
     "labview/opc_ua/opc_ua_certificates.md",
@@ -195,7 +197,6 @@
     "plc/assets/image-20241211165036609.png.bak",
     "plc/assets/image-20241211165004289.png.bak",
     "plc/assets/image-20241211164904784.png.bak",
-    "plc/assets/image-20241211164729090.png.bak",
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
@@ -209,7 +210,6 @@
     "labview/python/NetworkCommunication.md",
     "markdown/Markdown-Mermaid.md",
     "markdown/Markdown-math.md",
-    "misc/wc.md",
-    "labview/threads/call_from_third_party.md"
+    "misc/wc.md"
   ]
 }
