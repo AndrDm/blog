@@ -61,6 +61,7 @@ $$
 1.67262193 \times 10^{-27} \text{ kg}
 $$
 
+The electron's [mass](https://en.wikipedia.org/wiki/Invariant_mass) is approximately [⁠1/1836⁠](https://en.wikipedia.org/wiki/Proton-to-electron_mass_ratio) that of the [proton](https://en.wikipedia.org/wiki/Proton).
 
 You might ask — can we create other particles in the same way? Yes, we can, but you need much higher energies. For example, the threshold energy needed for muon-antimuon pair production is approximately 211 MeV; for tau-antitau pair production, you will need about 1.777 GeV. Protons can also be created, and the incoming energy sufficient to create both a proton and an antiproton, as well as conserve momentum in the reaction, will be 2.814 GeV. This is what happened in the Super Proton-Antiproton Synchrotron (SppS) at CERN, which operated from 1981 to 1991. Someday we will be able to perform synthesis of any kind of atoms, to be sure.
 
