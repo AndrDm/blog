@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/latest/2025.md",
+                "file": "labview/perf/strings/slow_strings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025"
+              "title": "slow_strings"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/latest/2025.md"
+                "file": "labview/perf/strings/slow_strings.md"
               },
               "icon": "lucide-list",
-              "title": "Структура 2025"
+              "title": "Структура slow_strings"
             }
           }
         ],
@@ -165,8 +165,10 @@
   },
   "active": "14bfda6615835edf",
   "lastOpenFiles": [
-    "ndt/paar_bildung/pair_production.md",
     "labview/latest/2025.md",
+    "labview/perf/strings/slow_strings.md",
+    "labview/perf/strings",
+    "ndt/paar_bildung/pair_production.md",
     "labview/latest",
     "labview/kb/how_to_set_par_threads.md",
     "ndt/paar_bildung",
@@ -197,7 +199,6 @@
     "benchmarks/i7-3520M@3400 MHz + Intel HD 4000 - AIDA64 CPUID 2.png",
     "plc/assets/TrafficLight.png.bak",
     "plc/assets/image-20241211165036609.png.bak",
-    "plc/assets/image-20241211165004289.png.bak",
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
@@ -209,7 +210,6 @@
     "labview/kb/how_to_download_snippet.md",
     "labview/snippets/snippets_collection.md",
     "labview/python/NetworkCommunication.md",
-    "markdown/Markdown-Mermaid.md",
-    "markdown/Markdown-math.md"
+    "markdown/Markdown-Mermaid.md"
   ]
 }
