@@ -18,23 +18,23 @@ To get DeepSeek running on your PC you will need enough RAM, and it is quite eas
 PC HP z8 G4 Workstation.
 CPU:
 
-![https://habrastorage.org/r/w1560/webt/d_/yh/_p/d_yh_p0en_whozfuj99jqozqxsy.png](https://habrastorage.org/r/w1560/webt/d_/yh/_p/d_yh_p0en_whozfuj99jqozqxsy.png)
+![](assets/image-20250205090637918.png)
 
 Memory - 12 x 64 GB = 768 GB:
 
-![](https://habrastorage.org/r/w1560/webt/on/5g/v0/on5gv0rl5mzjikwejwxcuempii0.png)
+![](assets/image-20250205090742608.png)
 
 Memory Benchmark (take a note, this is 12-channels memory with around 180 GB/s read - this is important for performance):
 
-![](https://habrastorage.org/r/w1560/webt/r2/pr/ru/r2prrupxqhuzmzpu60l2rporwd0.png)
+![](assets/image-20250205092255850.png)
 
 Video Adapters (will be unused):
 
-![https://habrastorage.org/r/w1560/webt/pn/yp/nx/pnypnxaxpnehsvrmwgw8nxb-wau.png](https://habrastorage.org/r/w1560/webt/pn/yp/nx/pnypnxaxpnehsvrmwgw8nxb-wau.png)
+![](assets/image-20250205090845219.png)
 
 SSD Drive:
 
-![](https://habrastorage.org/r/w1560/webt/gu/xu/sy/guxusypp7qprdup0zmk7_jycr7o.png)
+![](assets/image-20250205091725447.png)
 
 ### Download DeepSeek
 
@@ -54,17 +54,17 @@ That is. Also tried ollama and LM Studio, but got some troubles and issues.
 
 How it looks in real time:
 
-![](https://habrastorage.org/webt/fw/dy/na/fwdyna4ul4ucut-zug3yhonhhwc.gif)
+![](assets/ds4a-OK.gif)
 
 Let try to ask C Source code for Runge-Kutta Method:
 
-![](https://habrastorage.org/webt/bv/w8/db/bvw8db0gki2rnbcr1k77z3lih-u.gif)
+![](assets/ds5a.gif)
 
 It is not very fast, around 1.2 tokens per second, but works.
 
 It recommended to turn Hyper threading Off to get better performance and better CPU Utilization:
 
-![](https://habrastorage.org/webt/ks/6q/mc/ks6qmc7be895eh3y01j0sblzryk.gif)
+![](assets/ks6qmc7be895eh3y01j0sblzryk.gif)
 
 Also possible to run as server:
 
@@ -72,9 +72,11 @@ Also possible to run as server:
 llama-server.exe -m DeepSeek-R1.Q8_0-00001-of-00015.gguf --port 8082
 ```
 
-The you can use web interface
+The you can use web interface:
 
-![](https://habrastorage.org/r/w1560/webt/j4/qj/xg/j4qjxg4gicuvjkc8aa4j-s0fgce.png)
+![](assets/image-20250205152938717.png)
+
+
 
 Enjoy!
 
