@@ -17,7 +17,7 @@ programming_languages:
   - C
 draft: false
 ---
-Just encountered slow strings performance in LabVIEW when large string passed to DLL as c string pointer. It is always better to pass as "Adapt to type" instead of pointer.
+I just encountered slow string performance in LabVIEW when a large string is passed to a DLL as a C string pointer. It is always better to pass it as 'Adapt to Type' instead of a pointer.
 <!--more-->
 
 Actually I would to implement fast string search on large string based on AVX2/AVX-512, and got strange penalty.

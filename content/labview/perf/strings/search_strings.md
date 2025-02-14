@@ -17,7 +17,7 @@ programming_languages:
   - C
 draft: false
 ---
-For some reason I need a fast method for String Search. Provide by LabVIEW Search/Split String is relative slow, I done this with String Zilla, and got around 20x boost with AVX2/AVX512.
+For some reason, I need a fast method for string search. The LabVIEW Search/Split String function is relatively slow, I've done this using String Zilla, and achieved around a 20x boost with AVX2/AVX512.
 <!--more-->
 
 It is pretty simple, using DLL.
