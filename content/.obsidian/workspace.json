@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/ai/deepseek.md",
+                "file": "labview/dll/dll_in_rust_array_resize.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "deepseek"
+              "title": "dll_in_rust_array_resize"
             }
           }
         ],
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/ai/deepseek.md",
+                "file": "labview/dll/dll_in_rust_array_resize.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура deepseek"
+              "title": "Структура dll_in_rust_array_resize"
             }
           }
         ],
@@ -185,6 +185,7 @@
   "active": "72e61be0dc2dc5d7",
   "lastOpenFiles": [
     "kb/ai/deepseek.md",
+    "labview/dll/dll_in_rust_array_resize.md",
     "kb/ai",
     "labview/latest/2025.md",
     "labview/perf/strings/slow_strings.md",
@@ -228,7 +229,6 @@
     "ndt/diconde_standard/VR.md",
     "kb/ps-benchmark.md",
     "labview/kb/how_to_download_snippet.md",
-    "labview/snippets/snippets_collection.md",
-    "labview/python/NetworkCommunication.md"
+    "labview/snippets/snippets_collection.md"
   ]
 }
