@@ -84,7 +84,14 @@ Links: [1](https://forums.ni.com/t5/LabVIEW/Boolean-text-Size-to-text-the-boolea
 SuperSecretPrivateSpecialStuff=True
 ```
 
+## Enable scripting (available in VI Server)
+
+```ini
+server.viscripting.showScriptingOperationsInEditor=True
+```
+
 ---
 
 Some additional Info: [LabVIEW configuration file/Miscellaneous](https://labviewwiki.org/wiki/LabVIEW_configuration_file/Miscellaneous).
+
 
