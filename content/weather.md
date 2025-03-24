@@ -14,6 +14,3 @@ Rain Radar
 
 {{< iframe_ndr "https://www.ndr.de/nachrichten/wetter/index.html?radaron" >}}
 
-Vendée Globe 2024
-
-{{< iframe_ndr "https://team-malizia.geovoile.com/vendeeglobe/2024/tracker/?lg=en" >}}
