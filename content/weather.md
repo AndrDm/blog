@@ -1,7 +1,7 @@
 ---
 title: Weather
 authorbox: false
-sidebar: false
+sidebar: true
 menu: main
 date: 2024-11-07
 ---
