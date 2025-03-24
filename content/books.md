@@ -2,6 +2,7 @@
 title: Books
 authorbox: false
 sidebar: false
+sidebar2: false
 menu: main
 draft: false
 ---

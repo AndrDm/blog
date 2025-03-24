@@ -45,13 +45,12 @@ generate-h1-from-title = true
   widgets = ["search", "favorites", "recent", "categories", "programming_languages", "taglist", "archives", "social"]
 
 
-[Params.sidebar.single]
+[Params.sidebar2]
   home = "right"   # Configure layout for home page
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
   widgets = ["categories", "programming_languages", "taglist", "archives", "social"]
-
 
 
 [Params.widgets]
