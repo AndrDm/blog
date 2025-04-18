@@ -23,7 +23,7 @@ Vision Development Module 2025 Q2.
 
 Code:
 
-![](assets/Screenshot 2025-04-18 08.56.59.png)
+![image-20250418093426591](assets/image-20250418093426591.png)
 
 And the issue:
 
