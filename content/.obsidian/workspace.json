@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/dll/dll_in_rust_array_resize.md",
+                "file": "labview/nxg/ROIBugFix.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dll_in_rust_array_resize"
+              "title": "ROIBugFix"
             }
           }
         ],
@@ -55,11 +55,10 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -155,13 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/dll/dll_in_rust_array_resize.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "labview/nxg/ROIBugFix.md"
               },
               "icon": "lucide-list",
-              "title": "Структура dll_in_rust_array_resize"
+              "title": "Outline of ROIBugFix"
             }
           }
         ],
@@ -173,19 +169,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "72e61be0dc2dc5d7",
   "lastOpenFiles": [
-    "kb/ai/deepseek.md",
     "labview/dll/dll_in_rust_array_resize.md",
+    "labview/nxg/ROIBugFix.md",
+    "labview/nxg",
+    "kb/ai/deepseek.md",
     "kb/ai",
     "labview/latest/2025.md",
     "labview/perf/strings/slow_strings.md",
@@ -219,7 +217,6 @@
     "kb/assets/image-20241207061240640.png",
     "kb/PowerToys_in_trouble.md",
     "benchmarks/i7-3520M@3400 MHz + Intel HD 4000 - AIDA64 CPUID 2.png",
-    "plc/assets/TrafficLight.png.bak",
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
@@ -228,7 +225,6 @@
     "kb/cpu_name.md",
     "ndt/diconde_standard/VR.md",
     "kb/ps-benchmark.md",
-    "labview/kb/how_to_download_snippet.md",
-    "labview/snippets/snippets_collection.md"
+    "labview/kb/how_to_download_snippet.md"
   ]
 }
