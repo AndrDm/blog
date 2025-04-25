@@ -18,6 +18,16 @@ draft: false
 There are some "hidden" INI keys available in LabVIEW, which I often forgot
 <!--more-->
 
+## Run At Any Loop
+
+```
+showRunAtAnyLoopMenuItem=True
+```
+
+Allow to open references and run not only in Root Loop, but in any loop.
+
+Refer to [Re: What Execution System does LabVIEW use with VI server?](https://forums.ni.com/t5/LabVIEW/What-Execution-System-does-LabVIEW-use-with-VI-server/m-p/4435119#M1308630) and [The Root Loop](http://www.labviewcraftsmen.com/blog/the-root-loop)
+
 ## Maximal amount of threads in a parallel for loop
 
 ```
@@ -93,5 +103,4 @@ server.viscripting.showScriptingOperationsInEditor=True
 ---
 
 Some additional Info: [LabVIEW configuration file/Miscellaneous](https://labviewwiki.org/wiki/LabVIEW_configuration_file/Miscellaneous).
-
 
