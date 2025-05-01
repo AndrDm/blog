@@ -12,7 +12,37 @@ Software I using
 
 ### Windows
 
-Different flawors
+|                                 |            |             |      |
+| ------------------------------- | ---------- | ----------- | ---- |
+| Windows 11 Enterprise LTSC 24H2 | 26100.3915 | 25-APR-2025 |      |
+|                                 |            |             |      |
+|                                 |            |             |      |
+
+Different flavors from 3.11 used in the past
 
 ### Linux
+
+| OS                                   |             |             |      |
+| ------------------------------------ | ----------- | ----------- | ---- |
+| [Pop!_OS](https://system76.com/pop/) | 22.04 LTS   | 25-APR-2022 |      |
+| Linux Mint                           | 22.1        |             |      |
+| Ubuntu                               | 24.04.2 LTS |             |      |
+
+
+
+## Compilers and tools
+
+| Name                                                         | Version                                                      | Last update | Comment |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ----------- | ------- |
+| [Visual Studio Professional 2022](https://visualstudio.microsoft.com/de/vs/professional/) | [17.13.6](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes#17.13.6) | 8-APR-2025  |         |
+| [CMake](https://cmake.org/download/)                         | [4.0.1](https://github.com/Kitware/CMake/releases/download/v4.0.1/cmake-4.0.1-windows-x86_64.msi) | 10-APR-2025 |         |
+| [Python](https://www.python.org)                             | [3.13.3](https://www.python.org/downloads/release/python-3133/) | 08-APR-2025 |         |
+
+## NI Software
+
+|              |          |      |      |
+| ------------ | -------- | ---- | ---- |
+| LabVIEW 2025 | 25.1.2f2 |      |      |
+|              |          |      |      |
+|              |          |      |      |
 
