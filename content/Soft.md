@@ -38,6 +38,16 @@ Different flavors from 3.11 used in the past
 | [CMake](https://cmake.org/download/)                         | [4.0.1](https://github.com/Kitware/CMake/releases/download/v4.0.1/cmake-4.0.1-windows-x86_64.msi) | 10-APR-2025 |         |
 | [Python](https://www.python.org)                             | [3.13.3](https://www.python.org/downloads/release/python-3133/) | 08-APR-2025 |         |
 
+## Source Code Control
+
+|                 |              |             |      |
+| --------------- | ------------ | ----------- | ---- |
+| Github Desktop  | 3.4.19 (x64) | 27-APR-2025 |      |
+| Git for Windows |              |             |      |
+|                 |              |             |      |
+
+
+
 ## NI Software
 
 |              |          |      |      |
