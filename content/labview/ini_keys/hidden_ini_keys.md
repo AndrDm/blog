@@ -18,6 +18,16 @@ draft: false
 There are some "hidden" INI keys available in LabVIEW, which I often forgot
 <!--more-->
 
+## Run At Any Loop
+
+```
+showRunAtAnyLoopMenuItem=True
+```
+
+Allow to open references and run not only in Root Loop, but in any loop.
+
+Refer to [Re: What Execution System does LabVIEW use with VI server?](https://forums.ni.com/t5/LabVIEW/What-Execution-System-does-LabVIEW-use-with-VI-server/m-p/4435119#M1308630) and [The Root Loop](http://www.labviewcraftsmen.com/blog/the-root-loop)
+
 ## Maximal amount of threads in a parallel for loop
 
 ```
@@ -25,29 +35,13 @@ ParallelLoop.MaxNumLoopInstances=256
 ```
 
 ## Save for Previous Version
-Introduced in LabVIEW 2024 
+Introduced in LabVIEW 2024 and finally released in LabVIEW 2025 (so, no need to set any longer manually) 
 
 ```ini
 FeatureToggle.Editor.ProjectSaveVersion=True
 ```
 
-This feature allows you to use LabVIEW 2024 Q1 to edit VIs that can be opened with older versions of the LabVIEW editor. This allows you to collaborate on a project with others who haven’t upgraded to the same version of LabVIEW that you are using.
-
-How it works:
-
-![image-20240430103416698](image-20240430103416698.png)
-
-Don't forget to mark VIs to be saved in previous version:
-
-![image-20240430103602161](image-20240430103602161.png)
-
-The Version will appear on ToolBar and in the Properties:
-
-![image-20240430103855218](image-20240430103855218.png)
-
-
-
-Refer to [Preview Feature in LabVIEW 2024 Q1: Developing a LabVIEW Project in an Older Save Version File Format ](https://forums.ni.com/t5/LabVIEW-Public-Beta-Program-in/Preview-Feature-in-LabVIEW-2024-Q1-Developing-a-LabVIEW-Project/m-p/4350547)
+This feature allows you to use LabVIEW 2024 Q1 to edit VIs that can be opened with older versions of the LabVIEW editor. This allows you to collaborate on a project with others who haven’t upgraded to the same version of LabVIEW that you are using. Refer to [Preview Feature in LabVIEW 2024 Q1: Developing a LabVIEW Project in an Older Save Version File Format ](https://forums.ni.com/t5/LabVIEW-Public-Beta-Program-in/Preview-Feature-in-LabVIEW-2024-Q1-Developing-a-LabVIEW-Project/m-p/4350547)
 
 ## Enabling Heap Peek and Ned
 
@@ -93,5 +87,4 @@ server.viscripting.showScriptingOperationsInEditor=True
 ---
 
 Some additional Info: [LabVIEW configuration file/Miscellaneous](https://labviewwiki.org/wiki/LabVIEW_configuration_file/Miscellaneous).
-
 
