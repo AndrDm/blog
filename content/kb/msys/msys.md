@@ -1,5 +1,5 @@
 ---
-title: How to indtsll gcc and clang on Windows using MSYS
+title: How to install gcc and clang on Windows using MSYS
 date: 2025-04-30
 authorbox: false
 sidebar: false
