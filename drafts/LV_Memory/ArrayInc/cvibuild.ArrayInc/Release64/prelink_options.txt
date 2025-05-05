@@ -1,0 +1,6 @@
+-inrc c:\Users\Andrey\Desktop\ArrayInc\cvibuild.ArrayInc\Release64\resources.in.rc
+-outrc c:\Users\Andrey\Desktop\ArrayInc\cvibuild.ArrayInc\Release64\resources.out.rc
+-inhdef c:\Users\Andrey\Desktop\ArrayInc\cvibuild.ArrayInc\Release64\ArrayInc.h.hdefs
+-outdef c:\Users\Andrey\Desktop\ArrayInc\cvibuild.ArrayInc\Release64\ArrayInc.dll.defs
+-indefprot c:\Users\Andrey\Desktop\ArrayInc\cvibuild.ArrayInc\Release64\ArrayInc.obj.cvidefprots
+-dllName ArrayInc.dll

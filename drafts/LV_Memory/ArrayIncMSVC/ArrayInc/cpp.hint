@@ -1,0 +1,2 @@
+#define ARRAYINC_API __declspec(dllexport)
+#define ARRAYINC_API __declspec(dllimport)

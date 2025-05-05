@@ -1,0 +1,8 @@
+﻿  ArrayInc.cpp
+  dllmain.cpp
+     Creating library C:\Users\Andrey\Desktop\ArrayIncMSVC\ArrayInc\x64\Release\ArrayInc.lib and object C:\Users\Andrey\Desktop\ArrayIncMSVC\ArrayInc\x64\Release\ArrayInc.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ArrayInc.vcxproj -> C:\Users\Andrey\Desktop\ArrayIncMSVC\ArrayInc\x64\Release\ArrayInc.dll

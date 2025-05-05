@@ -1,0 +1,1 @@
+-force-include-file "ArrayInc.c";"c:\Users\Andrey\Desktop\ArrayInc\ArrayInc.c" -force-include-file "ArrayInc.h";"c:\Users\Andrey\Desktop\ArrayInc\ArrayInc.h" 
