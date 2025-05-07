@@ -1,8 +1,8 @@
 ﻿  dllmain.cpp
   FMA.cpp
-     Creating library C:\Users\Andrey\Desktop\ArrayFMAMSVC\FMA\x64\Release\FMA.lib and object C:\Users\Andrey\Desktop\ArrayFMAMSVC\FMA\x64\Release\FMA.exp
+     Creating library C:\Users\Andrey\Desktop\blog\drafts\LV_Memory\FMA\ArrayFMAMSVC\FMA\x64\Release\FMA.lib and object C:\Users\Andrey\Desktop\blog\drafts\LV_Memory\FMA\ArrayFMAMSVC\FMA\x64\Release\FMA.exp
   Generating code
   Previous IPDB not found, fall back to full compilation.
-  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  FMA.vcxproj -> C:\Users\Andrey\Desktop\ArrayFMAMSVC\FMA\x64\Release\FMA.dll
+  FMA.vcxproj -> C:\Users\Andrey\Desktop\blog\drafts\LV_Memory\FMA\ArrayFMAMSVC\FMA\x64\Release\FMA.dll
