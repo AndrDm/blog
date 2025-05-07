@@ -1,0 +1,2 @@
+#define FMA_API __declspec(dllexport)
+#define FMA_API __declspec(dllimport)
