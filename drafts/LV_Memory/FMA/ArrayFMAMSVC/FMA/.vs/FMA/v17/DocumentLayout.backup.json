@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\",
+  "WorkspaceRootPath": "C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCD342AF-154B-44BE-8034-1D98A4ED2C32}|FMA.vcxproj|C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\FMA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FCD342AF-154B-44BE-8034-1D98A4ED2C32}|FMA.vcxproj|C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\FMA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FCD342AF-154B-44BE-8034-1D98A4ED2C32}|FMA.vcxproj|solutionrelative:FMA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCD342AF-154B-44BE-8034-1D98A4ED2C32}|FMA.vcxproj|C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FCD342AF-154B-44BE-8034-1D98A4ED2C32}|FMA.vcxproj|C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FCD342AF-154B-44BE-8034-1D98A4ED2C32}|FMA.vcxproj|solutionrelative:dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -18,19 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "dllmain.cpp",
-              "DocumentMoniker": "C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\dllmain.cpp",
+              "DocumentMoniker": "C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\dllmain.cpp",
               "RelativeDocumentMoniker": "dllmain.cpp",
-              "ToolTip": "C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\dllmain.cpp",
+              "ToolTip": "C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\dllmain.cpp",
               "RelativeToolTip": "dllmain.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -40,11 +44,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FMA.cpp",
-              "DocumentMoniker": "C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\FMA.cpp",
+              "DocumentMoniker": "C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\FMA.cpp",
               "RelativeDocumentMoniker": "FMA.cpp",
-              "ToolTip": "C:\\Users\\Andrey\\Desktop\\blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\FMA.cpp",
+              "ToolTip": "C:\\Users\\108003658\\OneDrive - Baker Hughes\\Desktop\\Blog\\drafts\\LV_Memory\\FMA\\ArrayFMAMSVC\\FMA\\FMA.cpp",
               "RelativeToolTip": "FMA.cpp",
-              "ViewState": "AgIAAEkAAAAAAAAAAADwvzIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAgwJAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-07T03:16:09.441Z",
               "EditorCaption": ""
