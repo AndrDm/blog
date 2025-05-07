@@ -10,3 +10,9 @@ content/.obsidian/workspace.json
 content/.obsidian/workspace.json
 content/.obsidian/workspace.json
 content/.obsidian/workspace.json
+*.vsidx
+*.ipch
+*.iobj
+*.ipdb
+*.tlog
+*.pdb
