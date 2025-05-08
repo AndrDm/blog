@@ -123,13 +123,13 @@
     var xhr = new XMLHttpRequest();
     xhr.open('GET', matomoUrl + 'index.php?module=API&method=Actions.getPageUrl&pageUrl=' + encodeURIComponent(pageUrl) + '&idSite=' + siteId + '&period=day&date=today&format=json', true);
     xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
+//      if (xhr.readyState === 4 && xhr.status === 200) {
         var data = JSON.parse(xhr.responseText);
         var pageViews = data[0].nb_visits;
         var viewsElement = document.createElement('div');
         viewsElement.innerHTML = 'Page Views: ' + pageViews;
         document.body.appendChild(viewsElement);
-      }
+  //    }
     };
     xhr.send();
   });
