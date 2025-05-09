@@ -127,4 +127,8 @@ CPU 63 - Numa node 1: Read time: 77.11 ms
 sum 33554432
 ```
 
+How it looks:
+
+![](C:\Users\108003658\OneDrive - Baker Hughes\Desktop\Blog\content\kb\numa\assets\numa.gif)
+
 Now, as you can see, accessing the «wrong» node is not prohibited, but it cause performance penalties.
