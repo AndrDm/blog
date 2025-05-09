@@ -12,40 +12,33 @@ tags:
   - Benchmark
 draft: false
 ---
-If you have two sockets CPU then you may have dedicated RAM assigned to each socket, and get performance penalties while accessing from one socket to "wrong" memory bank, below simple bechmark and explanation how to utilize full bandwidth properly.
-<!--more-->
+- If you have a dual-socket CPU, each socket may have dedicated RAM assigned to it. This can lead to performance penalties when a processor accesses memory from the “wrong” memory bank. Below is a simple benchmark and an explanation of how to utilize the full bandwidth properly.
 
-NUMA (Non-Uniform Memory Access) is a computer memory architecture used in multi-processor systems where memory access time varies depending on the processor's location relative to the memory. Each processor has its own local memory and can also access other processors' memory, but accessing memory on a different processor's "node" takes longer than accessing local memory. 
-
-Here's a more detailed breakdown:
-
-- **Distributed Shared Memory:**
-
-    NUMA systems are essentially distributed shared memory architectures, meaning multiple processors share a single memory space.
-
-- **Nodes:**
-
-    Processors are grouped into "nodes," each with its own local memory and processors.
-
-- **Access Times:**
-
-    Accessing memory within the same node (local memory) is faster than accessing memory on a different node (non-local memory).
-
-- **Performance:**
-
-    NUMA can improve performance for workloads that have high memory locality, meaning data used by a processor is likely stored in its own node, reducing traffic on the shared memory bus.
-
-- **Scalability:**
-
-    NUMA allows for systems to be scaled by adding more nodes to handle larger memory and processor requirements, [according to TechTarget](https://www.techtarget.com/whatis/definition/NUMA-non-uniform-memory-access). 
+    <!--more-->
+    
+    NUMA (Non-Uniform Memory Access) is a computer memory architecture used in multi-processor systems, where memory access time varies depending on the processor’s location relative to the memory. Each processor has its own local memory and can also access other processors’ memory, but accessing memory on a different processor’s “node” takes longer than accessing local memory.
+    
+    More detailed breakdown:
+    
+    - **Distributed Shared Memory:**
+        NUMA systems are essentially distributed shared memory architectures, meaning multiple processors share a single memory space.
+    - **Nodes:**
+        Processors are grouped into “nodes,” each with its own local memory and processors.
+    - **Access Times:**
+        Accessing memory within the same node (local memory) is faster than accessing memory on a different node (non-local memory).
+    - **Performance:**
+        NUMA can improve performance for workloads with high memory locality, meaning data used by a processor is likely stored in its own node, reducing traffic on the shared memory bus.
+    - **Scalability:**
+        NUMA allows systems to be scaled by adding more nodes to handle larger memory and processor requirements, [according to TechTarget](https://www.techtarget.com/whatis/definition/NUMA-non-uniform-memory-access).
 
 ![](assets/NUMA.webp)
 
 (image from article [What is NUMA?](https://seniordba.wordpress.com/2015/12/23/what-is-numa/))
 
-How to work with NUMA? There are two things you need - to run threads on dedicated CPU and allocate memory on proper NUMA Node - you have to use [SetThreadAffinityMask function](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadaffinitymask) and [VirtualAllocExNuma function](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexnuma) instead of trivial malloc().
+**How to work with NUMA:**
+There are two things you need to do: run threads on dedicated CPUs and allocate memory on the appropriate NUMA node. To achieve this, you should use the [SetThreadAffinityMask function](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadaffinitymask) and the [VirtualAllocExNuma function](https://learn.microsoft.com/en-us/windows/win32/api/memoryapi/nf-memoryapi-virtualallocexnuma) instead of the standard `malloc()`.
 
-Simple demo and benchmark:
+Here is a simple demo and benchmark on my dual socket CPU, 32 cores each:
 
 ```c++
 #include <iostream>
@@ -101,7 +94,7 @@ int main() {
 And the result:
 
 ```
-C:\Users\Andrey\Desktop\numa_test\numa_test\x64\Release>numa_test.exe
+C:\Users\Andrey\Desktop\numa_test\x64\Release>numa_test.exe
 
 CPU 0 - Numa node 0: Read time: 83.31 ms << OK, Node 0 accessed from Socket 0
 CPU 1 - Numa node 0: Read time: 82.99 ms
@@ -134,4 +127,4 @@ CPU 63 - Numa node 1: Read time: 77.11 ms
 sum 33554432
 ```
 
-Now  as you can see, accessing «wrong» node is not prohibited, but caused penalties.
+Now, as you can see, accessing the «wrong» node is not prohibited, but it cause performance penalties.
