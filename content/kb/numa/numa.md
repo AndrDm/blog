@@ -12,24 +12,24 @@ tags:
   - Benchmark
 draft: false
 ---
-- If you have a dual-socket CPU, each socket may have dedicated RAM assigned to it. This can lead to performance penalties when a processor accesses memory from the “wrong” memory bank. Below is a simple benchmark and an explanation of how to utilize the full bandwidth properly.
+If you have a dual-socket CPU, each socket may have dedicated RAM assigned to it. This can lead to performance penalties when a processor accesses memory from the “wrong” memory bank. Below is a simple benchmark and an explanation of how to utilize the full bandwidth properly.
 
-    <!--more-->
-    
-    NUMA (Non-Uniform Memory Access) is a computer memory architecture used in multi-processor systems, where memory access time varies depending on the processor’s location relative to the memory. Each processor has its own local memory and can also access other processors’ memory, but accessing memory on a different processor’s “node” takes longer than accessing local memory.
-    
-    More detailed breakdown:
-    
-    - **Distributed Shared Memory:**
-        NUMA systems are essentially distributed shared memory architectures, meaning multiple processors share a single memory space.
-    - **Nodes:**
-        Processors are grouped into “nodes,” each with its own local memory and processors.
-    - **Access Times:**
-        Accessing memory within the same node (local memory) is faster than accessing memory on a different node (non-local memory).
-    - **Performance:**
-        NUMA can improve performance for workloads with high memory locality, meaning data used by a processor is likely stored in its own node, reducing traffic on the shared memory bus.
-    - **Scalability:**
-        NUMA allows systems to be scaled by adding more nodes to handle larger memory and processor requirements, [according to TechTarget](https://www.techtarget.com/whatis/definition/NUMA-non-uniform-memory-access).
+<!--more-->
+
+NUMA (Non-Uniform Memory Access) is a computer memory architecture used in multi-processor systems, where memory access time varies depending on the processor’s location relative to the memory. Each processor has its own local memory and can also access other processors’ memory, but accessing memory on a different processor’s “node” takes longer than accessing local memory.
+
+More detailed breakdown:
+
+- **Distributed Shared Memory:**
+NUMA systems are essentially distributed shared memory architectures, meaning multiple processors share a single memory space.
+- **Nodes:**
+Processors are grouped into “nodes,” each with its own local memory and processors.
+- **Access Times:**
+Accessing memory within the same node (local memory) is faster than accessing memory on a different node (non-local memory).
+- **Performance:**
+NUMA can improve performance for workloads with high memory locality, meaning data used by a processor is likely stored in its own node, reducing traffic on the shared memory bus.
+- **Scalability:**
+NUMA allows systems to be scaled by adding more nodes to handle larger memory and processor requirements, [according to TechTarget](https://www.techtarget.com/whatis/definition/NUMA-non-uniform-memory-access).
 
 ![](assets/NUMA.webp)
 
