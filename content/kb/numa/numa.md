@@ -129,6 +129,6 @@ sum 33554432
 
 How it looks:
 
-![](assets\numa.gif)
+![](assets/numa.gif)
 
 Now, as you can see, accessing the «wrong» node is not prohibited, but it cause performance penalties.
