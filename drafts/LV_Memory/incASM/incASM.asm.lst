@@ -1,0 +1,30 @@
+|                          |EUROASM AutoSegment=Yes, CPU=X64,  SIMD=AVX512, EVEX=ENABLED
+|                          |incrASM PROGRAM Format=DLL, Width=64, Model=Flat, Subsystem=CON, IconFile=
+|00000000:                 |
+|                          |EXPORT incasm
+|[.data]                   ::::Section changed.
+|00000000:000000000000F03F~|one dq 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0
+|00000040:                 |
+|[.text]                   ::::Section changed.
+|00000000:                 |incasm PROC
+|00000000:62F1FD48100D(00~~|    vmovupd zmm1, [one]
+|0000000A:                 |    ; Loop through the array in chunks of 8 elements (AVX512 can handle 8 doubles at a time)
+|0000000A:                 |    .loop:
+|0000000A:4883FA00         |        cmp rdx, 0 ; Check if we've processed all elements
+|0000000E:741C             |        je .done
+|00000010:62F1FD481001     |        vmovupd zmm0, [rcx] ; Load 8 elements from the array into zmm0
+|00000016:62F1FD4858C1     |        vaddpd zmm0, zmm0, zmm1 ; Add 1 to each element in zmm0
+|0000001C:62F1FD481101     |        vmovupd [rcx], zmm0 ; Store the result back to the array
+|00000022:4883C140         |        add rcx, 64  ; 8 elements * 8 bytes per element
+|00000026:4883EA08         |        sub rdx, 8 ; Move to the next 8 elements
+|0000002A:EBDE             |        jmp .loop
+|0000002C:                 |    .done:
+|0000002C:                 |ENDPROC incasm
+|0000002C:                 |
+|                          |ENDPROGRAM incrASM
+|        **** ListMap "incrASM.dll",model=FLAT,groups=0,segments=3,entry=,stack=
+|          [.text],FA=00000400h,VA=10001000h,size=0000002Ch=44,width=64,align=0010h,purpose=CODE
+|          [.data],FA=00000600h,VA=10002000h,size=00000040h=64,width=64,align=0010h,purpose=DATA
+|          [.edata],FA=00000800h,VA=10003000h,size=00000045h=69,width=0,align=8,purpose=EXPORT
+|        **** ListGlobals "incrASM.dll",Global=0,Public=0,Extern=0,eXport=1,Import=0
+|        incasm,[.text]:00000000h,VA=10001000h,scope='X'
