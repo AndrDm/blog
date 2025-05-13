@@ -74,10 +74,16 @@ generate-h1-from-title = true
   # email = "example@example.com"
 
 # Custom social links
-[[Params.widgets.social.custom]]
+[[Params.widgets.social.ni]]
   title = "NI Forum"
   url = "https://forums.ni.com/t5/user/viewprofilepage/user-id/7545"
   icon = "svg/ni.svg" # Optional. Path relative to "layouts/partials"
+  rel = "noopener noreferrer" # Set to false to remove the rel attribute
+
+[[Params.widgets.social.habr]]
+  title = "Habrahabr"
+  url = "https://habr.com/ru/users/AndreyDmitriev"
+  icon = "svg/habr24.svg" # Optional. Path relative to "layouts/partials"
   rel = "noopener noreferrer" # Set to false to remove the rel attribute
 
 [Params.style.vars]

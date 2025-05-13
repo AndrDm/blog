@@ -1,0 +1,190 @@
+/* EuroAssembler global Cascading Style Sheet. */
+a:hover, a:active {color:#000000;background-color:#FFFF20;}
+a:link, a:visited {text-decoration:none;border-bottom:1px dashed;}
+a:link.EXT, a:visited.EXT {text-decoration:underline;text-decoration-skip:ink;border:none;}
+a:link.EXTL, a:visited.EXTL {text-decoration:underline;text-decoration-skip:ink;border:none;padding-right:18px;
+background:url(data:image/gif;base64,R0lGODlhEAAQAPcAAAQCBIyKjERCRMTGxKyurGRiZCQiJOTm5JyanBQSFFRSVHRydPT29Nza3Ly6vDQyNAwKDJSSlGxqbOzu7KSipFxaXExKTMzOzLS2tCwqLBwaHHx6fPz+/OTi5MTCxDw6PAQGBIyOjLSytGRmZOzq7JyenBQWFFRWVPz6/Nze3Ly+vDQ2NAwODJSWlGxubPTy9KSmpFxeXExOTNTS1CwuLHx+fAAAWAAAfOAAzL8AvxIAEgAAADcAO7YAxksAWAAAfGYAAAAAAAAAAAAAAPgAfL8ABBIAAAAAAMwAAL8A/hIATwAAAHIAyHIAXk4AEwAAAOIAGP8AAP8AAP8AAAAAAAAAAAAAAAAAAFgAsLUAv0sAEgAAAPSsQO6+ABISAAAAAB7YAAAhAAATAAAAAPiKlL8svxL7EgB3AMwAAL8AABITAAAAAP///+4hABITAAAAAADYAAAhAAATAAAAAMiIDF6+ABMSAAAAAACIAgAGAAATAAAAAABAAQC/AQASEgAAAABkDQB+dAD7+AB3dwBYAAAx7AD4/QB3fwD/AAD/AAD/AAD/AABQAAC/AAASAAAAAADCBwC3AAD8AAB3AAB4/AATaAATWAAAfADYAAAhAAATAAAAAAAAAAAAAAAAAAAAAADKAAC2AAD8AAB3AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAHgAAAAAAAAAAAAAA/wAA/wAA/wAA/wAAHgAAAAAAAAAAAAAA9AAA7gAAEgAAAAAAAAAAAAAAAAAAAAAYGAC/wAASEgAAAAAArgAAgQAASwAAAAAA+AAAvwAAEgAAAAD8cwC+cgASTgAAAADYLAAhwAATEgAAAAAAAAAAAAAAAAAAAAAAvgAAwgAAEgAAAAAM4AAA/wAA/wAAfwAAoAAAwgAAEgAAAAAB9AAB7gASEgAAAAANAAB0AAD4AAB3AADY9AC87gASEgAAAAAAEAAAFAAAWAAAfAAArwDsAgD9RwB/AAAAoAAAwgATEgAAAABFoAAAwgAAEgAAACH5BAEAAGwALAAAAAAQABAAQAizANmwSRFgAwEGAhPCWghLIAUABQDEYPNQQcQVE9hYANAhIZuINF6waejRYwsACS4klAAAwwWUEUTIAJCBhEKGM0CwGEARAIAaLDKMyFiSTQcNEFzQUJHwAwCVRdlE8OkTggOBLUBQXXGgJEOWBBKCtMlwpAsAMBISOLFxA9GED1l4MLGTjQkDAjCWRDBCYgUAEC6gUABARlEYKKEKDAGAQtSpJgikyKoBYVQ2A0ZYWNBAYEAAOw==) no-repeat right;}
+a:link.EXTW, a:visited.EXTW {text-decoration:underline;text-decoration-skip:ink;border:none;padding-right:18px;
+background: url(data:image/gif;base64,R0lGODlhEAAQAPQXAHw+BHxCBIQ+BIRCBIRGBIROHIRSFIRSJIxaJIxeLIxmNIxiPJR2TJx+VKR+ZJyCbKyWfKSShKyelKyilLSmnLSqnLy6tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUAABcALAAAAAAQABAAAAVh4CWOZGmaiGEEpxm87agAx6KIUqMzepPQjcttQgAEBi8BQFAIjhyAAWBKBTifU0hly1heRQ4pZdRQfi9QwVjUCFhL0MCEbIa/CHh89BzBBwh/LwYWJg8ICYiICBUxjY4tIQA7) no-repeat right;}
+abbr {color:#A03000;font-family:monospace;font-style:italic;font-weight:bolder;}
+big {float:left; font-size:120%;margin:0 1em; padding:4px 1em;border:2px solid;}
+blockquote {color:#406000; font-size:90%; margin:0.5ex 1em; }
+blockquote ol li {margin-left:2em;}
+body {font-family:sans-serif;}
+caption {text-align:left; padding:5em; white-space:nowrap;font-size:100%; font-weight:bolder;padding-bottom:0.3ex; padding-top:1ex;}
+code  {display:inline; color:black; background-color:#FFFFD0; font-family:monospace; white-space:nowrap;  padding:0ex 0.2em; margin:0ex 0.2em;}
+dd {margin-left:2em;}
+del {color:#700000; text-decoration:line-through; font-style:normal;}
+dfn {color:#000030; margin: 0; padding: 0 0.3em; font-weight:bolder }
+dl {border: 1px dotted #003090; margin:1ex 0em; padding:1ex 1em; }
+dt {font-weight:bolder;}
+h1 {font-size:150%; line-height:1.2ex; letter-spacing:2px; float:left;padding:8px; margin:0 8px 0 0;}
+h1 a {font-size:60%;}
+h2 {font-size:120%;margin:0; }
+h3 {font-size:110%;margin:0 0 0 3em;}
+h4 {font-size:100%;margin:0 0 0 6em;}
+h5 {font-size:90% ;margin:0 0 0 8em;}
+h6 {font-size:90%;margin:1ex 0; padding:0.5ex 0 0 32px; height:24px; color:#008000;
+background:url(data:image/gif;base64,R0lGODlhGAAYAPcAAAwGDJyKFJSSlPzSBPzahFRGJPzGdPz+xERGRPzqHPzyREQqBPzuvPz2ZLSutPyiBGxmTPzyjPziHIRqBPz+5CQiJPz6hPzuPPzydLy6vPyyRGxqbCwuLBQSFPzOJPz+XNy2BHRmNJyinPz21Pz6RPz+pJx6BPz+lBQOBPyeBPz6LPz+ZMTCxHR2dDw2PPyyBPz+tJyeLJyenPzaFFxaXPzyLLy2vGRiZPzunPz+9CwqLPz+jPz+PPz+dMS+xDQ2NPzaHPz+1Pz+TJyCFHx6fAwKDLyaBPzWDFROLPzSdPz+zExOTPzuJPzyTPzybLSytPymBPzulPzmHJx2BCwmLPz+hPzyPLy+vDQyNBwWHMyyFKyqrPz+RPz+rJyCBPz+nAwODPz+bIR6dPy2BPz+vKSepGRqZPz+/Pz+fPzaJPz+3AAAfADe4P6fvk84EgB+AADNGACrAAC6AADcAAAAQNUA1xUAhwAAACAoYL2+nhISgAAAfNLefOafBIE4AHx+ACBYAGK+1RUSFQAAAEpFAOM31YE3FXx+AIAAAPvw0E/9FQB/ACBYAGK+AAESAAAAAGmUBwA3AAA3AAB+AFycELzWARIAAAAAAAA4AAC+AAASAAAAANyFAPgrABKDAAB8ABgAAO4AAJAAAHwAAHAAAAUAAJEAAHwAAP8AYP8Anv8AgP8AfG0pGwW3AJGSAHx8AEp8//QE/4AA/3wA/wAAGwAAABUAAAAAAAAAAADV/gAVTwAAACAAAGIAABUAAAAAAAAcZAG+vwASEgAAAAAArgAAgQAASwAAAFfcRPT4v4ASEnwAAEgYc77uchKQTgB8ACAAeGK3vxWSEgB8AHj/AAz/AFf/AAD/AAB8BwAEwgAAEgAAACgA474A/xIA/wAAf0Bg7Ne/wYcSEgAAAGznAL1k/hKDTwB8ACaIAItkADaDAH58AEAAANcA/ocATwAAAOswNP8AZP8Ag/9+fACgrwAEAgA8RwB+AChA7L7XwRKHEgAAAN6C7J8AwTgAEn4AACH5BAUAAKEALAAAAAAYABgAAAj/AEMJLCGwYCgBCAUYJGhwYUEiECZInACBSCiGDTMSiaGlSRMFVrQMsbgQY0ExARqg6VKiyw4hR7yIGciwBEYiAZyUCEKBghoYO3jEJNnQZigsQE5QOMP0zIEvH1Qc+ZGx4A0jPWAsbUqhxJcVR4zcsGky1NWsOZpGGUHmJROxJQmeJbPVAAMGSl5KgVv1apgdB9JqGBHlQBWYYo02vHphxU4KBJJEKNGDS9iCigVuQTJjxRcYSmB4sICGBJMBSKoWzIAEhJQePXbM+MCDCYjUVRVvCQGCCQ8hM5gkABFiYMmGMgoMmDHjxZEXBRzmLojCBAYoU1BkLHvRYAUaP37oPegwHXPDLDc2bOAARrX5ht/Dj3ffPSN69ezpqy6yQYYMDkXoVxUC4LnAARUCZrSFehtgYUaCClJRxBL0BQQAOw==)no-repeat;}
+list {list-style-position:inside;}
+ins {background-color:#FFFFFF;text-decoration:none;}
+kbd {background-color:#FCFCFC; font-weight:bold; padding:0ex 0.2em;white-space:nowrap;}
+p {margin:0.5ex 0;}
+pre, samp, div.PRE, div.MSG, div.SRC, td.PRE, dd.PRE, p.PRE, code.PRE {display:block; margin:0.5ex 0; padding:2ex 1em;border:1px solid #804000;font-family:monospace; white-space:pre;}
+pre {color:black; background-color:#FFFFD0;}
+q {background-color:#F8FFF8; font-family:monospace;xfont-weight:bold; padding:0ex 0.2em; }
+samp {background-color:#FFFFFF; color:#000000; border:1px solid #808080; padding-left:20px;background-repeat:repeat-y;
+background-image:url(data:image/gif;base64,R0lGODlhEAAYANMAAP///2ZmmWaZZmaZmZlmmZmZZpnMzMyZzMzMmczMzAAAAAAAAAAAAAAAAAAAAAAAACH5BAkZAAAALAAAAAAQABgAAAQwEMhJq7046827/yBgJMSGDJNxZEHVXsllXMWFyJeA1dSNHSXJAaVJHF6hpHLJVEYAADs=);}
+sup {font-size:70%;}
+small {font-size:80%;}
+table, fieldset {border-collapse:collapse;margin-left:2em; margin-bottom:1ex;}
+td {padding:0.1ex 0.5em; }
+table.SMALL {float:left; width:80%;}
+table.SMALL td {font-size:80%;}
+th {padding:0ex 0.5em; text-align:left; }
+th.FLAG {font-family:monospace; white-space:nowrap; font-size:90%; padding:2px; margin:0;}
+/* Home directory files */
+.EAHOME {color:#303030; background-color:#F0F0E0;}
+.EAHOME a:link, .EAHOME a:visited {color:#303030;}
+.EAHOME h1 {border:1px solid #303030;background-color:#FFFFF0;margin-right:1em;}
+.EAHOME big {background-color:#FFFFF0;}
+.EAHOME table {border: 2px solid #600000;}
+.EAHOME td {border:1px solid #303030; background-color:#FFFFF0;}
+.EAHOME th {border:1px solid #303030; background-color:#E0E0D0;}
+.EAHOME code {background-color:#FFFFF8;}
+/* Aplhabetical index links style  */
+.EAHOME .XLETTER a {color:#600000;border:0; font-size:120%; font-weight:bold;}
+.EAHOME a.XAT {color:#006080;background-color:#FFF0D0;border:0;font-family:monospace;font-weight:bolder;} /* Attributes.          */
+.EAHOME a.XII {color:#000000;background-color:#FFD8D8;border:0;font-family:monospace;font-weight:bolder;} /* Machine instruction. */
+.EAHOME a.XKN {color:#006000;background-color:#FFF0D0;border:0;font-family:monospace;}                    /* Keyword names.       */
+.EAHOME a.XKV {color:#C06000;background-color:#FFF0D0;border:0;font-family:monospace;}                    /* Keyword values       */
+.EAHOME a.XLG {color:#804000;background-color:#FFF0D0;border:0;}                                          /* Language element.    */
+.EAHOME a.XMI {color:#000040;background-color:#D8FFFF;border:0;font-family:monospace;}                    /* Macroinstruction.    */
+.EAHOME a.XOP {color:#000000;background-color:#FFF0D0;border:0;font-family:monospace;}                    /* Operators.           */
+.EAHOME a.XPF {color:#601060;background-color:#FFF0D0;border:0;font-family:monospace;font-weight:bolder;} /* Machine prefix.      */
+.EAHOME a.XPI {color:#800000;background-color:#FFF0D0;border:0;font-family:monospace;}                    /* Pseudoinstruction.   */
+.EAHOME a.XRG {color:#800000;background-color:#FFF0D0;border:0;font-family:monospace;font-weight:bolder;} /* Machine register.    */
+.EAHOME a.XSV {color:#800080;background-color:#FFF0D0;border:0;font-family:monospace;font-weight:bolder;} /* System %^variable.   */
+.EAHOME a.XAT:hover, a.XAT:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XII:hover, a.XII:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XKN:hover, a.XKN:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XKV:hover, a.XKV:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XLG:hover, a.XLG:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XMI:hover, a.XMI:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XOP:hover, a.XOP:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XPF:hover, a.XPF:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XPI:hover, a.XPI:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XRG:hover, a.XRG:active {color:#000000;background-color:#FFFF20;}
+.EAHOME a.XSV:hover, a.XSV:active {color:#000000;background-color:#FFFF20;}
+/* Documentation style  */
+.EADOC {color:#804000; background-color:#FFF0D0;}
+.EADOC a:link, a:visited {color:#804000;}
+.EADOC dt {margin-top:4px;}
+.EADOC table {border: 2px solid #804000;}
+.EADOC td {border:1px solid #804000; background-color:#FFFFD0;}
+.EADOC th {border:1px solid #804000; background-color:#FFF0A0;}
+.EADOC h1 {border:1px solid #804000; background-color:#FFFFD0;}
+.EADOC .PRE {border:0; background-color:#FFFFE0;color:#00}
+.EADOC .SRC {border:0; background-color:#FFFFC0;color:#000000;}
+.EADOC .MSG {border:0; background-color:#F0FFFF;color:#004000;}
+/* Macrolibrary style */
+.MACLIB {color:#000080; background-color:#D8FFFF;}
+.MACLIB a:link, .MACLIB a:visited {color:#000080;}
+.MACLIB a#top {font-size:120%;line-height:2ex;}
+.MACLIB h1 {border:1px solid #003090; background-color:#F0FFFF;}
+.MACLIB h1 a, .MACLIB dt a {color:#003090;}
+.MACLIB h1 i {font-size:60%; color:#606060;}
+.MACLIB h1 abbr {font-size:60%;font-weight:normal;line-height:0.9ex; letter-spacing:0px;}
+.MACLIB b {color:#303080;}
+.MACLIB ul {margin:0;}
+.MACLIB table {border: 2px solid #000080;}
+.MACLIB td {border:1px solid #000080; background-color:#F0FFFF;}
+.MACLIB th {border:1px solid #000080; background-color:#B0E8E8;}
+.MACLIB dd.PRE, .MACLIB div.PRE {padding:0.4ex 0.4em; background-color:#F0FFFF;}
+/* Object and project files style  */
+.OBJLIB {color:#600040; background-color:#FFE8FF;}
+.OBJLIB a:link, .OBJLIB a:visited {color:#600040;}
+.OBJLIB a#top {font-size:120%;line-height:2ex;}
+.OBJLIB h1 {border:1px solid #C00060; background-color:#FFF0FF;}
+.OBJLIB h1 a, .OBJLIB dt a {color:#600040;}
+.OBJLIB h1 i {font-size:60%; color:#606060;}
+.OBJLIB h1 abbr {font-size:60%;font-weight:normal;line-height:0.9ex; letter-spacing:0px;}
+.OBJLIB b {color:#803060;}
+.OBJLIB table {border: 2px solid #600040;}
+.OBJLIB td {border:1px solid #600040; background-color:#FFF0FF;}
+.OBJLIB th {border:1px solid #600040; background-color:#FFB0E8;}
+.OBJLIB dd.PRE {padding:0.4em 0.4ex; background-color:#FFF0FF;}
+/* EUROASM source files style  */
+.EASOURCE {color:#600000; background-color:#FFD8D8;}
+.EASOURCE a:link, .EASOURCE a:visited {color:#600000;}
+.EASOURCE h1 {border:1px solid #600000;background-color:#FFF0F0;margin-right:1em;}
+.EASOURCE h1 a, .EASOURCE dt a {color:#600000;}
+.EASOURCE h1 i {font-size:60%; color:#606060;}
+.EASOURCE table {border: 2px solid #600000;}
+.EASOURCE td {border:1px solid #600000; background-color:#FFF0F0;}
+.EASOURCE th {border:1px solid #600000; background-color:#E8B0B0;}
+.EASOURCE fieldset {border: 2px solid #600000; font-size:80%;}
+.EASOURCE code {background-color:#FFE8E8;}
+.EASOURCE i {color:#808080;}
+.EASOURCE h1 span.ILIST a {font-weight:normal; border-bottom:0; letter-spacing:normal; display:block;}
+.EASOURCE dd.PRE {padding:0.4em 0.4ex; background-color:#FFF0F0;}
+.EASOURCE dd .SRC {background-color:#FFFFD8;}
+.EASOURCE ol {padding-left:12em;}
+.EASOURCE ol.INLINE {display:inline;margin-left:6em;}
+.EASOURCE ol.INLINE li {margin-left:10%;}
+.EASOURCE ol.INLINE li ul.INLINE li {margin-left:0;}
+.EASOURCE td small {font-size:75%; XXXXXXXXfont-style:italic;color:#804060;}
+.EASOURCE .II input {width:100%;}
+.EASOURCE .II input[type="submit"] {float:right;margin:2ex; padding:2ex;width:25%;}
+/* EUROASM tests file style */
+.EATESTS {color:#006000; background-color:#D8FFD8;}
+.EATESTS h1 {border:1px solid #006000;background-color:#F0FFF0;margin-right:1em;line-height:2ex;letter-spacing:1px;}
+.EATESTS h1 a, .EATESTS dt a {color:#006000;}
+.EATESTS h1 i {font-size:60%;color:#606060;}
+.EATESTS a:link, .EATESTS a:visited {color:#006000;}
+.EATESTS table {border: 2px solid #006000;}
+.EATESTS th {border:1px solid #006000; background-color:#A0F0A0;}
+.EATESTS td {border:1px solid #006000; background-color:#F0FFF0;}
+.EATESTS code {display:block; padding:2px 1em 1ex;margin-top:4px; background-color:#006000; color:#C0FFC0; }
+.EATESTS fieldset {float:left; width:45%; margin:2px;}
+.EATESTS input.FULL, textarea {width:100%;}
+.EATESTS label.RIGHT {float:right;}
+.EATESTS input[type='submit'] {color:#004000;background-color:#B0FFB0; margin:0.5em 2ex;}
+.EATESTS button {color:#004000;background-color:#B0FFB0; margin:1ex 1em;padding:1ex 1em;}
+.EATESTS pre {color:#005000;background-color:#ECFFE4;}
+.EATESTS p.DISABLED {color:#600000;}
+.EATESTS button {float:right;margin:3px;}
+.EATESTS dl.STATUS {background-color:#FFFFA0;color:#008000;text-decoration:none;}
+.EATESTS dl.STATUS del {background-color:#FFFFA0;color:#800000;text-decoration:none;}
+.EATESTS del {color:#800000;text-decoration:none;}
+.EATESTS div.RESULT {position:absolute; left:2em; top:25ex; width:95%; font-size:80%; margin:1ex 0; background-color:#D8FFD8;}
+.EATESTS span.DIFF {display:block;background-color:#FFD0D0; color:#000000; padding:0 1ex;}
+.EATESTS span.TITLE {font-size:80%;}
+.EATESTS form.X input {height:80%;width:100%;margin:0;padding:0;}
+/* Common menu style */
+.HEADMENU table {border:1px solid #404040;margin:0 0 8px 0;width:90%;}
+.HEADMENU td {border:0;color:#303030; background-color:#F0F0F0; width:8%;}
+.HEADMENU th {border:0;xcolor:#303030; background-color:#F0F0F0; width:8%;}
+.HEADMENU a:link,.HEADMENU a:visited {color:#303030; text-decoration:none; border:none;}
+table.HEADMENU input.q {length:50%;}
+td.TREE {line-height:2ex; font-family:monospace; white-space:nowrap; }
+/* Miscellaneous adhoc styles         */
+br.CLEAR {clear:both;}
+h1#TestTitle a {font-size:100%;}
+img#Wait {position:absolute; left:40px; top:40px;}
+.CODE td {font-family:monospace; white-space:nowrap;}
+.DIMMED {color:#808080;} 
+.HALFCOLUMN  {width:45%; float:left; margin:0 2em;}
+.FLOATING table {float:left; width:45%;}
+.COL1OF3,.COL2OF3,.COL3OF3 {width:30%; float:left;}
+.inner {background-color:#FFCCEE;}
+.outer {background-color:#CCFFCC;}
+table.SMALLER th {font-size:80%;padding:1px;}
+table.SMALLER td {font-size:90%;padding:0 2px;background-color:#E0FFE0;}
+table.SMALLER td.NA {color:#506050; background-color:#C0D0C0;}
+table.SMALLER td abbr {font-size:110%; color:#506050; background-color:#FFFFFF;}
+input#find {color:#202020;background-color:#D8D8D8;margin:0;}
+input#q {color:#404040;background-color:#FFFFFF;margin:0;}
+input#CI,input#EW {color:#404040;background-color:#FFFFFF;margin:0;}
+img#Overlap {visibility:none;}
+#PfModel {border:0;}
