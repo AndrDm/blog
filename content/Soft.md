@@ -42,11 +42,11 @@ Different flavors from 3.11 used in the past
 
 ## Source Code Control
 
-|                 |              |             |      |
-| --------------- | ------------ | ----------- | ---- |
-| Github Desktop  | 3.4.19 (x64) | 27-APR-2025 |      |
-| Git for Windows |              |             |      |
-|                 |              |             |      |
+|                                                      |              |             |      |
+| ---------------------------------------------------- | ------------ | ----------- | ---- |
+| [Github Desktop](https://github.com/apps/desktop)    | 3.4.19 (x64) | 27-APR-2025 |      |
+| [Git for Windows](https://git-scm.com/downloads/win) | (2.49.0) x64 | 17-MAR-2025 |      |
+|                                                      |              |             |      |
 
 
 
@@ -60,9 +60,17 @@ Different flavors from 3.11 used in the past
 
 Source Code Control
 
-|                 |      |      |      |
-| --------------- | ---- | ---- | ---- |
-| Github Desktop  |      |      |      |
-| Perforce Server |      |      |      |
-| Perforce Client |      |      |      |
+|                 |              |          |                                                              |
+| --------------- | ------------ | -------- | ------------------------------------------------------------ |
+| GitHub Desktop  | 3.4.19 (x64) | MAI-2025 | [Download for Windows](https://desktop.githubusercontent.com/releases/3.4.19-d147b1a3/GitHubDesktopSetup-x64.exe) |
+| Perforce Server |              |          |                                                              |
+| Perforce Client |              |          |                                                              |
+
+## GPU
+
+|                     |      |             |                                                              |
+| ------------------- | ---- | ----------- | ------------------------------------------------------------ |
+| NVIDIA CUDA Toolkit | 12.9 | 14-MAI-2025 | [cuda_12.9.0_576.02_windows.exe](https://developer.download.nvidia.com/compute/cuda/12.9.0/local_installers/cuda_12.9.0_576.02_windows.exe) |
+|                     |      |             |                                                              |
+|                     |      |             |                                                              |
 
