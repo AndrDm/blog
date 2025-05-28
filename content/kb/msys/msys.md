@@ -39,6 +39,7 @@ pacman -S mingw-w64-ucrt-x86_64-clang
 ```
 pacman -Sy
 pacman -Syu
+pacman -Syuu
 ```
 
 ### Add to PATH
