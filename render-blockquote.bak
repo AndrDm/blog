@@ -1,0 +1,24 @@
+{{ $alertTypes := dict "note" "Note" "tip" "Tip" "important" "Important" "warning" "Warning" "caution" "Caution" }}
+{{ $m := .Page.Resources.Match "alert-icons/*" }}
+{{- if and (strings.HasPrefix .Inner "[!") (strings.HasSuffix .Inner "]") -}}
+  {{ $type := (replaceRE "^\\[!(\\w+)\\]" "${1}" .Inner) | lower }}
+  {{ with index $alertTypes $type }}
+    <div class="alert alert-{{ $type }}">
+      <strong>{{ . }}</strong>
+      <div>{{ replaceRE "^\\[!\\w+\\]\\s*" "" .Inner | markdownify }}</div>
+    </div>
+  {{ end }}
+{{- else -}}
+  <blockquote>{{ .Inner | markdownify }}</blockquote>
+{{- end -}}
+
+---
+
+{{ if strings.HasPrefix .Inner "[!" }}
+  {{ $type := replaceRE `^\[!(\w+)\]\s*` "$1" .Inner | lower }}
+  <div class="alert alert-{{ $type }}">
+    {{ .Inner | replaceRE `^\[!(\w+)\]\s*` "" | markdownify }}
+  </div>
+{{ else }}
+  <blockquote>{{ .Inner | markdownify }}</blockquote>
+{{ end }}
