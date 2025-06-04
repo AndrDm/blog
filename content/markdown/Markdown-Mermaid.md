@@ -494,3 +494,33 @@ You can find details [here](https://mermaid.js.org/syntax/c4c.html).
 
 
 ```
+
+### Notes
+
+> [!NOTE]
+>
+> Note Block
+
+> [!TIP]
+>
+> Tip Block
+>
+
+> [!IMPORTANT]
+>
+> Important Block
+>
+
+> [!WARNING]
+>
+> Warning Block
+>
+
+> [!CAUTION]
+>
+> Caution Block
+>
+
+> [!CUSTOM]
+>
+> Custom Block
