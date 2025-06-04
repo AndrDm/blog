@@ -88,3 +88,21 @@ server.viscripting.showScriptingOperationsInEditor=True
 
 Some additional Info: [LabVIEW configuration file/Miscellaneous](https://labviewwiki.org/wiki/LabVIEW_configuration_file/Miscellaneous).
 
+## Catch internals Errors
+
+In case of internal errors the following keys could be helpful:
+
+```
+Debugging=True
+LVdebugKeys=True
+DPrintfLogging=True
+```
+
+The next time the crash happens, check one of these log files:
+
+```
+%temp%\LabVIEW_[bitness]_[version]_[user]_cur.txt
+%temp%\LabVIEW_[bitness]_[version]_[user]_log.txt
+```
+
+Refer to [1](https://forums.ni.com/t5/LabVIEW/Fatal-Internal-Error-0x6D0FD433-quot-undo-cpp-quot-line-5038/m-p/4440613#M1310580) and [2](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000P9QYSA0&l=de-DE).
