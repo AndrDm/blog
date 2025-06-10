@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/ai/deepseek.md",
+                "file": "labview/math/rnd/galois_mercenne.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "deepseek"
+              "title": "galois_mercenne"
             }
           }
         ],
@@ -121,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 298.5
   },
   "right": {
     "id": "c47ee55e83f711c5",
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/ai/deepseek.md",
+                "file": "labview/math/rnd/galois_mercenne.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of deepseek"
+              "title": "Outline of galois_mercenne"
             }
           }
         ],
@@ -212,6 +212,10 @@
   },
   "active": "7ef3332ea5237905",
   "lastOpenFiles": [
+    "kb/ai/deepseek.md",
+    "labview/math/rnd/galois_mercenne.md",
+    "labview/math/rnd",
+    "labview/math",
     "2024-12-02.md",
     "kb/numa.md",
     "kb/cvi/cvi_volatile.md",
@@ -219,7 +223,6 @@
     "labview/dll/dll_in_rust_array_resize.md",
     "labview/nxg/ROIBugFix.md",
     "labview/nxg",
-    "kb/ai/deepseek.md",
     "kb/ai",
     "labview/latest/2025.md",
     "labview/perf/strings/slow_strings.md",
@@ -238,10 +241,8 @@
     "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
     "plc/sha256_in_plc",
-    "plc/using_assembly",
     "kb/ahk_far.md",
     "plc/state_machine.md",
-    "plc/FARA825.tmp",
     "plc/assets/Pasted image 20241211155347.png",
     "plc/assets/uaexpert.gif",
     "plc/assets/image-20241211170910677.png",
@@ -256,7 +257,6 @@
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
     "kb/drive_d/mapped_drive.md",
-    "kb/prevent_win_updates/metered_connection.md",
-    "kb/cpu_name.md"
+    "kb/prevent_win_updates/metered_connection.md"
   ]
 }
