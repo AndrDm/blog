@@ -30,7 +30,7 @@ static inline uint16_t galois_lfsr16(GRand* rand) {
 }
 ```
 
-so I will take 32-bit and lover 16 bit only:
+So, I use a 32-bit version and take only the lower 16 bits:
 
 ```c
 static inline uint16_t galois_lfsr32(GRand* rand) {
