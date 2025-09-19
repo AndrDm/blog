@@ -1,5 +1,6 @@
 {
-  "hugoCommandPath": "hugo",
+  "hugoCommandPath": "..hugo",
+  "hugoServerFlags": "--navigateToChanged",
   "port": "1313",
   "command": "C:\\Desktop\\blog\\hugo.exe"
 }
