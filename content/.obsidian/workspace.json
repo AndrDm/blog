@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labview/math/rnd/galois_mercenne.md",
+                "file": "kb/ht/HyperThreading.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "galois_mercenne"
+              "title": "HyperThreading"
             }
           }
         ],
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "labview/math/rnd/galois_mercenne.md",
+                "file": "kb/ht/HyperThreading.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура galois_mercenne"
+              "title": "Структура HyperThreading"
             }
           }
         ],
@@ -213,8 +213,10 @@
   },
   "active": "7ef3332ea5237905",
   "lastOpenFiles": [
-    "kb/ai/deepseek.md",
     "labview/math/rnd/galois_mercenne.md",
+    "kb/ht/HyperThreading.md",
+    "kb/ht",
+    "kb/ai/deepseek.md",
     "labview/math/rnd",
     "labview/math",
     "2024-12-02.md",
@@ -241,7 +243,6 @@
     "2024-12-15.md",
     "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
-    "plc/sha256_in_plc",
     "kb/ahk_far.md",
     "plc/state_machine.md",
     "plc/assets/Pasted image 20241211155347.png",
@@ -257,7 +258,6 @@
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
-    "kb/drive_d/mapped_drive.md",
-    "kb/prevent_win_updates/metered_connection.md"
+    "kb/drive_d/mapped_drive.md"
   ]
 }
