@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/ai/deepseek.md",
+                "file": "kb/ht/HyperThreading.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "deepseek"
+              "title": "HyperThreading"
             }
           }
         ],
@@ -87,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -121,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 298.5
   },
   "right": {
     "id": "c47ee55e83f711c5",
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/ai/deepseek.md",
+                "file": "kb/ht/HyperThreading.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of deepseek"
+              "title": "Структура HyperThreading"
             }
           }
         ],
@@ -201,17 +201,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "7ef3332ea5237905",
   "lastOpenFiles": [
+    "labview/math/rnd/galois_mercenne.md",
+    "kb/ht/HyperThreading.md",
+    "kb/ht",
+    "kb/ai/deepseek.md",
+    "labview/math/rnd",
+    "labview/math",
     "2024-12-02.md",
     "kb/numa.md",
     "kb/cvi/cvi_volatile.md",
@@ -219,7 +226,6 @@
     "labview/dll/dll_in_rust_array_resize.md",
     "labview/nxg/ROIBugFix.md",
     "labview/nxg",
-    "kb/ai/deepseek.md",
     "kb/ai",
     "labview/latest/2025.md",
     "labview/perf/strings/slow_strings.md",
@@ -237,11 +243,8 @@
     "2024-12-15.md",
     "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
-    "plc/sha256_in_plc",
-    "plc/using_assembly",
     "kb/ahk_far.md",
     "plc/state_machine.md",
-    "plc/FARA825.tmp",
     "plc/assets/Pasted image 20241211155347.png",
     "plc/assets/uaexpert.gif",
     "plc/assets/image-20241211170910677.png",
@@ -255,8 +258,6 @@
     "plc/assets/TrafficLight.png",
     "plc/Без названия.md",
     "labview/net/netFrameworkCoreStandard.md",
-    "kb/drive_d/mapped_drive.md",
-    "kb/prevent_win_updates/metered_connection.md",
-    "kb/cpu_name.md"
+    "kb/drive_d/mapped_drive.md"
   ]
 }

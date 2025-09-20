@@ -31,7 +31,7 @@ generate-h1-from-title = true
   pager = true
   post_meta = ["date", "lastmod", "categories"] # Order of post meta information
   mainSections = ["kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "hugo", "misc", "usability"]
-  allSections = ["markdown", "kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "sandbox", "hugo", "misc", "usability"]
+  allSections = ["assembly", "markdown", "kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "sandbox", "hugo", "misc", "usability"]
   math = true
 
 [Params.logo]
@@ -107,7 +107,11 @@ generate-h1-from-title = true
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'github' # monokai
+    # style = 'github' # monokai
+    # style = 'monokai' # monokai # monokailight 
+    # style = 'monokailight' # monokai # monokailight xcode
+    style = 'xcode'
+
     tabWidth = 4
 
   [markup.goldmark]
