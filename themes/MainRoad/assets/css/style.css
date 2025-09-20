@@ -1,6 +1,7 @@
 /* {{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}} */
 {{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#64a384") -}}
 {{- $headersColor := .Site.Params.style.vars.headersColor | default (.Site.Params.headersColor | default "#013025") -}}
+{{- $bodyColor := .Site.Params.style.vars.bodyColor | default (.Site.Params.bodyColor | default "#757575") -}}
 
 
 /* {{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}} */
