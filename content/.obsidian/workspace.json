@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kb/ht/HyperThreading.md",
+                "file": "assembly/20251006-memread.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HyperThreading"
+              "title": "20251006-memread"
             }
           }
         ],
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kb/ht/HyperThreading.md",
+                "file": "assembly/20251006-memread.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура HyperThreading"
+              "title": "Структура 20251006-memread"
             }
           }
         ],
@@ -213,6 +213,12 @@
   },
   "active": "7ef3332ea5237905",
   "lastOpenFiles": [
+    "assembly/20251006-latency.md",
+    "assembly/20251006-memread.md",
+    "assembly/20250916-llvm-mca.md",
+    "labview/dll/dll_in_assembler.md",
+    "assembly/20251006-fmt.md",
+    "assembly/20251006-cpu-freq.md",
     "labview/math/rnd/galois_mercenne.md",
     "kb/ht/HyperThreading.md",
     "kb/ht",
@@ -243,8 +249,6 @@
     "2024-12-15.md",
     "plc/state_machine/state_machine.md",
     "plc/using_assembly/using_assembly_in_plc.md",
-    "kb/ahk_far.md",
-    "plc/state_machine.md",
     "plc/assets/Pasted image 20241211155347.png",
     "plc/assets/uaexpert.gif",
     "plc/assets/image-20241211170910677.png",
@@ -253,11 +257,7 @@
     "kb/assets/image-20241207061516895.png",
     "kb/assets/image-20241207061347154.png",
     "kb/assets/image-20241207061240640.png",
-    "kb/PowerToys_in_trouble.md",
     "benchmarks/i7-3520M@3400 MHz + Intel HD 4000 - AIDA64 CPUID 2.png",
-    "plc/assets/TrafficLight.png",
-    "plc/Без названия.md",
-    "labview/net/netFrameworkCoreStandard.md",
-    "kb/drive_d/mapped_drive.md"
+    "plc/assets/TrafficLight.png"
   ]
 }
