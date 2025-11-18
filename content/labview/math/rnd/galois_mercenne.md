@@ -289,5 +289,28 @@ int __stdcall DllMain (HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 ```
 Useful link for me (in Russian) [Детальный обзор полей Галуа](https://habr.com/ru/articles/916740/).
 
+
+Update 18-NOV-2025
+
+This is a linear congruential generator (LCG) with multiplier 6364136223846793005 and an odd increment (inc | 1).
+
+```c
+
+typedef struct { uint64_t state;  uint64_t inc; } pcg32_random_t;
+
+uint32_t pcg32_random_r(pcg32_random_t* rng) {
+    uint64_t oldstate = rng->state;
+    rng->state = oldstate * 6364136223846793005ULL + (rng->inc | 1);
+    uint32_t xorshifted = ((oldstate >> 18u) ^ oldstate) >> 27u;
+    uint32_t rot = oldstate >> 59u;
+    return (xorshifted >> rot) | (xorshifted << ((-rot) & 31));
+}
+
+
+```
+
+
+
+
 </details>
 
