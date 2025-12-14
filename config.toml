@@ -30,8 +30,8 @@ generate-h1-from-title = true
   author.avatar = "img/avatar.png"
   pager = true
   post_meta = ["date", "lastmod", "categories"] # Order of post meta information
-  mainSections = ["kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "hugo", "misc", "usability"]
-  allSections = ["assembly", "markdown", "kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "sandbox", "hugo", "misc", "usability"]
+  mainSections = ["kb", "excel", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "hugo", "misc", "usability"]
+  allSections = ["assembly", "excel", "markdown", "kb", "xray", "ndt", "history", "museum", "algorithms", "programming", "hardware", "labview", "plc", "sandbox", "hugo", "misc", "usability"]
   math = true
 
 [Params.logo]
