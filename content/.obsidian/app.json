@@ -2,5 +2,8 @@
   "useMarkdownLinks": true,
   "userIgnoreFilters": [
     "*.png"
-  ]
+  ],
+  "attachmentFolderPath": "./assets",
+  "newFileLocation": "current",
+  "newLinkFormat": "relative"
 }
