@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "assembly/20251006-memread.md",
+                "file": "museum/programming_1965/programming_1965.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20251006-memread"
+              "title": "programming_1965"
             }
           }
         ],
@@ -87,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
+              "title": "Files"
             }
           },
           {
@@ -183,13 +183,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assembly/20251006-memread.md",
+                "file": "museum/programming_1965/programming_1965.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура 20251006-memread"
+              "title": "Outline of programming_1965"
             }
           }
         ],
@@ -197,24 +197,28 @@
       }
     ],
     "direction": "horizontal",
-    "width": 436.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Меню быстрого перехода": false,
-      "graph:Граф": false,
-      "canvas:Создать новый холст": false,
-      "daily-notes:Сегодняшняя заметка": false,
-      "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
-      "bases:Создать новую базу": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "7ef3332ea5237905",
   "lastOpenFiles": [
-    "assembly/20251006-latency.md",
+    "Pasted image 20251220101915.png",
+    "museum/xray_discovery/xray_discovery.md",
+    "museum/programming_1965/programming_1965.md",
+    "museum/programming_1965",
     "assembly/20251006-memread.md",
+    "assembly/20251006-latency.md",
     "assembly/20250916-llvm-mca.md",
     "labview/dll/dll_in_assembler.md",
     "assembly/20251006-fmt.md",
@@ -241,14 +245,10 @@
     "labview/kb/how_to_set_par_threads.md",
     "ndt/paar_bildung",
     "kb/20250112-intel.md",
-    "ndt/book",
     "kb/20250112-winget.md",
     "labview/opc_ua/opc_ua_certificates.md",
     "kb/Checksums.md",
     "plc/sha256_in_plc/sha256_in_plc.md",
-    "2024-12-15.md",
-    "plc/state_machine/state_machine.md",
-    "plc/using_assembly/using_assembly_in_plc.md",
     "plc/assets/Pasted image 20241211155347.png",
     "plc/assets/uaexpert.gif",
     "plc/assets/image-20241211170910677.png",
