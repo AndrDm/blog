@@ -21,7 +21,7 @@ An X-ray Image Intensifier converts X-rays into visible light at a much higher i
 
 The device shown in the photo above is equipped with a CCIR camera, which connects directly to a black-and-white TV via a coaxial cable with BNC connectors.
 
-However, the image produced by this setup was often low in contrast and noisy. To improve image quality, the UK-based company [Quantel](https://en.wikipedia.org/wiki/Quantel) developed a device called *Crystal Saffire*.
+However, the image produced by this setup was often low in contrast and noisy. To improve image quality, the UK-based company [Quantel](https://en.wikipedia.org/wiki/Quantel) developed a device called *Crystal Sapphire*:
 
 ![](assets/Bild000251m1 (Benutzerdefiniert).jpg)
 
