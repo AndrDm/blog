@@ -3,12 +3,13 @@ title: Crystal Saffire Image Enhancement Box
 date: 2026-01-24
 authorbox: false
 sidebar: false
-description: Some notes about Pair Production
+description: Crystal Saffire Image Enhancement Box
 categories:
   - NDT
 archives: 2026-01
 tags:
   - x-ray
+  - museum
 draft: false
 ---
 How image enhancements for x-ray inspection was done over 40 years ago.
