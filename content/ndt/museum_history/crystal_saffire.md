@@ -1,9 +1,9 @@
 ---
-title: Crystal Saffire Image Enhancement Box
+title: Crystal Sapphire Image Enhancement Box
 date: 2026-01-24
 authorbox: false
 sidebar: false
-description: Crystal Saffire Image Enhancement Box
+description: Crystal Sapphire Image Enhancement Box
 categories:
   - NDT
 archives: 2026-01
@@ -14,7 +14,7 @@ draft: false
 ---
 How image enhancements for x-ray inspection was done over 40 years ago.
 <!--more-->
-A long time ago, X-ray inspection was performed using devices called [X-ray Image Intensifiers](https://en.wikipedia.org/wiki/X-ray_image_intensifier). An example of such a device is the *Seifert VistaLux*.
+A long time ago, X-ray inspection was performed using devices called [X-ray Image Intensifiers](https://en.wikipedia.org/wiki/X-ray_image_intensifier). An example of such a device is the *Seifert VistaLux*:
 
 ![](assets/Bild000014s.jpg)
 
