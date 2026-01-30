@@ -7,7 +7,7 @@ description: Learn how to colorize cells in Excel based on rules from other cell
 categories:
   - "Excel"
 archives:
-  - "Dec-2025"
+  - "2025-12"
 tags:
   - "excel"
 draft: false
