@@ -6,7 +6,7 @@ sidebar: false
 description: Far Manager Editor Crash with ConEmu
 categories:
   - Knowledge Base
-archives: 2026-14
+archives: 2026-04
 tags:
   - ConEmu
   - Far
