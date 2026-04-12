@@ -1,0 +1,131 @@
+---
+title: Rust - Macro vs Function
+date: 2026-04-12
+description: Macro vs Function
+programming_languages:
+  - Rust
+categories:
+  - Programming
+archives:
+  - 2026-04
+tags:
+  - MyLearning
+draft: false
+
+---
+A practical look at when to use macros and when to stick with functions in Rust, using a real FFI example (`void_ptr`) to show why macros don’t magically make your code faster — and why small helper functions often compile to identical machine code. 
+<!--more-->
+
+Let say I have FFI Call like this one:
+
+```rust
+unsafe extern "C" {
+	pub fn CNVGetScalarDataValue(
+		data: CNVData,
+		type_: CNVDataType,
+		value: *mut ::std::os::raw::c_void,
+	) -> ::std::os::raw::c_int;
+}
+```
+
+This is actually from CVI Network Variables:
+
+```c
+int CVIFUNC CNVGetScalarDataValue(CNVData data, CNVDataType type, void * value);
+```
+
+This function supported different types.
+
+So, in Rust will be called like this:
+
+```
+	//...
+	let mut value: c_int = 0;
+	let result = CNVGetScalarDataValue(
+		data,
+		CNVDataType_CNVInt32,
+		&mut value as *mut c_int as *mut c_void,
+	);
+	println!("{}", value);
+```
+
+So far so good, it works, but this one `&mut value as *mut c_int as *mut c_void,` is not nice.
+
+Technically if If `value` is already a `c_int`, you can collapse the casts to idiomatic:
+
+```rust
+&mut value as *mut _ as *mut c_void
+```
+
+or even
+
+```rust
+value.as_mut() as *mut _ as *mut c_void
+```
+
+📌 Why this is the minimum
+
+- `CNVGetScalarDataValue` expects a `*mut c_void`
+- Rust references (`&mut T`) must be cast to raw pointers (`*mut T`)
+- Then cast again to `*mut c_void`
+
+So you always need **two casts**, but you can shorten the types.
+
+⭐ Even cleaner: helper function
+
+If you call this often, hide the ugliness:
+
+```rust
+fn void_ptr<T>(v: &mut T) -> *mut c_void {
+    v as *mut T as *mut c_void
+}
+
+let result = CNVGetScalarDataValue(
+    data,
+    CNVDataType_CNVInt32,
+    void_ptr(&mut value),
+);
+```
+
+This is the most readable approach, but our goal is simply to avoid writing the casts manually, this is the closest macro equivalent:
+
+⭐ Slightly nicer: macro that takes value and borrows it
+If you want the macro to always take a mutable reference:
+
+```rust
+macro_rules! void_ptr {
+    ($v:expr) => {
+        &mut $v as *mut _ as *mut c_void
+    };
+}
+```
+
+Then usage:
+
+```rust
+let result = CNVGetScalarDataValue(
+    data,
+    CNVDataType_CNVInt32,
+    void_ptr!(value),
+);
+```
+
+Now the question is - do we have penalties by function call or not?
+
+Let compare both in Assembly:
+
+```assembly
+.text:0000000140001266                 mov     [rbp+60h+var_4C], 0
+.text:000000014000126D                 mov     rcx, qword ptr [rbp+60h+var_78]
+.text:0000000140001271                 mov     edx, 3
+.text:0000000140001276                 mov     r8, rdi
+.text:0000000140001279                 call    CNVGetScalarDataValue
+.text:000000014000127E                 mov     r12d, eax
+.text:0000000140001281                 mov     [rbp+60h+var_50], 0
+.text:0000000140001288                 mov     rcx, qword ptr [rbp+60h+var_78]
+.text:000000014000128C                 mov     edx, 3
+.text:0000000140001291                 mov     r8, rbx
+.text:0000000140001294                 call    CNVGetScalarDataValue
+```
+
+Our parameter is in r8, and here no any difference between macro and function.
