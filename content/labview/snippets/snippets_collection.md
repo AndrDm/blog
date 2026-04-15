@@ -42,6 +42,10 @@ usage:
 
 Refer to [Re: -0.002 and -0.002 are not equal](https://forums.ni.com/t5/LabVIEW/0-002-and-0-002-are-not-equal/m-p/4410266#M1299609).
 
+### Units
+
+![](assets/Voltage.png)
+
 ## IMAQ Vision
 
 ### Fill U16 Image with random pixels
