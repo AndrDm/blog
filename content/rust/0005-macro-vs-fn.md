@@ -131,3 +131,7 @@ The pointer argument ends up in `r8` in both cases, and there is **no difference
 ## Conclusion
 
 Macros are great for syntactic convenience, but they don’t make your code faster. For FFI pointer casts, a small helper function is usually the cleanest and safest option — and thanks to Rust’s optimizer, it compiles down to the same machine code as a macro.
+
+## Links
+
+[Rust Macros vs Functions: What Java and Python Developers Should Know](https://noos.blog/posts/rust-macros-vs-functions/).
