@@ -420,7 +420,11 @@ fn main() {
 		t10.elapsed().as_millis()
 	);
 }
-  ```
+```
 
 </details>
+
+## Links
+
+[Rust Iterator Cheat Sheet](https://danielkeep.github.io/itercheat_baked.html).
 
