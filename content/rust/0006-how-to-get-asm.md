@@ -95,7 +95,7 @@ fn main() {
 
 Now it must be compiled with following command, the output assembly will be in target:
 
-```bash
+```console
 cargo rustc --release -- --emit asm -C opt-level=3 -C "llvm-args=-x86-asm-syntax=intel"
 copy target\release\deps\r_asm_marker.s r_asm_marker.s
 ```
@@ -104,7 +104,7 @@ copy target\release\deps\r_asm_marker.s r_asm_marker.s
 
 Now you can easily find according assembly code in the generated listing:
 
-```assembly
+```nasm
 	#APP
 
 	# === Prolog - before values.iter().sum() ===
