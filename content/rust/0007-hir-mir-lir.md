@@ -204,7 +204,7 @@ fn main() {
 }
 ```
 
-### HIR
+### HIR — High‑Level Intermediate Representation
 
 ```
 cargo +nightly rustc -- -Zunpretty=hir > hir.log
@@ -233,7 +233,7 @@ fn main() {
 }
 ```
 
-### THIR
+### THIR — Typed High‑Level Intermediate Representation
 
 ```
 cargo +nightly rustc -- -Zunpretty=thir-tree > thir.log
@@ -275,7 +275,9 @@ body:
 // ... + ~700 lines
 ```
 
-### MIR
+### MIR  — Mid‑Level Intermediate Representation
+
+(with borrow regions, moves, drops, etc.)
 
 ```
 cargo +nightly rustc -- -Zunpretty=mir > mir.log
@@ -362,7 +364,7 @@ alloc1 (size: 9, align: 1) {
 }
 ```
 
-### LLVM
+### LLVM IR — Low‑Level Virtual Machine Intermediate Representation
 
 ```
 cargo +nightly rustc --release -- --emit=llvm-ir
@@ -676,4 +678,15 @@ cargo +nightly rustc -- -Z unpretty=mir > mir.log
 cargo rustc --release -- --emit=llvm-ir
 cargo rustc --release -- --emit=asm -C "llvm-args=-x86-asm-syntax=intel"
 ```
+
+### 🧭 Summary Table
+
+| IR          | Stands for                       | Level    | Purpose                                      |
+| ----------- | -------------------------------- | -------- | -------------------------------------------- |
+| **HIR**     | High‑Level IR                    | High     | Desugared Rust, type‑checked, readable       |
+| **THIR**    | Typed High‑Level IR              | High‑mid | Typed expression tree, used to build MIR     |
+| **MIR**     | Mid‑Level IR                     | Mid      | Borrow checking, optimizations, control flow |
+| **LLVM IR** | LLVM Intermediate Representation | Low      | Optimization + codegen backend               |
+
+
 
