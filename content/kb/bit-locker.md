@@ -13,7 +13,7 @@ tags:
   - BitLocker
 draft: false
 ---
-From the administrator command prompt type manage-bde -protectors -get <drive letter>: where <drive letter> is the drive letter for the BitLocker protected drive that you want to recover. Note: The ID under a numerical password (this is the key identifier for the drive).
+From the administrator command prompt type `manage-bde -protectors -get <drive letter>:` where <drive letter> is the drive letter for the BitLocker protected drive that you want to recover. Note: The ID under a numerical password (this is the key identifier for the drive).
 <!--more-->
 
 cmd or PS as Admin, then:
