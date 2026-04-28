@@ -46,6 +46,8 @@ Refer to [Re: -0.002 and -0.002 are not equal](https://forums.ni.com/t5/LabVIEW/
 
 ![](assets/Voltage.png)
 
++ [Link](https://forums.ni.com/t5/LabVIEW/Format-to-Without-Space-Between-Number-and-Unit/m-p/4475732#M1322507)
+
 ## IMAQ Vision
 
 ### Fill U16 Image with random pixels
