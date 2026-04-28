@@ -51,3 +51,7 @@ Refer to [Re: -0.002 and -0.002 are not equal](https://forums.ni.com/t5/LabVIEW/
 ### Fill U16 Image with random pixels
 
 ![Fill U16 Image with random pixels](assets/FillU16Image.png)
+
+### Open Image, Histogram/SNR + ROI Profile
+
+![](assets/roi_snippet.png)
