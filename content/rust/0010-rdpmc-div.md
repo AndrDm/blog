@@ -1,5 +1,5 @@
 ---
-title: Measuring the True Cost of x86 Div: 32‑bit vs 64‑bit with Rust and Inline Asm
+title: Measuring the True Cost of Div (32‑bit vs 64‑bit with Rust and Inline Asm)
 date: 2026-04-28
 description: Div
 programming_languages:
