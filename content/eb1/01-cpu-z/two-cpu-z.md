@@ -16,9 +16,7 @@ i7 4800MQ:
 
 ![image-20260502091213187](assets/image-20260502091213187.png)
 
-![
-
-](assets/cpuid-1777730662123-2.png)
+![](assets/cpuid-1777730662123-2.png)
 
 i7 4940MX
 
