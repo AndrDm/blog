@@ -106,3 +106,10 @@ The next time the crash happens, check one of these log files:
 ```
 
 Refer to [1](https://forums.ni.com/t5/LabVIEW/Fatal-Internal-Error-0x6D0FD433-quot-undo-cpp-quot-line-5038/m-p/4440613#M1310580) and [2](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000P9QYSA0&l=de-DE).
+
+### German Locale for Run-Time
+
+```
+RTLocale = "German_Germany.1252"
+```
+
