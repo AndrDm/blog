@@ -1,0 +1,15 @@
+{
+  "name": "rust_leptos",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "rust_leptos_bg.wasm",
+    "rust_leptos.js",
+    "rust_leptos.d.ts"
+  ],
+  "main": "rust_leptos.js",
+  "types": "rust_leptos.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

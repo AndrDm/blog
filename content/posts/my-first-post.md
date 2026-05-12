@@ -10,6 +10,8 @@ Test 1
 Test 2
 {{< wasm-run2 module="iching_wasm/pkg/iching_wasm.js" function="generate_reading_text" >}}
 
-Test 4 (egui)
+Test 3 (egui)
 {{< wasm-egui-lazy-start module="rust_egui/pkg/rust_hello.js" function="start" >}}
 
+Test 4 (leptos)
+{{< wasm-leptos module="rust_leptos\pkg\rust_leptos.js" >}}

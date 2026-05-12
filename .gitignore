@@ -25,3 +25,4 @@ drafts/LV_Memory/incASM/euroasm.exe
 drafts/LV_Memory/incASM/euroasm.exe
 /target
 /static/rust_egui/target
+/static/rust_leptos/target

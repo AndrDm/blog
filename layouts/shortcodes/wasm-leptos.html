@@ -1,0 +1,22 @@
+{{/*
+Shortcode: wasm-leptos
+Usage:
+  {{< wasm-leptos module="leptos_app/pkg/your_crate.js" >}}
+*/}}
+
+<div id="wasm-container-{{ .Ordinal }}"></div>
+
+<script type="module">
+  import init, { start } from "/{{ .Get "module" }}";
+
+  async function runWasm() {
+    try {
+      await init();
+      start("wasm-container-{{ .Ordinal }}");
+    } catch (e) {
+      console.error("WASM failed:", e);
+    }
+  }
+
+  runWasm();
+</script>
