@@ -1,0 +1,15 @@
+{
+  "name": "iching_wasm",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "iching_wasm_bg.wasm",
+    "iching_wasm.js",
+    "iching_wasm.d.ts"
+  ],
+  "main": "iching_wasm.js",
+  "types": "iching_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
