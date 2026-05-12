@@ -1,0 +1,42 @@
+{{/*
+Shortcode: wasm-egui-lazy-start
+Usage:
+  {{< wasm-egui-lazy-start module="rust_egui/pkg/rust_hello.js" function="start" >}}
+*/}}
+
+<div id="wasm-container-{{ .Ordinal }}">
+  <div
+    style="
+      width: 800px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    "
+  >
+    <canvas
+      id="wasm-canvas-{{ .Ordinal }}"
+      width="800"
+      height="400"
+      style="
+        width: 100%;
+        height: 100%;
+        display: block;
+      "
+    ></canvas>
+  </div>
+</div>
+
+<script type="module">
+  import init, { start } from "/{{ .Get "module" }}";
+
+  async function runWasm() {
+    try {
+      await init();
+      await start("wasm-canvas-{{ .Ordinal }}");
+    } catch (e) {
+      console.error("WASM failed:", e);
+    }
+  }
+
+  runWasm();
+</script>
