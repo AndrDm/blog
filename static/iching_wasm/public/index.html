@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Ching • WASM Console</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./pkg/iching_wasm.js"></script>
+  <script src="./pkg/iching_wasm_bg_base64.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <main class="terminal-wrap">
+    <section class="terminal" aria-label="I Ching console">
+      <header class="terminal-head">
+        <div class="dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <p class="title">iching@wasm:~</p>
+      </header>
+
+      <div class="terminal-body">
+        <p class="line line-dim">Rust + WASM static app</p>
+        <p class="line">$ <button id="generateBtn" type="button">./generate_reading</button></p>
+        <pre id="resultText" class="output">Нажмите ./generate_reading</pre>
+        <p id="statusLine" class="line line-dim"></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

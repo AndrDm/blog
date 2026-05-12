@@ -1,0 +1,19 @@
+# The Docker image that will be used to build your app
+image: rust:slim
+
+create-pages:
+  pages:
+    # The folder that contains the files to be exposed at the Page URL
+    publish: public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH'
+  # Functions that should be executed before the build script is run
+  before_script:
+    - rustup target add wasm32-unknown-unknown
+    - cargo install wasm-pack --locked
+  script:
+    - wasm-pack build --target no-modules --release --out-dir public/pkg
+    - b64="$(base64 public/pkg/iching_wasm_bg.wasm | tr -d '\n')"
+    - printf 'window.ICHING_WASM_BASE64 = "%s";\n' "$b64" > public/pkg/iching_wasm_bg_base64.js

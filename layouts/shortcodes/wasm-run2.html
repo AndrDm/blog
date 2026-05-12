@@ -1,0 +1,27 @@
+{{/* 
+Shortcode: wasm-run
+Usage:
+  {{< wasm-run module="rust_app/pkg/rust_app.js" function="sieve_of_eratosthenes" >}}
+*/}}
+
+<div id="wasm-container-{{ .Ordinal }}">
+  <button id="wasm-btn-{{ .Ordinal }}">Run WASM</button>
+  <pre id="wasm-output-{{ .Ordinal }}"></pre>
+</div>
+
+<script type="module">
+  import init, * as wasm from "/{{ .Get "module" }}";
+
+  init().then(() => {
+    const runBtn = document.getElementById("wasm-btn-{{ .Ordinal }}");
+    const output = document.getElementById("wasm-output-{{ .Ordinal }}");
+
+    runBtn.addEventListener("click", () => {
+      
+      const result = wasm["{{ .Get "function" }}"]();
+      output.textContent = Array.isArray(result)
+        ? result.join(", ")
+        : result;
+    });
+  });
+</script>

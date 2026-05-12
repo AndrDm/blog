@@ -1,0 +1,127 @@
+:root {
+  --bg: #070d09;
+  --bg-soft: #0c1812;
+  --panel: #0a120d;
+  --edge: #1f6f3e;
+  --edge-soft: #194c2f;
+  --text: #8cffb8;
+  --text-dim: #5ebf82;
+  --accent: #46ff97;
+  --red: #f26d6d;
+  --yellow: #f2d76d;
+  --green: #7df2a4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "IBM Plex Mono", "JetBrains Mono", "Fira Code", "Consolas", monospace;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 15%, #193323 0%, transparent 33%),
+    radial-gradient(circle at 85% 80%, #132d20 0%, transparent 31%),
+    linear-gradient(180deg, var(--bg), var(--bg-soft));
+}
+
+.terminal-wrap {
+  width: min(1024px, calc(100% - 1.2rem));
+  margin: 1rem auto;
+}
+
+.terminal {
+  border: 1px solid var(--edge);
+  box-shadow: 0 0 0 1px #0f2d1d inset, 0 0 30px rgba(70, 255, 151, 0.14);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.terminal-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--edge-soft);
+  background: linear-gradient(180deg, #0f1c15, #0b130f);
+}
+
+.dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.dot {
+  width: 0.64rem;
+  height: 0.64rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.dot.red { background: var(--red); }
+.dot.yellow { background: var(--yellow); }
+.dot.green { background: var(--green); }
+
+.title {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.terminal-body {
+  padding: 0.8rem;
+}
+
+.line {
+  margin: 0 0 0.5rem;
+}
+
+.line-dim {
+  color: var(--text-dim);
+}
+
+#generateBtn {
+  border: 1px solid var(--accent);
+  background: #122219;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  padding: 0.25rem 0.55rem;
+}
+
+#generateBtn:hover {
+  border-color: #b8ffd6;
+  color: #dfffee;
+}
+
+#generateBtn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.output {
+  margin: 0;
+  padding: 0.7rem;
+  min-height: 320px;
+  border: 1px solid var(--edge-soft);
+  background: #070f0a;
+  color: var(--text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow: auto;
+  line-height: 1.4;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .output {
+    min-height: 280px;
+    font-size: 0.84rem;
+  }
+}
