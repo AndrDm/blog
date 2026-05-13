@@ -24,7 +24,7 @@ The reason lies in bounds checking. LabVIEW effectively performs triple bounds c
 
 Screenshot from [NI Forum Post](https://forums.ni.com/t5/LabVIEW/Replacing-a-2D-array-section-of-a-3D-array/m-p/4477124#M1322921):
 
-![](assets/Screenshot 2026-05-13 11.44.40.png)
+![](assets/3dlvr.png)
 
 This overhead dominates the actual computation, especially in tight nested loops such as diagonal traversal.
 
