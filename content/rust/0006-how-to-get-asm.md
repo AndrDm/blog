@@ -139,6 +139,20 @@ In IDA this code looks like this:
 
 As you can see, Rust does a solid job here: the loop is unrolled, and SIMD instructions are used. (Interesting detail: the loop walks the array backwards.)
 
+### Debugging
+
+If you need to stop at certain point, most easiest way just to put
+
+```Rust
+    unsafe {
+        asm!(
+            "int 3",
+        );
+    }
+```
+
+Then, once stopped, step over this instruction in the debugger.
+
 ## Links
 
 [Inline assembly - The Rust Reference](https://doc.rust-lang.org/reference/inline-assembly.html).
