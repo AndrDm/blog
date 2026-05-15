@@ -1,0 +1,18 @@
+<div id="wasm-container-{{ .Ordinal }}">
+  <pre id="wasm-output-{{ .Ordinal }}"></pre>
+</div>
+
+<script type="module">
+  import init, * as wasm from "/{{ .Get "module" }}";
+
+  init().then(async () => {
+    const output = document.getElementById("wasm-output-{{ .Ordinal }}");
+
+    // Call the async WASM function immediately
+    const result = await wasm["{{ .Get "function" }}"]();
+
+    output.textContent = Array.isArray(result)
+      ? result.join(", ")
+      : result;
+  });
+</script>

@@ -7,7 +7,13 @@ title = 'My First Post'
 Test 1
 {{< wasm-run module="rust_app/pkg/rust_app.js" function="sieve_of_eratosthenes" >}}
 
-Test 2
+Test 2a
+{{< wasm-run2 module="rust_hello/pkg/hello_wasm.js" function="generate_text" >}}
+
+Test 2a
+{{< wasm-run2 module="rust_weather/pkg/hello_weather.js" function="generate_report" >}}
+
+Test 2b
 {{< wasm-run2 module="iching_wasm/pkg/iching_wasm.js" function="generate_reading_text" >}}
 
 Test 3 (egui)

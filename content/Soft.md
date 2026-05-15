@@ -12,10 +12,10 @@ Software I using
 
 ### Windows
 
-| Operating Systems               | Version    | Release/Install | Remark |
-| ------------------------------- | ---------- | --------------- | ------ |
-| Windows 11 Enterprise LTSC 24H2 | 26100.8117 | 31-MAR-2026     |        |
-|                                 |            |                 |        |
+| Operating Systems                   | Version    | Release/Install | Remark |
+| ----------------------------------- | ---------- | --------------- | ------ |
+| Windows 11 Enterprise LTSC 24H2 Upd | 26100.8457 | 12-MAI-2026     |        |
+| Windows 11 Enterprise LTSC 24H2     | 26100.8117 | 31-MAR-2026     |        |
 
 
 

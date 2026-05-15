@@ -6,6 +6,9 @@ menu: main
 date: 2024-11-07
 ---
 
+Weather in Ahrensburg (this is Rust program, compiled to WASM):
+{{< wasm-run4 module="rust_weather/pkg/hello_weather.js" function="fetch_weather_report" >}}
+
 Weather in Ahrensburg
 
 {{< iframe_ndr "https://www.ndr.de/nachrichten/wetter/wetterplzsuche100.html?plz=22926" >}}
