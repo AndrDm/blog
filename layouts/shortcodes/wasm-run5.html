@@ -1,0 +1,24 @@
+<div id="wasm-container-{{ .Ordinal }}">
+  <pre id="wasm-output-{{ .Ordinal }}"></pre>
+</div>
+
+<script type="module">
+  import init, * as wasm from "/{{ .Get "module" }}";
+
+  init().then(() => {
+    const output = document.getElementById("wasm-output-{{ .Ordinal }}");
+
+    async function update() {
+      const result = await wasm["{{ .Get "function" }}"]();
+      output.textContent = Array.isArray(result)
+        ? result.join(", ")
+        : result;
+    }
+
+    // Run immediately
+    update();
+
+    // Update every second
+    setInterval(update, 1000);
+  });
+</script>
