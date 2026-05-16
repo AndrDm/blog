@@ -2,8 +2,10 @@
 title: Getting CPU String and Passing It to LabVIEW
 date: 2026-05-16
 description: CPU String to LabVIEW
+programming_languages:
   - Rust
   - LabVIEW
+  - C
 categories:
   - Programming
 archives:
