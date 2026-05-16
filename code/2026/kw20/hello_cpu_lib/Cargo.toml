@@ -1,0 +1,12 @@
+[package]
+name = "hello_cpu_lib"
+version = "0.1.0"
+edition = "2024"
+
+# Cargo.toml
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+raw-cpuid = "11.6.0"

@@ -26,3 +26,5 @@ drafts/LV_Memory/incASM/euroasm.exe
 /target
 /static/rust_egui/target
 /static/rust_leptos/target
+/code/2026/kw20/hello_cpu/target
+/code/2026/kw20/hello_cpu_lib/target
