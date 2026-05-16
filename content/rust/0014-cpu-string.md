@@ -320,6 +320,15 @@ pub extern "C" fn cpu_string_c(buffer: *mut c_char, length: c_int) {
     let n = bytes.len().min(max);
 
     unsafe {
+    /*
+    Here:
+        buffer: *mut c_char
+        But copy_nonoverlapping expects a *mut u8 for byte copying.
+        So we cast it: buffer as *mut u8.
+        This is necessary because c_char is not guaranteed to be u8 on all platforms
+        (it can be signed or unsigned).
+        Rust forces you to be explicit.
+    */
         copy_nonoverlapping(bytes.as_ptr(), buffer as *mut u8, n);
         *buffer.add(n) = 0; // null terminate
     }
@@ -350,6 +359,17 @@ pub extern "C" fn cpu_string_lv(h: LStrHandle) -> i32 {
         }
 
         (*ptr).cnt = size as i32;
+        
+        /*
+        str.as_mut_ptr() is already a *mut u8
+
+        pub struct LStr {
+            pub cnt: i32,     // number of bytes
+            pub str: [u8; 1], // flexible array member
+        }
+
+        No cast in copy_nonoverlapping needed:
+        */
 
         let dst = (*ptr).str.as_mut_ptr();
         copy_nonoverlapping(bytes.as_ptr(), dst, size);
