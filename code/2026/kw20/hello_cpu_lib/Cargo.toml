@@ -10,3 +10,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 raw-cpuid = "11.6.0"
+encoding_rs = "0.8.35"

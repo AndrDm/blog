@@ -2,10 +2,9 @@ use std::fs;
 use std::path::PathBuf;
 
 fn main() {
-    // Base directory where LabVIEW installs cintools
     let base = PathBuf::from(r"C:\Program Files\National Instruments");
 
-    // Find all directories starting with "LabVIEW "
+    // Collect all LabVIEW versions that contain cintools/labview.lib
     let mut candidates: Vec<(u32, PathBuf)> = Vec::new();
 
     if let Ok(entries) = fs::read_dir(&base) {
@@ -15,14 +14,14 @@ fn main() {
                 continue;
             }
 
-            // Folder name must start with "LabVIEW "
             let name = match path.file_name().and_then(|n| n.to_str()) {
                 Some(n) => n,
                 None => continue,
             };
 
+            // Folder must start with "LabVIEW "
             if let Some(rest) = name.strip_prefix("LabVIEW ") {
-                // Try to parse the version number (2026, 2025, 2024...)
+                // Parse version (e.g., 2026, 2025, 2024)
                 if let Ok(version) = rest.parse::<u32>() {
                     let cintools = path.join("cintools").join("labview.lib");
                     if cintools.exists() {
@@ -33,8 +32,11 @@ fn main() {
         }
     }
 
-    // Pick the highest LabVIEW version found
-    let Some((version, lib_path)) = candidates.into_iter().max_by_key(|c| c.0) else {
+    // Sort by version descending (newest first)
+    candidates.sort_by(|a, b| b.0.cmp(&a.0));
+
+    // Pick the newest version
+    let Some((version, lib_path)) = candidates.into_iter().next() else {
         panic!("Could not find any LabVIEW installation with cintools/labview.lib");
     };
 
@@ -46,6 +48,5 @@ fn main() {
     );
     println!("cargo:rustc-link-search=native={}", lib_dir.display());
     println!("cargo:rustc-link-lib=static=labview");
-    // Always link user32.lib (Windows system library)
     println!("cargo:rustc-link-lib=dylib=user32");
 }
