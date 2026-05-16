@@ -218,4 +218,4 @@ And called from LabVIEW:
 
 So simple. And that’s it — clean, simple, and fully LabVIEW‑compatible.
 
-[Code](https://github.com/AndrDm/blog/blob/main/code/2026/kw20/2026-kw20-hello_cpu.7z).
+[Code](https://github.com/AndrDm/blog/raw/refs/heads/main/code/2026/kw20/2026-kw20-hello_cpu.7z).
