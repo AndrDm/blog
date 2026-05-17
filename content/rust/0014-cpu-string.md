@@ -19,15 +19,12 @@ A simple exercise — how to obtain the CPU brand string using CPUID in Rust and
 
 <!--more-->
 
-Basic Rust code:
+Basic Rust singeliner code:
 
 ```rust
 use raw_cpuid::CpuId;
-
 fn main() {
-    let cpuid = CpuId::new();
-    let vf = cpuid.get_processor_brand_string();
-    dbg!(vf);
+    dbg!(CpuId::new().get_processor_brand_string());
 }
 ```
 
