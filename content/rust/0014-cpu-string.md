@@ -26,10 +26,8 @@ use raw_cpuid::CpuId;
 
 fn main() {
     let cpuid = CpuId::new();
-
-    if let Some(vf) = cpuid.get_processor_brand_string() {
-        println!("{:?}", vf);
-    }
+    let vf = cpuid.get_processor_brand_string();
+    dbg!(vf);
 }
 ```
 
