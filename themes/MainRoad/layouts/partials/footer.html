@@ -7,3 +7,20 @@
 		</div>
 	</div>
 </footer>
+
+<div id="footer-clock"></div>
+
+<script type="module">
+  import init, * as wasm from "/rust_kw/pkg/hello_kw.js";
+
+  init().then(() => {
+    const el = document.getElementById("footer-clock");
+
+    async function update() {
+      el.textContent = await wasm.current_timestamp_with_kw();
+    }
+
+    update();
+    setInterval(update, 1000);
+  });
+</script>

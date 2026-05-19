@@ -1,0 +1,147 @@
+use wasm_bindgen::prelude::*;
+use serde::Deserialize;
+use chrono::prelude::*;
+use js_sys::Date;
+
+#[wasm_bindgen]
+pub async fn fetch_weather_report() -> String {
+    let latitude = 53.675;
+    let longitude = 10.23;
+    let timezone = "Europe/Berlin";
+
+    let url = format!(
+        "https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}\
+        &hourly=temperature_2m,precipitation_probability,precipitation\
+        &daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum\
+        &forecast_days=7&timezone={tz}",
+        lat = latitude,
+        lon = longitude,
+        tz = timezone
+    );
+
+    let resp = reqwest::get(&url).await;
+    if resp.is_err() {
+        return "Failed to fetch weather data".into();
+    }
+
+    let weather: WeatherResponse = match resp.unwrap().json().await {
+        Ok(v) => v,
+        Err(_) => return "Failed to parse weather JSON".into(),
+    };
+
+    generate_report(&weather)
+}
+
+#[derive(Debug, Deserialize)]
+struct WeatherResponse {
+    hourly: Hourly,
+    daily: Daily,
+}
+
+#[derive(Debug, Deserialize)]
+struct Hourly {
+    time: Vec<String>,
+    temperature_2m: Vec<f32>,
+    precipitation_probability: Vec<Option<f32>>,
+    precipitation: Vec<f32>,
+}
+
+#[derive(Debug, Deserialize)]
+struct Daily {
+    time: Vec<String>,
+    temperature_2m_max: Vec<f32>,
+    temperature_2m_min: Vec<f32>,
+    precipitation_probability_max: Vec<Option<f32>>,
+    precipitation_sum: Vec<f32>,
+}
+
+fn generate_report(weather: &WeatherResponse) -> String {
+    let mut out = String::new();
+
+    // Local time via JS
+    let now = Date::new_0();
+    let now_str = now.to_iso_string().as_string().unwrap();
+    let now_parsed = NaiveDateTime::parse_from_str(&now_str[0..19], "%Y-%m-%dT%H:%M:%S").unwrap();
+
+    // Find first hour >= now
+    let mut start_idx = 0usize;
+    for (i, t) in weather.hourly.time.iter().enumerate() {
+        if let Ok(dt) = NaiveDateTime::parse_from_str(t, "%Y-%m-%dT%H:%M") {
+            if dt >= now_parsed {
+                start_idx = i;
+                break;
+            }
+        }
+    }
+
+    let end_idx = (start_idx + 8).min(weather.hourly.time.len());
+
+    out.push_str("Hourly temperature (next 8 hours):\n");
+    for i in start_idx..end_idx {
+        out.push_str(&format!(
+            "{}  |  {:.1}°C\n",
+            weather.hourly.time[i],
+            weather.hourly.temperature_2m[i]
+        ));
+    }
+
+    out.push_str("\nHourly rain expectation:\n");
+    for i in start_idx..end_idx {
+        out.push_str(&format!(
+            "{}  |  {}%  |  {:.2} mm\n",
+            weather.hourly.time[i],
+            weather.hourly.precipitation_probability[i].unwrap_or(0.0),
+            weather.hourly.precipitation[i]
+        ));
+    }
+
+    out.push_str("\nDaily forecast (next 5 days):\n");
+    let days = weather.daily.time.len().min(5);
+
+    for i in 0..days {
+        out.push_str(&format!(
+            "{} | Tmax {:.1} | Tmin {:.1} | Prob {}% | Rain {:.2} mm\n",
+            weather.daily.time[i],
+            weather.daily.temperature_2m_max[i],
+            weather.daily.temperature_2m_min[i],
+            weather.daily.precipitation_probability_max[i].unwrap_or(0.0),
+            weather.daily.precipitation_sum[i]
+        ));
+    }
+
+    out
+}
+
+
+
+
+
+/*
+use wasm_bindgen::prelude::*;
+use chrono::prelude::*;
+
+#[wasm_bindgen]
+pub fn generate_report() -> String {
+    // Local::now() works in WASM only if chrono is built with the "wasmbind" feature
+    let today = Local::now().date_naive();
+    let iso_week = today.iso_week().week();
+
+    let mut out = String::new();
+    out.push_str("Hello, WASM!\n");
+    out.push_str(&format!("KW.{}\n", iso_week));
+
+    out
+}
+
+
+#[cfg(test)]
+mod tests {
+    use super::generate_text;
+
+    #[test]
+    fn generated_text_contains_sections() {
+        let text = generate_reading_text();
+        assert!(text.contains("Hello, WASM"));
+    }
+}
+*/

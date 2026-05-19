@@ -1,0 +1,15 @@
+[package]
+name = "quick_notes"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4", features = ["clock"] }
+pulldown-cmark = "0.13"
+terminal_size = "0.4"
+yansi = "1.0"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.1"
+tempfile = "3.10"

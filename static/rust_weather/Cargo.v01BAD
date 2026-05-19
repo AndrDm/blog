@@ -1,0 +1,19 @@
+[package]
+name = "hello_weather"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# [dependencies]
+# chrono = "0.4.44"
+# wasm-bindgen = "0.2"
+
+[dependencies]
+wasm-bindgen = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["wasmbind"] }
+reqwest = { version = "0.12", features = ["json", "wasm"] }
+js-sys = "0.3"

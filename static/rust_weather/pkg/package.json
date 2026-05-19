@@ -1,0 +1,15 @@
+{
+  "name": "hello_weather",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "hello_weather_bg.wasm",
+    "hello_weather.js",
+    "hello_weather.d.ts"
+  ],
+  "main": "hello_weather.js",
+  "types": "hello_weather.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

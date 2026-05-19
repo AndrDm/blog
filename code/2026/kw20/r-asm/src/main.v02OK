@@ -1,0 +1,50 @@
+use core::arch::x86_64::*;
+use std::arch::asm;
+
+fn main() {
+    unsafe {
+        let a = _mm256_set1_epi32(10);
+        let b = _mm256_set1_epi32(20);
+
+        let mut result = _mm256_setzero_si256();
+
+        asm!(
+            //"int 3",
+            "vmovdqu ymm1, [{a_ptr}]",
+            "vmovdqu ymm2, [{b_ptr}]",
+            "vpaddd ymm3, ymm2, ymm1",
+            "vmovdqu [{out_ptr}], ymm3",
+
+            a_ptr = in(reg) &a,
+            b_ptr = in(reg) &b,
+            out_ptr = in(reg) &mut result,
+
+            //  expected one of `)`, `att_syntax`, `may_unwind`, `nomem`, `noreturn`,
+            // `nostack`, `preserves_flags`, `pure`, `raw`, or `readonly`, found `avx`
+            options(nostack, preserves_flags)
+        );
+
+        let mut out = [0i32; 8];
+        let mut a_t = [0i32; 8];
+        let mut b_t = [0i32; 8];
+
+        _mm256_storeu_si256(out.as_mut_ptr() as *mut __m256i, result);
+        _mm256_storeu_si256(a_t.as_mut_ptr() as *mut __m256i, a);
+        _mm256_storeu_si256(b_t.as_mut_ptr() as *mut __m256i, b);
+
+        println!("a_t = {:?}", a_t);
+        println!("b_t = {:?}", b_t);
+        println!("out = {:?}", out);
+        /*
+                dbg!(a_t);
+                dbg!(b_t);
+                dbg!(out);
+                println!("Result lane 0 = {}", out[0]);
+
+        for (i, v) in out.iter().enumerate() {
+            println!("lane {} = {}", i, v);
+        }
+
+        */
+    }
+}

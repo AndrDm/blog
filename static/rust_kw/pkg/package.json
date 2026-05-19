@@ -1,0 +1,15 @@
+{
+  "name": "hello_kw",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "hello_kw_bg.wasm",
+    "hello_kw.js",
+    "hello_kw.d.ts"
+  ],
+  "main": "hello_kw.js",
+  "types": "hello_kw.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
