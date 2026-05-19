@@ -86,3 +86,6 @@ https://www.intel.com/content/www/us/en/developer/articles/release-notes/oneapi-
 https://aka.ms/PowerShell-Release?tag=v7.6.1
 https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6#msi
 https://github.com/powershell/powershell
+
+Helix Rust Editor
+
