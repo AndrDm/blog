@@ -18,5 +18,11 @@ Just notes  about Epipolar Consistency of X-Ray Images
 
 <!--more-->
 
-TBD
+Base original Article — [Epipolar Consistency](https://www5.cs.fau.de/research/software/epipolar-consistency/).
+
+Base GitHub Repository — [Epipolar Consistency of X-Ray Images](https://github.com/aaichert/EpipolarConsistency).
+
+Software: Visual Studio Professional 2026 v.18.6.0
+
+
 
