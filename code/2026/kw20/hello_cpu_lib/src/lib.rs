@@ -5,7 +5,7 @@ use std::os::raw::{c_char, c_int};
 use std::ptr::copy_nonoverlapping;
 //
 // LabVIEW LStr definition (from extcode.h)
-//
+
 #[repr(C)]
 pub struct LStr {
     pub cnt: i32,     // number of bytes
