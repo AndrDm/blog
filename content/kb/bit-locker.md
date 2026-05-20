@@ -93,3 +93,29 @@ If the above identifier doesn't match the one displayed by your PC, then this is
 Try another recovery key, or refer to https://go.microsoft.com/fwlink/?LinkID=260589 for additional assistance.
 ```
 
+Another useful command `manage-bde -status C:`
+
+```
+C:\Windows\System32>manage-bde -status C:
+BitLocker Drive Encryption: Configuration Tool version 10.0.26100
+Copyright (C) 2013 Microsoft Corporation. All rights reserved.
+
+Volume C: [OS]
+[OS Volume]
+
+    Size:                 952,63 GB
+    BitLocker Version:    2.0
+    Conversion Status:    Fully Encrypted
+    Percentage Encrypted: 100,0%
+    Encryption Method:    XTS-AES 256
+    Protection Status:    Protection On
+    Lock Status:          Unlocked
+    Identification Field: Unknown
+    Key Protectors:
+        TPM
+        Numerical Password
+
+C:\Windows\System32>
+```
+
+Important that Key Protectors should have both TPM and Pin for full protection.
