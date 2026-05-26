@@ -14,7 +14,7 @@ tags:
 draft: false
 ---
 
-An easies way — from registry.
+An easiest way — from registry.
 
 <!--more-->
 
