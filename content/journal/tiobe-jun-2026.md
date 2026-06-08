@@ -1,5 +1,5 @@
 +++
-date = '2026-05-17'
+date = '2026-06-01'
 draft = false
 title = 'Tiobe June 2026'
 
