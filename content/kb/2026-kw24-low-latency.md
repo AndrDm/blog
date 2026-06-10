@@ -12,7 +12,7 @@ tags:
   - windows
 draft: false
 ---
-New Windows feature available in KB5089573.
+New Windows feature available in KB5094126.
 <!--more-->
 
 This one:
