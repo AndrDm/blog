@@ -1,3 +1,4 @@
 https://github.com/tbiering/hugo-slider-shortcode
 https://synyx.de/blog/an-image-slideshow-shortcode-for-hugo/
 https://hugocodex.org/add-ons/slider-carousel/
+blog\themes\MainRoad\layouts\_default\baseof.html
