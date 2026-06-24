@@ -1,0 +1,28 @@
+{{- $href := cond .IsNamedParams (.Get "href") (.Get 0) -}}
+{{- $classNames := slice "button" -}}
+{{- /* Get variant */ -}}
+{{- $variant := cond .IsNamedParams (.Get "variant") (.Get 1) -}}
+{{- if in (slice "primary" "secondary" "info" "success" "warning" "error") $variant -}}
+  {{- $classNames = $classNames | append (printf "button--%s" $variant) -}}
+{{- end -}}
+{{- /* Get size */ -}}
+{{- $size := cond .IsNamedParams (.Get "size") (.Get 2) -}}
+{{- if in (slice "small" "medium" "large") $size -}}
+  {{- $classNames = $classNames | append (printf "button--%s" $size) -}}
+{{- end -}}
+{{- /* Get disabled */ -}}
+{{- $disabled := cond .IsNamedParams (.Get "disabled") (.Get 3) -}}
+{{- if in (slice "true" "disabled") $disabled -}}
+  {{- $classNames = $classNames | append "button--disabled" -}}
+{{- end -}}
+{{- /* Get additional class name */ -}}
+{{- $class := cond .IsNamedParams (.Get "class") (.Get 4) -}}
+{{- if $class -}}
+  {{- $classNames = $classNames | append $class -}}
+{{- end -}}
+{{- /* Build class names */ -}}
+{{- $classNames = delimit $classNames " " -}}
+{{- /* Output */ -}}
+<a href="{{ $href }}" class="{{ $classNames }}" {{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
+  {{ .Inner | $.Page.RenderString }}
+</a>{{ "" -}}
