@@ -1,7 +1,8 @@
 baseurl = "/"
 uglyURLs = false
 title = "Andrey's Notes on Everything"
-languageCode = "en-us"
+# languageCode = "en-us" # deprecated
+locale = "en-US"
 # paginate = "15" # Number of posts per page
 pagination.pagerSize = 15
 theme = "MainRoad"
