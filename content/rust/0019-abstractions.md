@@ -152,8 +152,8 @@ Loop sum: 65536; time: 654.454 ms
 ### Observations
 
 - In Rust, the iterator pipeline and the explicit `for` loop produce **identical performance**.
-- In C++, the same holds: `std::accumulate` and a manual loop perform equivalently.
-- C++ is slightly faster in this test.
+- In C++, the same holds: `std::accumulate` and a manual loop perform **equivalently**.
+- Rust is slightly faster in this particular test.
 
 ### Assembly Analysis
 
