@@ -1,3 +1,4 @@
+/* blog\themes\MainRoad\static\css\carousel.css */
 .carousel {position: relative;}
 .carousel ul {overflow: auto; display: flex; flex-wrap: nowrap; scroll-snap-type: x mandatory; scroll-snap-points-y: 
 		repeat(100%); scroll-behavior: smooth; background: white; -ms-overflow-style: none; scrollbar-width: none; 
