@@ -138,8 +138,10 @@ blockquote {
     top: -10px;
     left: 16px;
     color:#999;
-    font-size: 4rem;
-    content: "\201C";
+    font-size: 1rem;
+    // content: "\201C";
+    content: " "; // not for every Font OK
+
   }
   &::after {
     content: "";

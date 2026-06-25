@@ -79,7 +79,6 @@ Link - [Syntax highlighting](https://gohugo.io/content-management/syntax-highlig
 > Urgent info that needs immediate user attention to avoid problems.
 
 
-
 ### Inline Image
 
 This is an inline ![Alt text](image.png "Image title") image.
