@@ -1,0 +1,27 @@
+{{- /*
+@example {{ partial "components/blockquote" (dict "text" $text "author" $author "cite" $cite "caption" $caption) }}
+*/ -}}
+<figure>
+  <blockquote{{ with .cite }} cite="{{ . }}"{{ end }}>
+    {{ .text }}
+    {{- if or .author .caption }}
+      <figcaption>—
+        {{- with .author }}{{ . }}{{ end }}
+        {{- if and .author .caption }}, {{ end }}
+        {{- if .caption }}
+          <cite>
+            {{- if .cite }}
+              {{/*
+                Use Markdown so the link will be passed through the render hook.
+                Note: Since we do not have a page context in this partial, we have to use markdownify instead of $.Page.RenderString, which will result in relative urls not being resolved.
+              */}}
+              {{ printf "[%s](%s)" .caption .cite | markdownify }}
+            {{- else }}
+              {{ .caption }}
+            {{- end }}
+          </cite>
+        {{- end }}
+      </figcaption>
+    {{- end }}
+  </blockquote>
+</figure>
