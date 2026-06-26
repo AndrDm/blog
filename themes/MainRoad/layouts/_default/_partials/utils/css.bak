@@ -11,7 +11,7 @@
   {{ if $dst }}
     {{ $css = . | toCSS (dict "transpiler" "dartsass" "targetPath" $dst) }}
     {{ if hugo.IsProduction }}
-      {{ $css = $css | minify }}
+      {{ $css = $css | minify | fingerprint }}
     {{ end }}
     {{ $result = printf `<link rel="stylesheet" href=%q>` $css.RelPermalink }}
   {{ end }}
