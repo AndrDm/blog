@@ -184,6 +184,20 @@ This is an [external link](https://github.com/).
 
 ### alert
 
+```
+{{</* alert "success" */>}}
+  **Success:** This is a success alert.
+{{</* /alert */>}}
+
+{{</* alert severity="warning" size="small" >}}
+  **Warning:** This is a small warning alert.
+{{</* /alert */>}}
+
+{{</* alert hideIcon="true" >}}
+  This alert doesn't have an icon.
+{{</* /alert */>}}
+```
+
 {{< alert "success" >}}
   **Success:** This is a success alert.
 {{< /alert >}}
@@ -197,6 +211,12 @@ This is an [external link](https://github.com/).
 {{< /alert >}}
 
 ### blockquote
+
+```
+{{</* blockquote author="Aldous Huxley" cite="https://www.huxley.net/bnw/" caption="Brave New World" */>}}
+  Most human beings have an almost infinite capacity for taking things for granted.
+{{</* /blockquote */>}}
+```
 
 {{< blockquote author="Aldous Huxley" cite="https://www.huxley.net/bnw/" caption="Brave New World" >}}
   Most human beings have an almost infinite capacity for taking things for granted.
@@ -252,12 +272,12 @@ code
 {{< /collapse >}}
 
 ```html
-{{</* collapse "80" */>}}
+{{</* collapse "40" */>}}
 code
 {{</* /collapse */>}}
 ```
 
-{{< collapse "80" >}}
+{{< collapse "40" >}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -268,13 +288,25 @@ culpa qui officia deserunt mollit anim id est laborum.
 
 {{< /collapse >}}
 
+The Expand appear only of the text not fit into collapsed area!
+
 ---
 
 ### details
 
+```html
+{{</* details summary="Summary" name="my-details" title="My Details" */>}}
+  Lorem ipsum dolor sit amet.
+{{</* /details */>}}
+```
+
 {{< details summary="Summary" name="my-details" title="My Details" >}}
   Lorem ipsum dolor sit amet.
 {{< /details >}}
+
+---
+
+
 
 ### file-list
 
