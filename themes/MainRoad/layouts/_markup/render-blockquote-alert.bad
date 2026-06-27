@@ -15,8 +15,5 @@
   "important" "important"
   "caution"   "caution"
   "warning"   "warning"
-  "error"	"error"
-  "info"		"info"
-  "alert"	"alert"
 -}}
 {{ partial "components/alert" (dict "text" .Text "severity" (index $typeToSev .AlertType)) }}

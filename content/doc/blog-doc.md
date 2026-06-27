@@ -44,7 +44,7 @@ fn main() {
 }
 ```
 
-Default
+Default without numbers
 
 ```
 -> ```rust
@@ -59,6 +59,8 @@ fn main() {
     println!("Hello, world!");
 }
 ```
+
+See [themes\MainRoad\layouts\_markup\render-codeblock.html](https://github.com/AndrDm/blog/blob/main/themes/MainRoad/layouts/_markup/render-codeblock.html)
 
 Link - [Syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
 
@@ -99,6 +101,31 @@ Link - [Syntax highlighting](https://gohugo.io/content-management/syntax-highlig
 
 > Most human beings have an almost infinite capacity for taking things for granted.
 > {author="Aldous Huxley" cite="https://www.huxley.net/bnw/" caption="Brave New World"}
+
+```
+> Quote
+
+> [!INFO]
+> Useful information that users should know, even when skimming content.
+> 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+```
+
+> [!INFO]
+> Useful information that users should know, even when skimming content.
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.

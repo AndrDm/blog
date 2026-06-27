@@ -5,18 +5,13 @@
 {{- /* Map severity to icon names */ -}}
 {{- $icons := dict
   "info"    "information-box"
-  "note"	"alert_note"
-  "tip"		"alert_tip"
-  "important"	"alert_important"
-  "caution"	"alert_caution"
   "success" "check-circle"
-  "warning" "alert_warning"
-  "alert"	"alert"
+  "warning" "alert"
   "error"   "alert-circle"
 }}
 {{- /* Get severity */ -}}
 {{- $severity := .severity -}}
-{{- $severities := slice "note" "info" "tip" "important" "caution" "success" "warning" "error" -}}
+{{- $severities := slice "info" "success" "warning" "error" -}}
 {{- if not (in $severities $severity) -}}
   {{- $severity = index $severities 0 -}}
 {{- end -}}

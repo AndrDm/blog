@@ -29,14 +29,37 @@
       fill: #0085fd;
     }
   }
-  &.icon--success {
+  &.icon--note {
     path {
-      fill: #2e7d32;
+      fill: #0968d9;
+    }
+  }
+  &.icon--tip {
+    path {
+      fill: #1f873d;
+    }
+  }
+
+  &.icon--important {
+    path {
+      fill: #8250e0;
+    }
+  }
+  &.icon-caution {
+    path {
+      fill: #cf222e;
     }
   }
   &.icon--warning {
     path {
-      fill: #ed8f02;
+      fill: #d59400;
+    }
+  }
+
+
+  &.icon--success {
+    path {
+      fill: #2e7d32;
     }
   }
   &.icon--error {

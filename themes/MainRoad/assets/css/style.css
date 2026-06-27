@@ -1930,6 +1930,6 @@ textarea {
 /* GitHub-style colors */
 .alert-note { border-color: #218bff; background: #f0f6ff; }
 .alert-tip { border-color: #2da44e; background: #f0fff4; }
-.alert-warning { border-color: #bf8700; background: #fff8c5; }
 .alert-important { border-color: #a371f7; background: #faf5ff; }
 .alert-caution { border-color: #cf222e; background: #fff1f2; }
+.alert-warning { border-color: #bf8700; background: #fff8c5; }
