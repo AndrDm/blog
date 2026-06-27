@@ -158,11 +158,30 @@ This is an inline ![Alt text](100x30.png "Image title") image.
 
 ### Links
 
-This is a [link](/).
+```
+This is a [link](/doc/blog-doc/#shortcuts).
+```
+
+This is a [link](/doc/blog-doc/#shortcuts).
+
+```
+This is an [external link](https://github.com/).
+```
 
 This is an [external link](https://github.com/).
 
 ### Tables
+
+```
+| Month    | Amount |
+| :------- | -----: |
+| January  |    $10 |
+| February |   $100 |
+| March    |  $1000 |
+```
+
+Take a note about alignment.
+
 
 | Month    | Amount |
 | :------- | -----: |
@@ -170,8 +189,18 @@ This is an [external link](https://github.com/).
 | February |   $100 |
 | March    |  $1000 |
 
-
 ### accordion
+
+```
+{{</* accordion name="my-accordion" */>}}
+  {{</* details summary="**Accordion 1**" open="true" */>}}
+    Lorem ipsum dolor sit amet.
+  {{</* /details */>}}
+  {{</* details summary="**Accordion 2**" */>}}
+    Lorem ipsum dolor sit amet.
+  {{</* /details */>}}
+{{</* /accordion */>}}
+```
 
 {{< accordion name="my-accordion" >}}
   {{< details summary="**Accordion 1**" open="true" >}}
