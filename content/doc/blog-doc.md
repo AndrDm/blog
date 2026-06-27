@@ -376,3 +376,14 @@ The page description is {{< param "description" "not set" >}}
     This is content for **tab 3**
   {{< /tab >}}
 {{< /tabpane >}}
+
+---
+
+### carousel
+
+```html
+{{</* carousel4 items="1" height="70" unit="%" */>}}
+```
+
+{{< carousel4 items="1" height="70" unit="%" >}}
+
