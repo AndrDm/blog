@@ -7,7 +7,7 @@
   {{ $svg := readFile $src | htmlUnescape }}
   {{ $classNames := slice "icon" }}
   {{/* Get variant */}}
-  {{ $variants := slice "primary" "secondary" "info" "success" "warning" "error" "current" }}
+  {{ $variants := slice "primary" "secondary" "info" "note" "tip" "important" "caution" "success" "warning" "error" "current" }}
   {{ if in $variants .variant }}
     {{ $classNames = $classNames | append (printf "icon--%s" .variant) }}
   {{ end }}

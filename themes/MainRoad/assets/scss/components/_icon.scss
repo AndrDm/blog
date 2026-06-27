@@ -24,6 +24,12 @@
       fill: #999;
     }
   }
+  &.icon--caution {
+    path {
+      fill: #d2222e;
+	  //stroke: #d2222e;
+    }
+  }
   &.icon--info {
     path {
       fill: #0085fd;
@@ -39,15 +45,9 @@
       fill: #1f873d;
     }
   }
-
   &.icon--important {
     path {
       fill: #8250e0;
-    }
-  }
-  &.icon-caution {
-    path {
-      fill: #cf222e;
     }
   }
   &.icon--warning {
@@ -55,8 +55,6 @@
       fill: #d59400;
     }
   }
-
-
   &.icon--success {
     path {
       fill: #2e7d32;

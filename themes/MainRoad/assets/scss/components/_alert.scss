@@ -25,17 +25,18 @@
     background-color: rgba(#0085fd, 0.25);
   }
   &.alert--tip {
-    background-color: rgba(#0085fd, 0.25);
+    background-color: rgba(#1f873d, 0.25);
+
   }
 
   &.alert--success {
     background-color: rgba(#2e7d32, 0.25);
   }
   &.alert--important {
-    background-color: rgba(#ed8f02, 0.25);
+    background-color: rgba(#8250e0, 0.2);
   }
   &.alert--caution {
-    background-color: rgba(#ed8f02, 0.25);
+    background-color: rgba(#d2222e, 0.25);
   }
 
   &.alert--warning {

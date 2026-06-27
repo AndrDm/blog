@@ -142,10 +142,15 @@ Link - [Syntax highlighting](https://gohugo.io/content-management/syntax-highlig
 > [!WARNING]
 > Urgent info that needs immediate user attention to avoid problems.
 
+Icons in blog\themes\MainRoad\assets\icons 
+
+Colors blog\themes\MainRoad\assets\scss\components\\_icon.scss
+
+Colors blog\themes\MainRoad\assets\scss\components\\_alert.scss 
 
 ### Inline Image
 
-This is an inline ![Alt text](image.png "Image title") image.
+This is an inline ![Alt text](100x30.png "Image title") image.
 
 ### Block Image
 
