@@ -9,6 +9,7 @@
 
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     {{ partial "utils/css" (dict "src" "scss/main.scss" "dst" "css/main.css") }}
 
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }} - {{ .Site.Title }}">
@@ -37,6 +38,8 @@
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
+	{{ $css := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "styles.css") | minify }}
+	<link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
 	{{ range .Site.Params.customCSS -}}
 	<link rel="stylesheet" href="{{ . | relURL }}">

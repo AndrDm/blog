@@ -8,8 +8,8 @@
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }}{{ end }}{{ if .IsHome }}{{ .Site.Title }}{{ end }}{{ end }}</title>
 
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
+	{{ $css := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "styles.css") | minify }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    {{ partial "utils/css" (dict "src" "scss/main.scss" "dst" "css/main.css") }}
 
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }} - {{ .Site.Title }}">
 	<link rel="icon" href="https://blog.dmitriev.de/favicon.svg" type="image/svg+xml">
