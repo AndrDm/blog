@@ -231,12 +231,12 @@ This is an [external link](https://github.com/).
 ### collapse
 
 ```html
-{{</* collapse "80" */>}}
+{{</* collapse "120" */>}}
 code
 {{</* /collapse */>}}
 ```
 
-{{< collapse "80" >}}
+{{< collapse "120" >}}
   ```
   1
   2
@@ -252,12 +252,12 @@ code
 {{< /collapse >}}
 
 ```html
-{{</* collapse "120" */>}}
+{{</* collapse "80" */>}}
 code
 {{</* /collapse */>}}
 ```
 
-{{< collapse "120" >}}
+{{< collapse "80" >}}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
