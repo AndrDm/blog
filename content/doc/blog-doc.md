@@ -15,12 +15,49 @@ Text before this tag will appear in announce, but after in post body.
 
 ### Code Blocks
 
-The source code
+The source code with numbers
 
 ```
+-> ```rust {linenos=true}
+fn main() {
+    println!("Hello, world!");
+}
 -> ```
-code
--> ```language
+```
+
+```rust {linenos=true}
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+without numbers
+
+```
+-> ```rust {linenos=false}
+fmt.Println("Hello with numbers")
+-> ```
+```
+```rust {linenos=false}
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+Default
+
+```
+-> ```rust
+fn main() {
+    println!("Hello, world!");
+}
+-> ```
+```
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
 ```
 
 Link - [Syntax highlighting](https://gohugo.io/content-management/syntax-highlighting/).
