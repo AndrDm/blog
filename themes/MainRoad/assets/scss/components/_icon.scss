@@ -9,6 +9,88 @@
 .icon {
   display: inline-block;
   vertical-align: var(--icon-vertical-align);
+  width: 16px;
+  height: 16px;
+
+  // Variant
+
+  &.icon--primary {
+    path {
+      fill: #0085fd;
+    }
+  }
+  &.icon--secondary {
+    path {
+      fill: #999;
+    }
+  }
+  &.icon--caution {
+    path {
+      fill: #d2222e;
+	  //stroke: #d2222e;
+    }
+  }
+  &.icon--info {
+    path {
+      fill: #0085fd;
+    }
+  }
+  &.icon--note {
+    path {
+      fill: #0968d9;
+    }
+  }
+  &.icon--tip {
+    path {
+      fill: #1f873d;
+    }
+  }
+  &.icon--important {
+    path {
+      fill: #8250e0;
+    }
+  }
+  &.icon--warning {
+    path {
+      fill: #d59400;
+    }
+  }
+  &.icon--success {
+    path {
+      fill: #2e7d32;
+    }
+  }
+  &.icon--error {
+    path {
+      fill: #d32f2f;
+    }
+  }
+  &.icon--current {
+    path {
+      fill: currentColor;
+    }
+  }
+
+  // Size
+  
+  &.icon--large {
+    width: 32px;
+    height: 32px;
+  }
+  &.icon--medium {
+    width: 24px;
+    height: 24px;
+  }
+  &.icon--small {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.icon_24 {
+  display: inline-block;
+  vertical-align: var(--icon-vertical-align);
   width: 24px;
   height: 24px;
 
