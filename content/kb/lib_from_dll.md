@@ -121,3 +121,10 @@ In VSCode hold <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Alt</kbd> and select text w
 
 In Far Manager use <kbd>Shift</kbd>+<kbd>Alt</kbd>
 
+### Using mingw/MSYS2
+
+```console
+gendef your.dll
+dlltool -d your.def -l your.lib
+```
+

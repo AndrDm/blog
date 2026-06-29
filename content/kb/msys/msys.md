@@ -108,3 +108,26 @@ You may need to keep here the servers only where you have access to:
 Server = https://repo.msys2.org/mingw/clang64/
 ```
 
+## Useful Tools and Libraries
+
+### Install Utilities
+
+Like dlltool, gendef, objdump, nm, etc
+
+```Console
+pacman -Sy
+pacman -S mingw-w64-ucrt-x86_64-tools
+```
+
+### Install Format Library
+
+```
+ pacman -S mingw-w64-ucrt-x86_64-fmt
+```
+
+### Install QEMU
+
+```
+$ pacman -S mingw-w64-ucrt-x86_64-qemu
+```
+
