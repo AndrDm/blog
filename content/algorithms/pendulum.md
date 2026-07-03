@@ -34,7 +34,6 @@ This simulation uses the full nonlinear equation of motion:
 **θ'' + (g/L)sin(θ) = 0**
 
 The equation is numerically integrated using the **fourth-order Runge–Kutta (RK4)** method, providing accurate results even for larger oscillation amplitudes.
-
 <div id="m-demo">
 
 <style>

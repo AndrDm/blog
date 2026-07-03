@@ -40,7 +40,6 @@ The motion of each pendulum is calculated using the nonlinear equation:
 Unlike the small-angle approximation, this equation remains accurate for larger oscillation amplitudes.
 
 Numerical integration is performed using the **fourth-order Runge–Kutta (RK4)** method, providing stable and accurate results throughout the simulation.
-
 <div id="m-demo">
 
 <style>

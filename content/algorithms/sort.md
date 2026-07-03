@@ -22,7 +22,6 @@ Available algorithms:
 - **Insertion Sort** — incrementally builds a sorted section by inserting each new element into the correct location.
 
 Try different speeds, randomize the dataset, and compare how each algorithm behaves as it processes the same input.
-
 <div id="sorting-demo">
 
 <style>
