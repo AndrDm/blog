@@ -272,7 +272,7 @@ function buildPendulums(){
 
     pendulums = [];
 
-const minL = Math.min(
+	const minL = Math.min(
     Number(minLengthSlider.value),
     Number(lengthSlider.value) - 0.1
 );
@@ -327,7 +327,7 @@ Number(lengthSlider.value).toFixed(1) +
 updateLabels();
 
 [
-minLengthSlider,
+	minLengthSlider,
     lengthSlider,
     angleSlider,
     gravitySlider,
@@ -433,64 +433,63 @@ function frame(now){
     ctx.clearRect(0,0,canvas.width,canvas.height);
     drawGrid();
 
-const originX = canvas.width / 2;
-const originY = 40;
+	const originX = canvas.width / 2;
+	const originY = 40;
 
-for(let i = 0; i < pendulums.length; i++){
+	for(let i = 0; i < pendulums.length; i++){
 
-    const p = pendulums[i];
+    	const p = pendulums[i];
 
-    if(running){
-        rk4(p, dt);
-    }
+   		if(running){
+        	rk4(p, dt);
+    	}
 
-    const visualLength =
-        p.L * 95;
+    	const visualLength = p.L * 95;
 
-    const bobX =
-        originX +
-        visualLength * Math.sin(p.theta);
+    	const bobX =
+        	originX +
+        	visualLength * Math.sin(p.theta);
 
-    const bobY =
-        originY +
-        visualLength * Math.cos(p.theta);
+    	const bobY =
+        	originY +
+        	visualLength * Math.cos(p.theta);
 
-    ctx.beginPath();
-    ctx.arc(
-        originX,
-        originY,
-        3,
-        0,
-        Math.PI * 2
-    );
-    ctx.fillStyle = "#64748b";
-    ctx.fill();
+    	ctx.beginPath();
+    	ctx.arc(
+        	originX,
+        	originY,
+        	3,
+        	0,
+        	Math.PI * 2
+    	);
+    	ctx.fillStyle = "#64748b";
+    	ctx.fill();
 
-    ctx.beginPath();
-    ctx.moveTo(originX, originY);
-    ctx.lineTo(bobX, bobY);
-    ctx.strokeStyle = hexToRgba(p.color, 0.45);
-    ctx.lineWidth = 1.5;
-    ctx.stroke();
+    	ctx.beginPath();
+    	ctx.moveTo(originX, originY);
+    	ctx.lineTo(bobX, bobY);
+    	ctx.strokeStyle = hexToRgba(p.color, 0.45);
+    	ctx.lineWidth = 1.5;
+    	ctx.stroke();
 
-    ctx.beginPath();
-    ctx.arc(
-        bobX,
-        bobY,
-        8,
-        0,
-        Math.PI * 2
-    );
-    ctx.fillStyle = p.color;
-    ctx.fill();
-}
-document.getElementById("curAngle").textContent =
-COUNT + " pendulums";
+    	ctx.beginPath();
+    	ctx.arc(
+        	bobX,
+        	bobY,
+        	8,
+        	0,
+        	Math.PI * 2
+    	);
+    	ctx.fillStyle = p.color;
+    	ctx.fill();
+	}
+	document.getElementById("curAngle").textContent =
+	COUNT + " pendulums";
 
     document.getElementById("simTime").textContent =
         time.toFixed(2) + " s";
 
-requestAnimationFrame(frame);
+	requestAnimationFrame(frame);
 }
 
 requestAnimationFrame(frame);
