@@ -1,7 +1,7 @@
 ---
 title: Lemniscate of Bernoulli
 date: 2026-07-03
-description: The Lemniscate of Bernoulli is a classic figure-eight curve with elegant geometric properties and applications in mathematics.
+description: "The Lemniscate of Bernoulli is a classic figure-eight curve with elegant geometric properties and applications in mathematics."
 categories:
   - Math
 archives:
