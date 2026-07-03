@@ -2,6 +2,8 @@
 title: Visualizing Sorting Algorithms in Real Time
 date: 2026-07-03
 description: Explore how Bubble Sort, Selection Sort, and Insertion Sort work through an interactive live visualization with adjustable speed and operation statistics.
+archives:
+  - 2026-07
 draft: false
 ---
 

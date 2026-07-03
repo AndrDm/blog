@@ -2,6 +2,8 @@
 title: "Interactive Pendulum Wave Simulation"
 date: 2026-07-03
 description: "Explore the fascinating behavior of multiple pendulums with different lengths oscillating from a common suspension point. Observe synchronization, phase shifts, and periodic realignment using an accurate nonlinear pendulum model and RK4 numerical integration."
+archives:
+  - 2026-07
 draft: false
 ---
 

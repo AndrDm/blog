@@ -2,6 +2,8 @@
 title: "Interactive Mathematical Pendulum Simulation"
 date: 2026-07-03
 description: "Explore the motion of a mathematical pendulum using a real-time interactive simulation. Adjust pendulum length, initial angle, gravity, and time scale while observing period, frequency, and angular displacement calculated using a nonlinear physical model."
+archives:
+  - 2026-07
 draft: false
 ---
 
