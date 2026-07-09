@@ -11,7 +11,7 @@ archives:
   - 2026-05
 tags:
   - Math
-draft: false
+draft: true
 ---
 
 Just notes  about Epipolar Consistency of X-Ray Images
