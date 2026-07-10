@@ -113,3 +113,11 @@ Refer to [1](https://forums.ni.com/t5/LabVIEW/Fatal-Internal-Error-0x6D0FD433-qu
 RTLocale = "German_Germany.1252"
 ```
 
+### Create Constant/Indicator/Control Block Diagram Changes
+
+```
+PopupMenus.ElevateCreation=True
+```
+With these changes, you can still tack down a broken wire... use Alt-Double Click for that now.
+
+Refer to [NI forum](https://forums.ni.com/t5/BreakPoint/Create-Constant-Indicator-Control-Block-Diagram-Changes/m-p/4480504#M34352).
