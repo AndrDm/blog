@@ -85,18 +85,33 @@ Get-WinEvent -ListLog *Diagnostics* | Format-Table LogName, IsEnabled
 
 
 <details>
-  <summary>Spoiler warning</summary>
+  <summary>Diagnostics</summary>
 ```
 LogName | IsEnabled
--------                                                                 Microsoft-Windows-Windows Firewall With Advanced Security/FirewallDiagnostics
-Microsoft-Windows-Provisioning-Diagnostics-Provider/ManagementService   Microsoft-Windows-Provisioning-Diagnostics-Provider/AutoPilot           Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin               Microsoft-Windows-ModernDeployment-Diagnostics-Provider/ManagementService
-Microsoft-Windows-ModernDeployment-Diagnostics-Provider/Diagnostics     Microsoft-Windows-ModernDeployment-Diagnostics-Provider/Autopilot       Microsoft-Windows-ModernDeployment-Diagnostics-Provider/Admin           Microsoft-Windows-MemoryDiagnostics-Results/Debug                       Microsoft-Windows-Diagnostics-Performance/Operational                   Microsoft-Windows-Diagnostics-Networking/Operational                     Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational     Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Operational
+-------
+Microsoft-Windows-Windows Firewall With Advanced Security/FirewallDiagnostics
+Microsoft-Windows-Provisioning-Diagnostics-Provider/ManagementService
+Microsoft-Windows-Provisioning-Diagnostics-Provider/AutoPilot
+Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider/ManagementService
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider/Diagnostics
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider/Autopilot
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider/Admin
+Microsoft-Windows-MemoryDiagnostics-Results/Debug
+Microsoft-Windows-Diagnostics-Performance/Operational
+Microsoft-Windows-Diagnostics-Networking/Operational
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider/Operational
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Sync
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Operational
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Enrollment
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Autopilot
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
 Microsoft-System-Diagnostics-DiagnosticInvoker/Operational
 ```
 </details>
+
+<br>
+
 Alternatively you can create simple Rust Program, which will measure time from the start of GetTickCount:
 
 ```Rust
