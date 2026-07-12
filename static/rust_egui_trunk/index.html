@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>egui-web 0.35 WASM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <canvas id="the_canvas_id"></canvas>
+
+    <script type="module">
+        import init from "./rust_egui_web.js";
+        init();
+    </script>
+</body>
+</html>

@@ -8,12 +8,12 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
     readonly start: (a: number, b: number) => any;
-    readonly wasm_bindgen__convert__closures_____invoke__h6ec84f578ba11990: (a: number, b: number, c: any) => [number, number];
-    readonly wasm_bindgen__convert__closures_____invoke__h61de946e401a5840: (a: number, b: number, c: any, d: any) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h640b324383700523: (a: number, b: number, c: any) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h5009a3ffdbff80fc: (a: number, b: number) => [number, number];
-    readonly wasm_bindgen__convert__closures_____invoke__hfbacce05261874b4: (a: number, b: number) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__hd597cf745f28eb8e: (a: number, b: number) => void;
+    readonly wasm_bindgen_4838f87513b3f0b1___convert__closures_____invoke___wasm_bindgen_4838f87513b3f0b1___JsValue__core_7d5f0a2ba6a62c33___result__Result_____wasm_bindgen_4838f87513b3f0b1___JsError___true_: (a: number, b: number, c: any) => [number, number];
+    readonly wasm_bindgen_4838f87513b3f0b1___convert__closures_____invoke___js_sys_4d86690b17422774___Function_fn_wasm_bindgen_4838f87513b3f0b1___JsValue_____wasm_bindgen_4838f87513b3f0b1___sys__Undefined___js_sys_4d86690b17422774___Function_fn_wasm_bindgen_4838f87513b3f0b1___JsValue_____wasm_bindgen_4838f87513b3f0b1___sys__Undefined_______true_: (a: number, b: number, c: any, d: any) => void;
+    readonly wasm_bindgen_4838f87513b3f0b1___convert__closures_____invoke___web_sys_be478437a48fa859___features__gen_Event__Event______true_: (a: number, b: number, c: any) => void;
+    readonly wasm_bindgen_4838f87513b3f0b1___convert__closures_____invoke___core_7d5f0a2ba6a62c33___result__Result_____wasm_bindgen_4838f87513b3f0b1___JsValue___true_: (a: number, b: number) => [number, number];
+    readonly wasm_bindgen_4838f87513b3f0b1___convert__closures_____invoke_______true__1_: (a: number, b: number) => void;
+    readonly wasm_bindgen_4838f87513b3f0b1___convert__closures_____invoke_______true_: (a: number, b: number) => void;
     readonly __wbindgen_malloc: (a: number, b: number) => number;
     readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
     readonly __wbindgen_exn_store: (a: number) => void;
