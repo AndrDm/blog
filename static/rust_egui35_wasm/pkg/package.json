@@ -1,0 +1,15 @@
+{
+  "name": "rust_hello",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "rust_hello_bg.wasm",
+    "rust_hello.js",
+    "rust_hello.d.ts"
+  ],
+  "main": "rust_hello.js",
+  "types": "rust_hello.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

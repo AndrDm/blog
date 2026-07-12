@@ -1,0 +1,12 @@
+[package]
+name = "rust_hello"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+eframe = "0.35.0"
+egui = "0.35.0"
+wasm-bindgen-futures = "0.4.76"
+web-sys = "0.3.103"
+
+ 

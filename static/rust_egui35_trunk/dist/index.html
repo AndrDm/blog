@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>egui web</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+<link rel="modulepreload" href="/rust_hello-e356800925eb20fc.js" crossorigin="anonymous" integrity="sha384-6xQZpiinV5tPOz9lXF7DsCuYPt4KecHb37J5zNKCZ43DofRAjxArma3Y4O1OTb0Z"><link rel="preload" href="/rust_hello-e356800925eb20fc_bg.wasm" crossorigin="anonymous" integrity="sha384-Qhb0/7I5ntkVnxhFJC9elXVATZS/wJxXCxOY3xpB/88JQtxDY96D0hVvKSkyC9be" as="fetch" type="application/wasm"></head>
+<body>
+    <canvas id="the_canvas_id"></canvas>
+
+<script type="module">
+import init, * as bindings from '/rust_hello-e356800925eb20fc.js';
+const wasm = await init({ module_or_path: '/rust_hello-e356800925eb20fc_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
