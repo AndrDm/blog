@@ -158,7 +158,7 @@ And PDF looks good:
 Now 0.10.0:
 
 ```
-C:\Users\108003658\Desktop\r-pdf-font\target\release>fonts-issue-min.exe
+>fonts-issue-min.exe
 Font size: 162588
 Glyph count: 1250
 pdf size = 2727
@@ -192,7 +192,7 @@ Helvetica                    Type 1            WinAnsi          no  no  no      
 And how it should be in 0.9.1:
 
 ```
-C:\Users\108003658\Desktop\r-pdf-font\target\release>pdffonts.exe font-test.pdf
+>pdffonts.exe font-test.pdf
 name                         type              encoding         emb sub uni object ID
 ---------------------------- ----------------- ---------------- --- --- --- ---------
 HEIGID+Roboto-Medium         CID TrueType      Identity-H       yes yes yes      5  0
