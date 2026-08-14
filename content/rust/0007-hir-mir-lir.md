@@ -688,5 +688,33 @@ cargo rustc --release -- --emit=asm -C "llvm-args=-x86-asm-syntax=intel"
 | **MIR**     | Mid‑Level IR                     | Mid      | Borrow checking, optimizations, control flow |
 | **LLVM IR** | LLVM Intermediate Representation | Low      | Optimization + codegen backend               |
 
+### ALL Commands
 
+```cmd
+cargo +nightly rustc -- -Z unpretty=normal > normal.log 
+cargo +nightly rustc -- -Z unpretty=expanded > expanded.log 
+cargo +nightly rustc -- -Z unpretty=expanded,identified > expanded_identified.log 
+cargo +nightly rustc -- -Z unpretty=expanded,hygiene > expanded_hygiene.log 
+cargo +nightly rustc -- -Z unpretty=ast-tree > ast_tree.log 
+cargo +nightly rustc -- -Z unpretty=ast-tree,expanded > ast_tree_expanded.log 
+cargo +nightly rustc -- -Z unpretty=hir > hir.log 
+cargo +nightly rustc -- -Z unpretty=hir,identified > hir_identified.log 
+cargo +nightly rustc -- -Z unpretty=hir,typed > hir_typed.log 
+cargo +nightly rustc -- -Z unpretty=hir-tree > hir_tree.log 
+cargo +nightly rustc -- -Z unpretty=thir-tree > thir_tree.log 
+cargo +nightly rustc -- -Z unpretty=thir-flat > thir_flat.log 
+cargo +nightly rustc -- -Z unpretty=mir > mir.log 
+cargo +nightly rustc -- -Z unpretty=stable-mir > mir_stable.log 
+cargo +nightly rustc -- -Z unpretty=mir-cfg > mir_cfg.log
+
+cargo rustc --release -- --emit=asm -C "llvm-args=-x86-asm-syntax=intel"
+cargo rustc --release -- --emit=llvm-bc
+cargo rustc --release -- --emit=dep-info 
+cargo rustc --release -- --emit=link 
+cargo rustc --release -- --emit=llvm-ir 
+cargo rustc --release -- --emit=metadata 
+cargo rustc --release -- --emit=mir 
+cargo rustc --release -- --emit=obj 
+cargo +nightly rustc --release -- --emit=thin-link-bitcode -Zunstable-options
+```
 
