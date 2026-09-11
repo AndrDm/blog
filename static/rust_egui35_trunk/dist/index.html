@@ -17,13 +17,13 @@
             height: 100%;
         }
     </style>
-<link rel="modulepreload" href="/rust_hello-e356800925eb20fc.js" crossorigin="anonymous" integrity="sha384-6xQZpiinV5tPOz9lXF7DsCuYPt4KecHb37J5zNKCZ43DofRAjxArma3Y4O1OTb0Z"><link rel="preload" href="/rust_hello-e356800925eb20fc_bg.wasm" crossorigin="anonymous" integrity="sha384-Qhb0/7I5ntkVnxhFJC9elXVATZS/wJxXCxOY3xpB/88JQtxDY96D0hVvKSkyC9be" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="./rust_hello-63218f66320cf2af.js" crossorigin="anonymous" integrity="sha384-sjIha9tBDBNxZl4SORLmgsNQWyg32NaVIlq/UoAWVagPdH84nSW6HfMWnvTDXVM7"><link rel="preload" href="./rust_hello-63218f66320cf2af_bg.wasm" crossorigin="anonymous" integrity="sha384-d+9y4ijQ3czeQDfx6Kj8M1+R4GJIxI3ngmSY8HrxQpCMyPvwmsph9AuE9ApKQn7H" as="fetch" type="application/wasm"></head>
 <body>
     <canvas id="the_canvas_id"></canvas>
 
 <script type="module">
-import init, * as bindings from '/rust_hello-e356800925eb20fc.js';
-const wasm = await init({ module_or_path: '/rust_hello-e356800925eb20fc_bg.wasm' });
+import init, * as bindings from './rust_hello-63218f66320cf2af.js';
+const wasm = await init({ module_or_path: './rust_hello-63218f66320cf2af_bg.wasm' });
 
 
 window.wasmBindings = bindings;
