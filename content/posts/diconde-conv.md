@@ -7,6 +7,9 @@ title = 'Simple TIFF to DICONDE converter (Test)'
 
 ## TIFF to DICOM Converter (egui/rust/trunk)
 
+Built with trunk build --release --public-url . --no-default-features
+Taken from \dist
+
 <iframe
     src="/diconde_conv_egui/index.html"
     width="100%"
