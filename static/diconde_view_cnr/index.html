@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rust Image Viewer</title>
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		#the_canvas_id {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+
+		#loading_text {
+			font-size: 16px;
+			color: #808080;
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+<link rel="modulepreload" href="./r-viewer-1cb26d269dd68db.js" crossorigin="anonymous" integrity="sha384-CpoOoxa4vY6oWoetzZwmjdWYKFgqoGPCxS8HmJJ4YaLtiOixXcgPRaiNtbPWubiL"><link rel="preload" href="./r-viewer-1cb26d269dd68db_bg.wasm" crossorigin="anonymous" integrity="sha384-9CrL1mCQ9gtAa3FcIyeNk0wNSKvzGQqrbwBEEwL4vAD0/4r04QtBGD2MLd7G1Gm+" as="fetch" type="application/wasm"></head>
+<body>
+	<!-- egui runs here -->
+	<canvas id="the_canvas_id"></canvas>
+
+	<!-- loading text is removed by main.rs after the canvas initializes -->
+	<div id="loading_text">Loading...</div>
+
+<script type="module">
+import init, * as bindings from './r-viewer-1cb26d269dd68db.js';
+const wasm = await init({ module_or_path: './r-viewer-1cb26d269dd68db_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
